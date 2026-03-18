@@ -12,6 +12,8 @@
     --sql: #00758f;
     --spring: #6db33f;
     --django: #092e20;
+    --data-engineering: #FF6B00;
+    --full-stack: #9C27B0;
 }
 
 * {
@@ -508,6 +510,14 @@ color: var(--text);
 }
 .title-segment.ai::before {
     background: var(--python);
+}
+
+.title-segment.data-engineering::before {
+    background: var(--data-engineering);
+}
+
+.title-segment.full-stack::before {
+    background: var(--full-stack);
 }
 
 .title-segment::before {
