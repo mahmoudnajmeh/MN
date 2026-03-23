@@ -24,7 +24,7 @@ const translations = {
         contact: "Get In Touch"
     },
     about: {
-        description: "Dedicated Full-Stack Developer with solid experience in OOP and a strong interest in web and AI development. Proficient in Java, Spring Boot, Python, Django, and C# .NET. Successful implementation of web projects with a focus on full-stack development (backend and frontend) and teamwork.",
+        description: "Software Developer with strong backend and full-stack experience using Java, Spring Boot, Python, Django, and C# .NET. Focused on building scalable applications and data-driven systems using solid software engineering and object-oriented design principles. Currently expanding into Data Engineering and ML systems, working with ETL/ELT pipelines, APIs, SQL, and automated data workflows.",
         education: "Education"
     },
     education: {
@@ -318,7 +318,7 @@ const translations = {
         contact: "Kontakt aufnehmen"
     },
     about: {
-        description: "Engagierter Full-Stack-Entwickler mit fundierter Erfahrung in objektorientierter Programmierung und großem Interesse an Web- und KI-Entwicklung. Versiert in Java, Spring Boot, Python, Django und C# .NET. Erfolgreiche Umsetzung von Webprojekten mit Fokus auf Full-Stack-Entwicklung (Backend und Frontend) und Teamarbeit.",
+        description: "Softwareentwickler mit fundierter Backend- und Full-Stack-Erfahrung in Java, Spring Boot, Python, Django und C# .NET. Schwerpunkt auf der Entwicklung skalierbarer Anwendungen und datengetriebener Systeme unter Einsatz solider Software-Engineering-Prinzipien und objektorientierter Architektur. Derzeit vertiefe ich meine Kenntnisse im Bereich Data Engineering und ML-Systeme, insbesondere in ETL/ELT-Pipelines, APIs, SQL und automatisierten Daten-Workflows.",
         education: "Ausbildung"
     },
 
@@ -613,7 +613,7 @@ const translations = {
         contact: "Skontaktuj się"
     },
     about: {
-        description: "Zaangażowany programista Full-Stack z solidnym doświadczeniem w programowaniu obiektowym i dużym zainteresowaniem rozwojem aplikacji webowych oraz sztuczną inteligencją. Biegły w Java, Spring Boot, Python, Django oraz C# .NET. Pomyślna realizacja projektów webowych z naciskiem na rozwój full-stack (backend i frontend) oraz pracę zespołową.",
+        description: "Programista oprogramowania z dużym doświadczeniem w backendzie i full-stack, wykorzystujący Java, Spring Boot, Python, Django oraz C# .NET. Skupiony na tworzeniu skalowalnych aplikacji i systemów opartych na danych, z wykorzystaniem solidnych zasad inżynierii oprogramowania oraz programowania obiektowego. Obecnie rozwijam się w kierunku Data Engineering i systemów ML, pracując z pipeline’ami ETL/ELT, API, SQL oraz zautomatyzowanymi workflowami danych.",
         education: "Wykształcenie"
     },
 
@@ -908,7 +908,7 @@ const translations = {
         contact: "Me contacter"
     },
     about: {
-        description: "Développeur Full-Stack dévoué avec une solide expérience en programmation orientée objet et un vif intérêt pour le développement web et l'IA. Maîtrise de Java, Spring Boot, Python, Django et C# .NET. Mise en œuvre réussie de projets web avec un accent sur le développement full-stack (backend et frontend) et le travail d'équipe.",
+        description: "Développeur logiciel avec une solide expérience en backend et full-stack utilisant Java, Spring Boot, Python, Django et C# .NET. Axé sur la conception d’applications évolutives et de systèmes orientés données, en s’appuyant sur des principes solides d’ingénierie logicielle et de programmation orientée objet. Actuellement en développement de compétences en Data Engineering et systèmes de ML, avec une expérience sur les pipelines ETL/ELT, les API, SQL et les workflows de données automatisés.",
         education: "Éducation"
     },
 
@@ -1203,7 +1203,7 @@ const translations = {
         contact: "İletişime Geç"
     },
     about: {
-        description: "Nesne tabanlı programlamada sağlam deneyime ve web ile yapay zeka geliştirmeye güçlü bir ilgiye sahip kararlı bir Full-Stack Geliştirici. Java, Spring Boot, Python, Django ve C# .NET konusunda yetkin. Full-stack geliştirme (backend ve frontend) ve ekip çalışmasına odaklanarak web projelerinin başarılı bir şekilde uygulanması.",
+        description: "Java, Spring Boot, Python, Django ve C# .NET kullanarak güçlü backend ve full-stack deneyimine sahip bir yazılım geliştirici. Sağlam yazılım mühendisliği ve nesne yönelimli tasarım prensiplerini kullanarak ölçeklenebilir uygulamalar ve veri odaklı sistemler geliştirmeye odaklanır. Şu anda ETL/ELT pipeline'ları, API'ler, SQL ve otomatik veri iş akışları üzerinde çalışarak Data Engineering ve ML sistemleri alanında uzmanlığını geliştirmektedir.",
         education: "Eğitim"
     },
 
@@ -1498,8 +1498,7 @@ const translations = {
         contact: "Связаться"
     },
     about: {
-        description: "Преданный Full-Stack разработчик с солидным опытом в ООП и сильным интересом к веб-разработке и искусственному интеллекту. Владеет Java, Spring Boot, Python, Django и C# .NET. Успешно реализует веб-проекты с фокусом на полную разработку (бэкенд и фронтенд) и командную работу.",
-        education: "Образование"
+        description: "Разработчик программного обеспечения с сильным опытом в backend и full-stack разработке с использованием Java, Spring Boot, Python, Django и C# .NET. Сосредоточен на создании масштабируемых приложений и систем, ориентированных на данные, с использованием надежных принципов объектно-ориентированного проектирования. В настоящее время расширяет экспертизу в области Data Engineering и ML-систем, работая с ETL/ELT конвейерами, API, SQL и автоматизированными потоками данных.",
     },
 
     education: {
@@ -1792,7 +1791,7 @@ const translations = {
         contact: "تواصل معي"
     },
     about: {
-        description: "مهندس برمجيات فول ستاك متفانٍ يتمتع بخبرة قوية في البرمجة الكائنية واهتمام كبير بتطوير الويب والذكاء الاصطناعي. يتقن Java، Spring Boot، Python، Django، وC# .NET. تنفيذ ناجح لمشاريع الويب مع التركيز على تطوير فول ستاك (الواجهة الخلفية والأمامية) والعمل الجماعي.",
+        description: "مطور برمجيات ذو خبرة قوية في تطوير الـ backend و full-stack باستخدام Java و Spring Boot و Python و Django و C# .NET. يركز على بناء تطبيقات قابلة للتوسع وأنظمة قائمة على البيانات باستخدام مبادئ هندسة البرمجيات القوية والتصميم الموجه للكائنات. يعمل حاليًا على توسيع خبرته في هندسة البيانات وأنظمة التعلم الآلي، من خلال التعامل مع خطوط ETL/ELT وواجهات API وSQL وسير العمل الآلي للبيانات.",
         education: "التعليم"
     },
     education: {
@@ -2074,7 +2073,7 @@ const translations = {
         contact: "צור קשר"
     },
     about: {
-        description: "מפתח Full-Stack מסור עם ניסיון מוצק בתכנות מונחה-עצמים ועניין חזק בפיתוח web ובינה מלאכותית. מיומן ב-Java, Spring Boot, Python, Django ו-C# .NET. מימוש מוצלח של פרויקטי web עם דגש על פיתוח full-stack (backend ו-frontend) ועבודת צוות.",
+        description: "מפתח תוכנה עם ניסיון חזק ב-backend ו-full-stack באמצעות Java, Spring Boot, Python, Django ו-C# .NET. מתמקד בבניית אפליקציות ניתנות להרחבה ומערכות מונחות נתונים תוך שימוש בעקרונות עיצוב מונחה עצמים והנדסת תוכנה מוצקה. כעת מרחיב את המומחיות שלו בהנדסת נתונים ומערכות ML, בעבודה עם צינורות ETL/ELT, APIs, SQL וזרימות עבודה אוטומטיות של נתונים.",
         education: "השכלה"
     },
     education: {
