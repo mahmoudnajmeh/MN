@@ -8,7 +8,6 @@ if (typeof document.title !== 'string' || document.title.includes('[object Objec
     // List of allowed titles
     const allowedTitles = [
         "Mahmoud Najmeh | Data Engineering & Full-Stack Developer",
-        "MN Portfolio",
         "Mahmoud Najmeh - Portfolio"
     ];
     

@@ -1,7 +1,7 @@
 // Translation map
 const translations = {
     en: { 
-    title: "Mahmoud Najmeh | Full-Stack Developer",
+    title: "Mahmoud Najmeh | Data Engineering & Full-Stack Developer",
     name: {
         first: "Mahmoud",
         last: "Najmeh"
@@ -295,7 +295,7 @@ const translations = {
         // }
     },
     de: {
-    title: "Mahmoud Najmeh | Full-Stack Entwickler",
+    title: "Mahmoud Najmeh | Data Engineering & Full-Stack Entwickler",
     name: {
         first: "Mahmoud",
         last: "Najmeh"
@@ -590,7 +590,7 @@ const translations = {
         // }
     },
         pl: {
-    title: "Mahmoud Najmeh | Programista Full-Stack",
+    title: "Mahmoud Najmeh | Inżynieria Danych & Programista Full-Stack",
     name: {
         first: "Mahmoud",
         last: "Najmeh"
@@ -885,7 +885,7 @@ const translations = {
         // }
     },
     fr: {
-    title: "Mahmoud Najmeh | Développeur Full-Stack",
+    title: "Mahmoud Najmeh | Ingénierie des Données & Développeur Full-Stack",
     name: {
         first: "Mahmoud",
         last: "Najmeh"
@@ -1475,7 +1475,7 @@ const translations = {
         // }
     },
         ru: {
-    title: "Махмуд Наджмех | Full-Stack разработчик",
+    title: "Махмуд Наджмех | Инженерия данных & Full-Stack разработчик",
     name: {
         first: "Махмуд",
         last: "Наджмех"
@@ -1768,7 +1768,7 @@ const translations = {
         // }
     },
     ar: {
-    title: "محمود نجمة | مهندس برمجيات فول ستاك",
+    title: "محمود نجمة | هندسة البيانات & مطور فول ستاك",
     name: {
         first: "محمود",
         last: "نجمة"
@@ -2050,7 +2050,7 @@ const translations = {
         // }
     },
     he: {
-    title: "מחמוד נג'מה | מפתח Full-Stack",
+    title: "מחמוד נג'מה | הנדסת נתונים & מפתח Full-Stack",
     name: {
         first: "מחמוד",
         last: "נג'מה"
