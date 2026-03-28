@@ -1,13 +1,13 @@
 // Ensure the title is valid on load
 if (typeof document.title !== 'string' || document.title.includes('[object Object]')) {
-    document.title = "Mahmoud Najmeh | Data Engineer & Full-Stack Developer";
+    document.title = "Mahmoud Najmeh | Data Engineering & Full-Stack Developer";
 }
 
 // Title Protection Guard
 (function() {
     // List of allowed titles
     const allowedTitles = [
-        "Mahmoud Najmeh | Data Engineer & Full-Stack Developer",
+        "Mahmoud Najmeh | Data Engineering & Full-Stack Developer",
         "MN Portfolio",
         "Mahmoud Najmeh - Portfolio"
     ];
