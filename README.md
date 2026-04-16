@@ -8,7 +8,7 @@ Designed to showcase projects, skills, and professional background.
 
 ## 🚀 Live Demo
 
-👉 https://mn10101.github.io/MN/
+👉 https://mahmoudnajmeh.github.io/MN
 
 ------------------------------------------------------------------------
 
