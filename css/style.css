@@ -862,25 +862,130 @@ color: var(--text);
     animation: flame-pulse 1.5s ease-in-out infinite;
 }
 
+/* Technical Skills Section */
 .skills-container h3 {
     color: var(--accent);
     font-size: 1.3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.skills-container h3::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent), transparent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.skills-container h3:hover::after {
+    transform: scaleX(1);
 }
 
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 1.5rem;
+}
+
+.skill-category {
+    background: rgba(30, 41, 59, 0.5);
+    border-radius: 16px;
+    padding: 1.2rem;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    backdrop-filter: blur(4px);
+    opacity: 0;
+    animation: cardFadeIn 0.5s ease-out forwards;
+    transform: translateY(20px);
+}
+
+.skill-category:nth-child(1) { animation-delay: 0.1s; }
+.skill-category:nth-child(2) { animation-delay: 0.2s; }
+.skill-category:nth-child(3) { animation-delay: 0.3s; }
+.skill-category:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes cardFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.skill-category:hover {
+    transform: translateY(-8px) scale(1.01);
+    border-color: var(--accent);
+    box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(59, 130, 246, 0.3);
+    background: rgba(30, 41, 59, 0.8);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .skill-category h4 {
     color: var(--text);
-    margin-bottom: 0.8rem;
-    font-size: 1.1rem;
-    white-space: normal;
-    overflow-wrap: break-word;
-    padding: 0.2rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-left: 3px solid var(--accent);
+    padding-left: 0.75rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.skill-category h4::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: var(--accent);
+    border-radius: 50%;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.skill-category:hover h4::before {
+    transform: scale(1.5);
+    box-shadow: 0 0 10px var(--accent);
+}
+
+.skill-category h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--accent), transparent);
+    transition: width 0.4s ease;
+}
+
+.skill-category:hover h4::after {
+    width: 100%;
 }
 
 .icon-list {
@@ -891,76 +996,184 @@ color: var(--text);
 }
 
 .icon-list li {
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--secondary);
-    border-radius: 8px;
-    transition: all 0.3s ease;
+    background: var(--primary);
+    border-radius: 12px;
+    transition: all 0.3s cubic-bezier(0.34, 1.2, 0.64, 1);
     position: relative;
+    cursor: pointer;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    opacity: 0;
+    animation: iconPopIn 0.4s ease-out forwards;
+}
+
+.icon-list li:nth-child(1) { animation-delay: 0.05s; }
+.icon-list li:nth-child(2) { animation-delay: 0.1s; }
+.icon-list li:nth-child(3) { animation-delay: 0.15s; }
+.icon-list li:nth-child(4) { animation-delay: 0.2s; }
+.icon-list li:nth-child(5) { animation-delay: 0.25s; }
+.icon-list li:nth-child(6) { animation-delay: 0.3s; }
+.icon-list li:nth-child(7) { animation-delay: 0.35s; }
+
+@keyframes iconPopIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) rotate(-10deg);
+    }
+    60% {
+        transform: scale(1.1) rotate(2deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0);
+    }
 }
 
 .icon-list li:hover {
-    transform: translateY(-3px);
+    transform: translateY(-8px) scale(1.12);
     background: var(--accent);
-    box-shadow:
-        0 5px 15px rgba(59, 130, 246, 0.3),
-        0 0 15px rgba(255, 204, 0, 0.8),
-        0 0 25px rgba(255, 147, 0, 0.6);
-}
-
-.icon-list li::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-    background: radial-gradient(circle, rgba(255, 204, 0, 0.3) 0%, transparent 70%);
-    opacity: 0;
-    z-index: -1;
-    transition: opacity 0.3s ease;
-}
-
-.icon-list li:hover::before {
-    opacity: 1;
-    animation: flame-pulse 1.5s ease-in-out infinite;
+    border-color: var(--accent);
+    box-shadow: 0 12px 25px -8px rgba(59, 130, 246, 0.5);
+    transition: all 0.25s cubic-bezier(0.34, 1.2, 0.64, 1);
 }
 
 .icon-list li i {
     font-size: 24px;
-    color: var(--text);
-    transition: text-shadow 0.3s ease;
+    color: var(--text-light);
+    transition: all 0.25s ease;
 }
 
 .icon-list li:hover i {
     color: white;
-    text-shadow:
-        0 0 10px white,
-        0 0 20px rgba(255, 204, 0, 0.8);
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+    transform: scale(1.05);
 }
 
 .icon-list li::after {
     content: attr(title);
     position: absolute;
-    top: -2rem;
+    bottom: -30px;
     left: 50%;
-    transform: translateX(-50%);
-    background: var(--secondary);
+    transform: translateX(-50%) scale(0.9);
+    background: linear-gradient(135deg, var(--secondary), var(--primary));
     color: var(--text);
-    padding: 0.3rem 0.6rem;
-    border-radius: 4px;
-    font-size: 0.75rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: 8px;
+    font-size: 0.7rem;
+    font-weight: 500;
     white-space: nowrap;
     opacity: 0;
     visibility: hidden;
-    transition: all 0.3s ease;
+    transition: all 0.25s cubic-bezier(0.34, 1.2, 0.64, 1);
+    pointer-events: none;
+    z-index: 10;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+    letter-spacing: 0.3px;
+    border: 1px solid rgba(59, 130, 246, 0.3);
 }
 
 .icon-list li:hover::after {
     opacity: 1;
     visibility: visible;
+    bottom: -42px;
+    transform: translateX(-50%) scale(1);
+}
+
+/* Pulse animation on first load for attention */
+@keyframes subtlePulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 6px rgba(59, 130, 246, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+    }
+}
+
+.skill-category:first-child .icon-list li:first-child {
+    animation: iconPopIn 0.4s ease-out forwards, subtlePulse 0.8s ease-out 0.5s;
+}
+
+/* Extra margin between subcategories inside same card */
+.skill-category h4:not(:first-of-type) {
+    margin-top: 1.5rem;
+    position: relative;
+    animation: fadeInUp 0.4s ease-out;
+}
+
+.skill-category .icon-list + h4 {
+    margin-top: 1.8rem;
+}
+
+/* Staggered animation for subcategory headers */
+.skill-category h4:first-of-type {
+    animation: fadeInUp 0.4s ease-out 0.05s both;
+}
+
+.skill-category h4:not(:first-of-type) {
+    animation: fadeInUp 0.4s ease-out 0.15s both;
+}
+
+/* Subtle background glow on category hover */
+.skill-category::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 16px;
+    background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), rgba(59, 130, 246, 0.08), transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.skill-category:hover::before {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .skill-category {
+        padding: 1rem;
+    }
+    
+    .skill-category h4 {
+        font-size: 0.9rem;
+    }
+    
+    .icon-list li {
+        width: 38px;
+        height: 38px;
+    }
+    
+    .icon-list li i {
+        font-size: 18px;
+    }
+    
+    .skill-category h4:not(:first-of-type) {
+        margin-top: 1.2rem;
+    }
+    
+    .icon-list li::after {
+        font-size: 0.65rem;
+        padding: 0.25rem 0.6rem;
+    }
+    
+    .icon-list li:hover::after {
+        bottom: -36px;
+    }
 }
 
 /* Services Section Specific Styles */
