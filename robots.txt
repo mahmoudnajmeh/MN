@@ -1,3 +1,8 @@
 User-agent: *
 Allow: /
-Sitemap: https://mn10101.github.io/MN/sitemap.xml
+
+Disallow: /private/
+Disallow: /admin/
+Disallow: /.github/
+
+Sitemap: https://mahmoudnajmeh.github.io/MN/sitemap.xml
