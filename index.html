@@ -21,318 +21,80 @@
     <!-- Structured Data for SEO -->
     <script type="application/ld+json">
     {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "Person",
-                "name": "Mahmoud Najmeh",
-                "additionalName": "MN",
-                "honorificPrefix": "Mr.",
-                "jobTitle": "Software Developer | Data Engineering & ML Systems",
-                "url": "https://mn10101.github.io/MN",
-                "image": "https://mn10101.github.io/MN/images/profile.jpg",
-                "email": "mn.de@outlook.com",
-                "telephone": "+49-163-9769764",
-                "gender": "https://schema.org/Male",
-                "nationality": {
-                    "@type": "Country",
-                    "name": "Germany"
-                },
-                "birthPlace": {
-                    "@type": "Place",
-                    "name": "Berlin, Germany"
-                },
-                "homeLocation": {
-                    "@type": "Place",
-                    "name": "Berlin, Germany"
-                },
-                "workLocation": {
-                    "@type": "Place",
-                    "name": "Berlin, Germany"
-                },
-                "hasCredential": [
-                    {
-                        "@type": "EducationalOccupationalCredential",
-                        "name": "Data Engineering with Python (IHK Certificate)",
-                        "credentialCategory": "professional_certification",
-                        "description": "IHK-certified program covering Apache Spark, Airflow, MLflow, dbt, and modern data stack"
-                    },
-                    {
-                        "@type": "EducationalOccupationalCredential",
-                        "name": "Java Backend Developer Certification",
-                        "credentialCategory": "professional_certification"
-                    },
-                    {
-                        "@type": "EducationalOccupationalCredential", 
-                        "name": "IT Specialist Application Development",
-                        "credentialCategory": "professional_certification"
-                    }
-                ],
-                "hasOccupation": {
-                    "@type": "Occupation",
-                    "name": "Software Developer - Data Engineering & ML Systems",
-                    "occupationLocation": {
-                        "@type": "City",
-                        "name": "Berlin"
-                    },
-                    "responsibilities": [
-                        "Design and implement ETL/ELT data pipelines",
-                        "Build scalable data platforms and lakehouse architectures",
-                        "Develop ML systems with MLflow and model registry",
-                        "Orchestrate workflows with Apache Airflow",
-                        "Process streaming data with Apache Spark and Kafka",
-                        "Ensure data quality with Great Expectations"
-                    ]
-                },
-                "knowsAbout": [
-                    "Data Engineering", "Apache Spark", "Apache Airflow", "MLflow",
-                    "dbt", "Great Expectations", "Delta Lake", "Apache Iceberg",
-                    "ETL Pipelines", "Data Warehousing", "Data Lakes", "Lakehouses",
-                    "Apache Kafka", "Stream Processing", "Feature Stores",
-                    "Java Programming", "Spring Boot Framework", "Python Development",
-                    "Django Framework", "REST API Design", "Microservices Architecture",
-                    "Artificial Intelligence", "Machine Learning", "TensorFlow",
-                    "Cloud Computing", "AWS Glue", "Google BigQuery", "Dataflow",
-                    "Docker Containers", "CI/CD Pipelines", "PostgreSQL Database",
-                    "MySQL Database", "System Design", "Software Architecture"
-                ],
-                "knowsLanguage": [
-                    {"@type": "Language", "name": "English"},
-                    {"@type": "Language", "name": "German"}, 
-                    {"@type": "Language", "name": "Arabic"}
-                ],
-                "memberOf": [
-                    {
-                        "@type": "Organization",
-                        "name": "Java Community"
-                    },
-                    {
-                        "@type": "Organization", 
-                        "name": "Python Software Foundation"
-                    },
-                    {
-                        "@type": "Organization",
-                        "name": "Apache Software Foundation"
-                    }
-                ],
-                "award": [
-                    "IHK-certified Data Engineering candidate",
-                    "Top Performing Student - DCI Digital Career Institute",
-                    "Excellence in Java Development"
-                ],
-                "description": "Software Developer specializing in Data Engineering & ML Systems. IHK-certified Data Engineering candidate with expertise in Apache Spark, Airflow, MLflow, and modern data stack, combined with full-stack development experience in Java, Spring Boot, and Python."
-            },
-            {
-                "@type": "WebSite",
-                "name": "Mahmoud Najmeh - Data Engineering & Software Development Portfolio",
-                "url": "https://mn10101.github.io/MN",
-                "description": "Professional portfolio showcasing data engineering, ML systems, and full-stack development expertise with IHK certification",
-                "author": {
-                    "@type": "Person",
-                    "name": "Mahmoud Najmeh"
-                },
-                "publisher": {
-                    "@type": "Organization", 
-                    "name": "Mahmoud Najmeh - Data Engineering & Software Development"
-                },
-                "inLanguage": ["en", "de", "ar"]
-            },
-            {
-                "@type": "Organization",
-                "name": "Mahmoud Najmeh - Data Engineering & Software Development",
-                "description": "Professional data engineering and software development services specializing in ETL pipelines, data platforms, and ML systems",
-                "url": "https://mn10101.github.io/MN",
-                "logo": "https://mn10101.github.io/MN/images/profile.jpg",
-                "foundingDate": "2020",
-                "foundingLocation": {
-                    "@type": "Place",
-                    "name": "Berlin, Germany" 
-                },
-                "address": {
-                    "@type": "PostalAddress",
-                    "addressCountry": "DE",
-                    "addressRegion": "Berlin",
-                    "addressLocality": "Berlin"
-                },
-                "contactPoint": {
-                    "@type": "ContactPoint",
-                    "contactType": "customer service",
-                    "telephone": "+49-163-9769764",
-                    "email": "mn.de@outlook.com",
-                    "areaServed": "DE"
-                },
-                "sameAs": [
-                    "https://github.com/MN10101",
-                    "https://www.linkedin.com/in/mahmoud-najmeh-b53172211"
-                ]
-            },
-            {
-                "@type": "Service",
-                "serviceType": "DataEngineering",
-                "provider": {
-                    "@type": "Person", 
-                    "name": "Mahmoud Najmeh"
-                },
-                "name": "Data Engineering & ML Systems Development",
-                "description": "Professional data engineering services including ETL pipelines, Apache Spark processing, Airflow orchestration, MLflow model management, and lakehouse architecture",
-                "areaServed": ["Worldwide", "Germany", "European Union"],
-                "offers": {
-                    "@type": "Offer",
-                    "priceSpecification": {
-                        "@type": "PriceSpecification",
-                        "priceCurrency": "EUR",
-                        "price": "4500-12000"
-                    }
-                }
-            },
-            {
-                "@type": "SoftwareApplication",
-                "name": "Mahmoud Najmeh Data Engineering Portfolio",
-                "applicationCategory": "DeveloperApplication",
-                "operatingSystem": "Any",
-                "description": "Professional portfolio showcasing data engineering projects, ML systems, and full-stack development with IHK certification",
-                "url": "https://mn10101.github.io/MN",
-                "author": {
-                    "@type": "Person",
-                    "name": "Mahmoud Najmeh"
-                }
-            },
-            {
-                "@type": "Project",
-                "name": "Missing Person Alert System",
-                "description": "Full-stack police application with Spring Boot backend, mobile apps, and real-time notifications",
-                "url": "https://github.com/MN10101/missing_person_alert"
-            },
-            {
-                "@type": "Project", 
-                "name": "Banking System FullStack",
-                "description": "Secure banking application with multi-currency support and advanced transaction processing",
-                "url": "https://github.com/MN10101/Banking-System-FullStack"
-            },
-            {
-                "@type": "BreadcrumbList",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Home",
-                        "item": "https://mn10101.github.io/MN/"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2, 
-                        "name": "Expertise",
-                        "item": "https://mn10101.github.io/MN/#about"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 3,
-                        "name": "Enterprise Projects", 
-                        "item": "https://mn10101.github.io/MN/#projects"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 4,
-                        "name": "Premium Services",
-                        "item": "https://mn10101.github.io/MN/#services"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 5,
-                        "name": "Contact",
-                        "item": "https://mn10101.github.io/MN/#contact"
-                    }
-                ]
-            },
-            {
-                "@type": "FAQPage",
-                "mainEntity": [
-                    {
-                        "@type": "Question",
-                        "name": "What data engineering technologies do you specialize in?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "I specialize in modern data engineering technologies including Apache Spark for data processing, Apache Airflow for workflow orchestration, MLflow for ML model management, dbt for data transformations, Great Expectations for data quality, and lakehouse architectures with Delta Lake and Apache Iceberg."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "What is your IHK certification in Data Engineering?",
-                        "acceptedAnswer": {
-                            "@type": "Answer", 
-                            "text": "I'm currently completing an IHK-certified Data Engineering with Python program at DCI Berlin, covering data acquisition, cloud data platforms (AWS Glue, BigQuery), stream processing with Kafka and Spark, data lakes and lakehouses, ML systems with MLflow, and data governance with Great Expectations."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "Can you build end-to-end data pipelines?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Absolutely. I design and implement complete data pipelines including data ingestion from APIs and databases, transformation with Spark and dbt, orchestration with Airflow, storage in data lakes/warehouses, and integration with ML systems and BI dashboards."
-                        }
-                    },
-                    {
-                        "@type": "Question", 
-                        "name": "Do you combine data engineering with full-stack development?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes, I bring a unique combination of full-stack development expertise (Java Spring Boot, Python Django, React) with IHK-certified data engineering skills, enabling me to build complete systems from data pipelines to user-facing applications."
-                        }
-                    },
-                    {
-                        "@type": "Question",
-                        "name": "What industries have you worked with?",
-                        "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "I've delivered solutions across multiple industries including finance (banking systems), public safety (missing person alerts), education (student portals), healthcare (medical diagnosis), and AI research (computer vision, NLP)."
-                        }
-                    }
-                ]
-            },
-            {
-                "@type": "JobPosting",
-                "title": "Software Developer | Data Engineering & ML Systems Available for Leadership Roles",
-                "description": "Software Developer specializing in Data Engineering & ML Systems. IHK-certified Data Engineering candidate with expertise in Apache Spark, Airflow, MLflow, and modern data stack, combined with full-stack development experience in Java Spring Boot, Python Django, and enterprise architecture.",
-                "datePosted": "2026-03-09",
-                "validThrough": "2026-09-09",
-                "employmentType": ["FULL_TIME", "CONTRACTOR", "PART_TIME"],
-                "hiringOrganization": {
-                    "@type": "Organization",
-                    "name": "Available for Premium Opportunities",
-                    "sameAs": "https://mn10101.github.io/MN"
-                },
-                "jobLocation": {
-                    "@type": "Place",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "addressCountry": "DE",
-                        "addressRegion": "Berlin",
-                        "addressLocality": "Berlin",
-                        "postalCode": "10115",
-                        "streetAddress": "Remote & Berlin Opportunities"
-                    }
-                },
-                "applicantLocationRequirements": {
-                    "@type": "Country",
-                    "name": "DE"
-                },
-                "jobLocationType": "TELECOMMUTE",
-                "baseSalary": {
-                    "@type": "MonetaryAmount",
-                    "currency": "EUR",
-                    "value": {
-                        "@type": "QuantitativeValue",
-                        "minValue": 70000,
-                        "maxValue": 110000,
-                        "unitText": "YEAR"
-                    }
-                },
-                "experienceRequirements": "Full-stack development experience with data engineering specialization",
-                "skills": "Data Engineering, Apache Spark, Apache Airflow, MLflow, dbt, Great Expectations, Delta Lake, Java Spring Boot, Python Django, React, AI/ML, Cloud Architecture, System Design",
-                "qualifications": "Full-stack development expertise combined with IHK-certified Data Engineering skills. Proven track record of delivering scalable enterprise applications and data pipelines.",
-                "responsibilities": "Lead data engineering initiatives, design and implement data pipelines, build ML systems, develop full-stack applications, mentor team members"
-            }
+    "@context": "https://schema.org",
+    "@graph": [
+
+        {
+        "@type": "Person",
+        "@id": "https://mahmoudnajmeh.github.io/MN/#person",
+        "name": "Mahmoud Najmeh",
+        "alternateName": "mahmoudnajmeh",
+        "url": "https://mahmoudnajmeh.github.io/MN",
+        "image": "https://mahmoudnajmeh.github.io/MN/images/profile.jpg",
+        "email": "mn.de@outlook.com",
+        "telephone": "+49-163-9769764",
+        "jobTitle": "Data Engineer | Software Developer",
+        "description": "Data Engineer specializing in Apache Spark, Kafka, Airflow, and scalable data pipelines, with full-stack development experience.",
+        
+        "sameAs": [
+            "https://github.com/mahmoudnajmeh",
+            "https://www.linkedin.com/in/mahmoudnajmeh/"
+        ],
+
+        "knowsAbout": [
+            "Data Engineering",
+            "Apache Spark",
+            "Apache Kafka",
+            "Apache Airflow",
+            "MLflow",
+            "ETL Pipelines",
+            "Data Warehousing",
+            "Python",
+            "Java",
+            "Spring Boot",
+            "Django",
+            "AWS",
+            "Docker",
+            "CI/CD"
+        ],
+
+        "knowsLanguage": [
+            {"@type": "Language", "name": "English"},
+            {"@type": "Language", "name": "German"},
+            {"@type": "Language", "name": "Arabic"}
+        ],
+
+        "homeLocation": {
+            "@type": "Place",
+            "name": "Berlin, Germany"
+        }
+        },
+
+        {
+        "@type": "WebSite",
+        "@id": "https://mahmoudnajmeh.github.io/MN/#website",
+        "url": "https://mahmoudnajmeh.github.io/MN",
+        "name": "Mahmoud Najmeh Portfolio",
+        "description": "Portfolio of Mahmoud Najmeh - Data Engineer and Software Developer",
+        "inLanguage": ["en", "de", "ar"],
+        "author": {
+            "@id": "https://mahmoudnajmeh.github.io/MN/#person"
+        }
+        },
+
+        {
+        "@type": "Organization",
+        "@id": "https://mahmoudnajmeh.github.io/MN/#organization",
+        "name": "Mahmoud Najmeh",
+        "url": "https://mahmoudnajmeh.github.io/MN",
+        "logo": "https://mahmoudnajmeh.github.io/MN/images/profile.jpg",
+        "sameAs": [
+            "https://github.com/mahmoudnajmeh",
+            "https://www.linkedin.com/in/mahmoudnajmeh/"
         ]
+        }
+
+    ]
     }
     </script>
 
