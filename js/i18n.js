@@ -1919,7 +1919,7 @@ const translations = {
         },
         "data-engineering": {
             title: "هندسة البيانات باستخدام Python (شهادة IHK)",
-            details: "- برنامج معتمد بشهادة IHK<br>- جمع البيانات ودمجها: ETL/ELT، API، Web Scraping<br>- منصات البيانات السحابية: AWS Glue، BigQuery، dbt Cloud<br>- تدفقات البيانات: Apache Airflow، Kafka، Spark Streaming<br>- منصات البيانات: Delta Lake، Apache Iceberg، Lakehouse<br>- هندسة ML: MLflow، scikit-learn، Feature Store<br>- جودة البيانات: Great Expectations، Data Lineage، Observability"
+            details: "- برنامج معتمد بشهادة IHK<br>- جمع البيانات ودمجها: ETL/ELT، API، Web Scraping<br>- منصات البيانات السحابية: AWS Glue، BigQuery، dbt Cloud<br>- تدفقات البيانات: Apache Airflow، Kafka، Spark Streaming<br>- منصات البيانات: Delta Lake، Apache Iceberg، Lakehouse<br>- هندسة ML: <span dir=\"ltr\">MLflow, scikit-learn, Feature Stores</span><br>- جودة البيانات: Great Expectations، Data Lineage، Observability"
         },
         toggle: "إظهار التفاصيل",
         toggleHide: "إخفاء التفاصيل"
@@ -1979,10 +1979,11 @@ const translations = {
         airflow: "Apache Airflow",
         kafka: "Apache Kafka",
         mlflow: "MLflow",
+        "scikit-learn": "scikit-learn",
+        "feature-store": "Feature Store",
         dbt: "dbt",
         "great-expectations": "Great Expectations",
         "delta-lake": "Delta Lake",
-
         avro: "Avro",
         schema_registry: "سجل المخططات",
         docker_compose: "Docker Compose",
@@ -1990,7 +1991,6 @@ const translations = {
         stateful_processing: "معالجة بحالة",
         real_time_streaming: "بث في الوقت الحقيقي",
         pytest: "Pytest",
-
         dagster: "Dagster",
         pandas: "Pandas",
         sqlalchemy: "SQLAlchemy",
