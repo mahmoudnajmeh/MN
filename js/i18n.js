@@ -24,9 +24,9 @@ const translations = {
         contact: "Get In Touch"
     },
     about: {
-        description: "Software Developer with strong backend and full-stack experience using Java, Spring Boot, Python, Django, and C# .NET. Focused on building scalable applications and data-driven systems using solid software engineering and object-oriented design principles. Currently expanding into Data Engineering and ML systems, working with ETL/ELT pipelines, APIs, SQL, and automated data workflows.",
+        description: "Data Engineer with hands-on experience building ETL/ELT pipelines, real-time data processing systems, and scalable data architectures using Python, Apache Spark, Kafka, Dagster, SQL, and cloud technologies. Strong backend development background with Java, Spring Boot, Python, Django, and C# .NET, experienced in designing REST APIs, data-driven applications, and production-ready software solutions.",
         education: "Education"
-    },
+        },
     education: {
         java: {
             title: "Java Developer",
@@ -338,9 +338,9 @@ const translations = {
         contact: "Kontakt aufnehmen"
     },
     about: {
-        description: "Softwareentwickler mit fundierter Backend- und Full-Stack-Erfahrung in Java, Spring Boot, Python, Django und C# .NET. Schwerpunkt auf der Entwicklung skalierbarer Anwendungen und datengetriebener Systeme unter Einsatz solider Software-Engineering-Prinzipien und objektorientierter Architektur. Derzeit vertiefe ich meine Kenntnisse im Bereich Data Engineering und ML-Systeme, insbesondere in ETL/ELT-Pipelines, APIs, SQL und automatisierten Daten-Workflows.",
+        description: "Data Engineer mit praktischer Erfahrung in der Entwicklung von ETL/ELT-Pipelines, Echtzeit-Datenverarbeitungssystemen und skalierbaren Datenarchitekturen unter Verwendung von Python, Apache Spark, Kafka, Dagster, SQL und Cloud-Technologien. Starker Hintergrund in der Backend-Entwicklung mit Java, Spring Boot, Python, Django und C# .NET sowie Erfahrung in der Entwicklung von REST-APIs, datengetriebenen Anwendungen und produktionsreifen Softwarelösungen.",
         education: "Ausbildung"
-    },
+        },
 
     education: {
         java: {
@@ -652,9 +652,9 @@ const translations = {
         contact: "Skontaktuj się"
     },
     about: {
-        description: "Programista oprogramowania z dużym doświadczeniem w backendzie i full-stack, wykorzystujący Java, Spring Boot, Python, Django oraz C# .NET. Skupiony na tworzeniu skalowalnych aplikacji i systemów opartych na danych, z wykorzystaniem solidnych zasad inżynierii oprogramowania oraz programowania obiektowego. Obecnie rozwijam się w kierunku Data Engineering i systemów ML, pracując z pipeline’ami ETL/ELT, API, SQL oraz zautomatyzowanymi workflowami danych.",
+        description: "Data Engineer z praktycznym doświadczeniem w budowaniu pipeline’ów ETL/ELT, systemów przetwarzania danych w czasie rzeczywistym oraz skalowalnych architektur danych z wykorzystaniem Python, Apache Spark, Kafka, Dagster, SQL i technologii chmurowych. Silne doświadczenie w backendzie z Java, Spring Boot, Python, Django i C# .NET oraz w projektowaniu REST API, aplikacji opartych na danych i gotowych do wdrożenia rozwiązań programistycznych.",
         education: "Wykształcenie"
-    },
+        },
 
     education: {
         java: {
@@ -966,9 +966,9 @@ const translations = {
         contact: "Me contacter"
     },
     about: {
-        description: "Développeur logiciel avec une solide expérience en backend et full-stack utilisant Java, Spring Boot, Python, Django et C# .NET. Axé sur la conception d’applications évolutives et de systèmes orientés données, en s’appuyant sur des principes solides d’ingénierie logicielle et de programmation orientée objet. Actuellement en développement de compétences en Data Engineering et systèmes de ML, avec une expérience sur les pipelines ETL/ELT, les API, SQL et les workflows de données automatisés.",
+        description: "Data Engineer avec une expérience pratique dans la conception de pipelines ETL/ELT, de systèmes de traitement de données en temps réel et d’architectures de données évolutives utilisant Python, Apache Spark, Kafka, Dagster, SQL et les technologies cloud. Solide expérience en développement backend avec Java, Spring Boot, Python, Django et C# .NET, ainsi que dans la conception d’API REST, d’applications orientées données et de solutions logicielles prêtes pour la production.",
         education: "Éducation"
-    },
+        },
 
     education: {
         java: {
@@ -1280,9 +1280,9 @@ const translations = {
         contact: "İletişime Geç"
     },
     about: {
-        description: "Java, Spring Boot, Python, Django ve C# .NET kullanarak güçlü backend ve full-stack deneyimine sahip bir yazılım geliştirici. Sağlam yazılım mühendisliği ve nesne yönelimli tasarım prensiplerini kullanarak ölçeklenebilir uygulamalar ve veri odaklı sistemler geliştirmeye odaklanır. Şu anda ETL/ELT pipeline'ları, API'ler, SQL ve otomatik veri iş akışları üzerinde çalışarak Data Engineering ve ML sistemleri alanında uzmanlığını geliştirmektedir.",
+        description: "Python, Apache Spark, Kafka, Dagster, SQL ve bulut teknolojilerini kullanarak ETL/ELT pipeline'ları, gerçek zamanlı veri işleme sistemleri ve ölçeklenebilir veri mimarileri geliştirme konusunda uygulamalı deneyime sahip bir Data Engineer. Java, Spring Boot, Python, Django ve C# .NET ile güçlü backend geliştirme geçmişine sahip olup REST API'leri, veri odaklı uygulamalar ve üretime hazır yazılım çözümleri geliştirme konusunda deneyimlidir.",
         education: "Eğitim"
-    },
+        },
 
     education: {
         java: {
@@ -1593,8 +1593,8 @@ const translations = {
         contact: "Связаться"
     },
     about: {
-        description: "Разработчик программного обеспечения с сильным опытом в backend и full-stack разработке с использованием Java, Spring Boot, Python, Django и C# .NET. Сосредоточен на создании масштабируемых приложений и систем, ориентированных на данные, с использованием надежных принципов объектно-ориентированного проектирования. В настоящее время расширяет экспертизу в области Data Engineering и ML-систем, работая с ETL/ELT конвейерами, API, SQL и автоматизированными потоками данных.",
-    },
+        description: "Data Engineer с практическим опытом разработки ETL/ELT-конвейеров, систем обработки данных в реальном времени и масштабируемых архитектур данных с использованием Python, Apache Spark, Kafka, Dagster, SQL и облачных технологий. Имеет сильный опыт backend-разработки на Java, Spring Boot, Python, Django и C# .NET, а также опыт проектирования REST API, приложений, ориентированных на данные, и готовых к эксплуатации программных решений."
+        },
 
     education: {
         java: {
@@ -1905,9 +1905,9 @@ const translations = {
         contact: "تواصل معي"
     },
     about: {
-        description: "مطور برمجيات ذو خبرة قوية في تطوير الـ backend و full-stack باستخدام Java و Spring Boot و Python و Django و C# .NET. يركز على بناء تطبيقات قابلة للتوسع وأنظمة قائمة على البيانات باستخدام مبادئ هندسة البرمجيات القوية والتصميم الموجه للكائنات. يعمل حاليًا على توسيع خبرته في هندسة البيانات وأنظمة التعلم الآلي، من خلال التعامل مع خطوط ETL/ELT وواجهات API وSQL وسير العمل الآلي للبيانات.",
+        description: "مهندس بيانات يمتلك خبرة عملية في بناء خطوط ETL/ELT وأنظمة معالجة البيانات في الوقت الفعلي وهندسات البيانات القابلة للتوسع باستخدام Python وApache Spark وKafka وDagster وSQL وتقنيات الحوسبة السحابية. يمتلك خلفية قوية في تطوير الـ Backend باستخدام Java وSpring Boot وPython وDjango وC# .NET، مع خبرة في تصميم واجهات REST API والتطبيقات المعتمدة على البيانات والحلول البرمجية الجاهزة للإنتاج.",
         education: "التعليم"
-    },
+        },
     education: {
         java: {
             title: "مبرمج جافا",
@@ -2207,9 +2207,9 @@ const translations = {
         contact: "צור קשר"
     },
     about: {
-        description: "מפתח תוכנה עם ניסיון חזק ב-backend ו-full-stack באמצעות Java, Spring Boot, Python, Django ו-C# .NET. מתמקד בבניית אפליקציות ניתנות להרחבה ומערכות מונחות נתונים תוך שימוש בעקרונות עיצוב מונחה עצמים והנדסת תוכנה מוצקה. כעת מרחיב את המומחיות שלו בהנדסת נתונים ומערכות ML, בעבודה עם צינורות ETL/ELT, APIs, SQL וזרימות עבודה אוטומטיות של נתונים.",
+        description: "מהנדס נתונים בעל ניסיון מעשי בבניית צינורות ETL/ELT, מערכות עיבוד נתונים בזמן אמת וארכיטקטורות נתונים ניתנות להרחבה באמצעות Python, Apache Spark, Kafka, Dagster, SQL וטכנולוגיות ענן. בעל רקע חזק בפיתוח Backend עם Java, Spring Boot, Python, Django ו-C# .NET, וניסיון בתכנון REST APIs, יישומים מונחי נתונים ופתרונות תוכנה מוכנים לייצור.",
         education: "השכלה"
-    },
+        },
     education: {
         java: {
             title: "מפתח Java",

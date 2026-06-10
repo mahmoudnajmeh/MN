@@ -8,7 +8,6 @@
     <link rel="sitemap" type="application/xml" href="/sitemap.xml" title="Sitemap">
 
     <script>
-        // Quick language detection to prevent flash of wrong content
         (function() {
             const storedLang = localStorage.getItem('language');
             if (storedLang && ['en', 'de', 'pl', 'fr', 'tr', 'ar', 'ru', 'he'].includes(storedLang)) {
@@ -286,12 +285,17 @@
             <h2 class="section-title" data-i18n="section.about">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p data-i18n="about.description">Software Developer with strong backend and full-stack experience using Java, 
-                        Spring Boot, Python, Django, and C# .NET. 
-                        Focused on building scalable applications and data-driven systems using solid software engineering 
-                        and object-oriented design principles. Currently expanding into Data Engineering and ML systems, 
-                        working with ETL/ELT pipelines, APIs, SQL, and automated data workflows.</p>
-                    
+                    <p data-i18n="about.description">
+                        Data Engineer with hands-on experience building ETL/ELT pipelines, 
+                        real-time data processing systems, and scalable data architectures using Python, 
+                        Apache Spark, Kafka, Dagster, SQL, and cloud technologies. 
+                        Strong backend development background with Java and Spring Boot, 
+                        experienced in designing REST APIs, data-driven applications, 
+                        and production-ready software solutions. Skilled in data modeling, 
+                        workflow orchestration, batch and streaming processing, 
+                        and delivering end-to-end data pipelines for analytics and business intelligence.
+                    </p>
+                                        
                     <h3 data-i18n="about.education">Education</h3>
                     <ul class="education-list">
                         <li>
