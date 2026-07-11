@@ -398,64 +398,147 @@
             <h2 class="section-title" data-i18n="section.projects">Featured Projects</h2>
             <div class="projects-grid">
 
-                <!-- Fraud Detection System Project -->
+                <!-- Project 1: Fraud Detection Platform -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="images/fraud-detection.webp" alt="Fraud Detection System Kafka Real-time Processing Architecture" loading="lazy">
+                        <img src="/images/11.png" alt="Fraud Detection Platform with Kafka Spark Delta Lake and MLflow" loading="lazy">
                     </div>
                     <div class="project-details">
-                        <h3 data-i18n="project.fraud_detection.title">Fraud Detection System (Kafka)</h3>
-                        <p data-i18n="project.fraud_detection.description">Real-time fraud detection system built with Apache Kafka featuring dual-format messaging (Avro + JSON), stateful stream processing, and a rich terminal-based monitoring UI.</p>
+                        <h3 data-i18n="project.fraud_platform.title">Fraud Detection Platform (Kafka, Spark, Delta Lake, MLflow)</h3>
+                        <p data-i18n="project.fraud_platform.description">Real-time fraud detection platform combining Kafka streaming, Spark Structured Streaming, Delta Lake, Random Forest machine learning, and hybrid rule-based risk scoring.</p>
                         <div class="project-impact">
                             <strong data-i18n="project.impact">Impact:</strong>
-                            <span data-i18n="project.fraud_detection.impact">Achieved sub-second fraud detection latency with 5-tier rules engine, reduced false positives through dynamic user profiling, and provided complete audit trail compliance with automated JSONL logging and daily rotation.</span>
+                            <span data-i18n="project.fraud_platform.impact">Delivers sub-second detection, combines deterministic rules with ML probability scoring, stores alert history in Delta Lake, and provides auditable, fault-tolerant processing with live monitoring.</span>
                         </div>
                         <div class="project-tech">
-                            <span data-i18n="tech.avro">Avro</span>
-                            <span data-i18n="tech.schema_registry">Schema Registry</span>
-                            <span data-i18n="tech.docker_compose">Docker Compose</span>
-                            <span data-i18n="tech.rich_ui">Rich UI</span>
-                            <span data-i18n="tech.stateful_processing">Stateful Processing</span>
-                            <span data-i18n="tech.real_time_streaming">Real-time Streaming</span>
-                            <span data-i18n="tech.pytest">Pytest</span>
+                            <span>Apache Kafka</span>
+                            <span>Apache Spark</span>
+                            <span>Delta Lake</span>
+                            <span>MLflow</span>
+                            <span>Random Forest</span>
+                            <span>Avro</span>
+                            <span>Docker</span>
                         </div>
                         <div class="project-meta">
-                            <span class="project-duration" data-i18n="project.fraud_detection.duration">3 Months</span>
-                            <a href="https://github.com/mahmoudnajmeh/fraud-detection-system-kafak" class="btn" target="_blank" rel="noopener noreferrer" data-i18n="project.view">View Project</a>
+                            <span class="project-duration" data-i18n="project.fraud_platform.duration">Data Engineering Project</span>
+                            <a href="https://github.com/mahmoudnajmeh/fraud-detection-system-Kafka-Spark-Delta-Lake-MLflow" class="btn" target="_blank" rel="noopener noreferrer" data-i18n="project.view">View Project</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Dagster ETL Project -->
+                <!-- Project 2: Berlin Estate ETL Pipeline -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="images/10.png" alt="Dagster ETL Pipeline Architecture" loading="lazy">
+                        <img src="/images/12.png" alt="Berlin Estate ETL Pipeline with Airflow and Kafka" loading="lazy">
                     </div>
                     <div class="project-details">
-                        <h3 data-i18n="project.dagster_etl.title">Dagster ETL Project</h3>
-                        <p data-i18n="project.dagster_etl.description">ETL pipeline built with Dagster, Docker, and PostgreSQL demonstrating modern data engineering practices with asset-based orchestration, data quality validation, and automated scheduling.</p>
+                        <h3 data-i18n="project.berlin_estate.title">Berlin Estate ETL Pipeline</h3>
+                        <p data-i18n="project.berlin_estate.description">Production-grade event-driven ETL pipeline that consumes Berlin property data from Kafka, orchestrates processing with Airflow, validates quality with Soda Core, and loads curated data into PostgreSQL.</p>
                         <div class="project-impact">
                             <strong data-i18n="project.impact">Impact:</strong>
-                            <span data-i18n="project.dagster_etl.impact">Implemented a ETL pipeline with Dagster orchestration, containerized with Docker for consistent deployments, and integrated with PostgreSQL for reliable data storage. Features automated data validation, asset lineage tracking, and scheduled job execution for reproducible data workflows.</span>
+                            <span data-i18n="project.berlin_estate.impact">Supports batch and streaming ingestion, automated data-quality checks, reusable transformations, PostgreSQL loading, clean CSV exports, and generated quality reports.</span>
                         </div>
                         <div class="project-tech">
-                            <span data-i18n="tech.dagster">Dagster</span>
-                            <span data-i18n="tech.postgresql">PostgreSQL</span>
-                            <span data-i18n="tech.docker">Docker</span>
-                            <span data-i18n="tech.docker_compose">Docker Compose</span>
-                            <span data-i18n="tech.pandas">Pandas</span>
-                            <span data-i18n="tech.sqlalchemy">SQLAlchemy</span>
-                            <span data-i18n="tech.pytest">Pytest</span>
-                            <span data-i18n="tech.python">Python</span>
-                            <span data-i18n="tech.etl">ETL</span>
-                            <span data-i18n="tech.data_pipeline">Data Pipeline</span>
+                            <span>Apache Airflow</span>
+                            <span>Apache Kafka</span>
+                            <span>Soda Core</span>
+                            <span>PostgreSQL</span>
+                            <span>Python</span>
+                            <span>Docker</span>
                         </div>
                         <div class="project-meta">
-                            <span class="project-duration" data-i18n="project.dagster_etl.duration">3 Months</span>
-                            <a href="https://github.com/mahmoudnajmeh/dagster_etl" class="btn" target="_blank" rel="noopener noreferrer" data-i18n="project.view">View Project</a>
+                            <span class="project-duration" data-i18n="project.berlin_estate.duration">Data Engineering Project</span>
+                            <a href="https://github.com/mahmoudnajmeh/berlin-estate-airflow-kafka" class="btn" target="_blank" rel="noopener noreferrer" data-i18n="project.view">View Project</a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Project 3: Manufacturing Analytics Platform -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/images/13.png" alt="Manufacturing Analytics Platform with Spark and Delta Lake" loading="lazy">
+                    </div>
+                    <div class="project-details">
+                        <h3 data-i18n="project.manufacturing_analytics.title">Manufacturing Analytics Platform</h3>
+                        <p data-i18n="project.manufacturing_analytics.description">Spark-based manufacturing analytics platform for factory telemetry, real-time anomaly detection, Delta Lake versioning, predictive-maintenance clustering, and AI-assisted analysis.</p>
+                        <div class="project-impact">
+                            <strong data-i18n="project.impact">Impact:</strong>
+                            <span data-i18n="project.manufacturing_analytics.impact">Processes IoT sensor data through a modular analytics pipeline, detects anomalies in streaming workloads, evaluates machine risk with MLlib, and produces executive and quality outputs.</span>
+                        </div>
+                        <div class="project-tech">
+                            <span>Apache Spark</span>
+                            <span>Structured Streaming</span>
+                            <span>Delta Lake</span>
+                            <span>MLlib</span>
+                            <span>Python</span>
+                            <span>AI Assistant</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-duration" data-i18n="project.manufacturing_analytics.duration">Analytics Engineering Project</span>
+                            <a href="https://github.com/mahmoudnajmeh/manufacturing-analytics-spark" class="btn" target="_blank" rel="noopener noreferrer" data-i18n="project.view">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Project Management Platform -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/images/14.png" alt="ProjectFlow full-stack project management platform architecture" loading="lazy">
+                    </div>
+                    <div class="project-details">
+                        <h3 data-i18n="project.project_management.title">ProjectFlow - Project Management Platform</h3>
+                        <p data-i18n="project.project_management.description">Full-stack project management platform with Spring AI, Kafka and Spring Batch analytics, WebSocket notifications and chat, OAuth2, team collaboration, and task tracking.</p>
+                        <div class="project-impact">
+                            <strong data-i18n="project.impact">Impact:</strong>
+                            <span data-i18n="project.project_management.impact">Combines real-time collaboration, AI-assisted project workflows, event-driven activity processing, daily analytics, secure role-based access, and centralized project, task, team, and calendar management.</span>
+                        </div>
+                        <div class="project-tech">
+                            <span>Spring Boot</span>
+                            <span>Spring AI</span>
+                            <span>React</span>
+                            <span>TypeScript</span>
+                            <span>Apache Kafka</span>
+                            <span>Spring Batch</span>
+                            <span>WebSocket</span>
+                            <span>OAuth2</span>
+                            <span>MySQL</span>
+                            <span>Docker</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-duration" data-i18n="project.project_management.duration">Full-Stack Engineering Project</span>
+                            <a href="https://github.com/mahmoudnajmeh/project-management-app" class="btn" target="_blank" rel="noopener noreferrer" data-i18n="project.view">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Bakehouse Analytics Dashboard -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/images/15.png" alt="Bakehouse Analytics Dashboard on Databricks" loading="lazy">
+                    </div>
+                    <div class="project-details">
+                        <h3 data-i18n="project.bakehouse_dashboard.title">Bakehouse Analytics Dashboard</h3>
+                        <p data-i18n="project.bakehouse_dashboard.description">Databricks analytics solution using Delta Live Tables and a medallion architecture to process sales and review data and power an interactive AI/BI dashboard.</p>
+                        <div class="project-impact">
+                            <strong data-i18n="project.impact">Impact:</strong>
+                            <span data-i18n="project.bakehouse_dashboard.impact">Automates Bronze, Silver, and Gold transformations, enforces data-quality expectations, classifies customer sentiment, and exposes product and city performance insights.</span>
+                        </div>
+                        <div class="project-tech">
+                            <span>Databricks</span>
+                            <span>Delta Live Tables</span>
+                            <span>Databricks SQL</span>
+                            <span>AI/BI Dashboard</span>
+                            <span>Medallion Architecture</span>
+                            <span>Python</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-duration" data-i18n="project.bakehouse_dashboard.duration">Analytics Dashboard Project</span>
+                            <a href="https://github.com/mahmoudnajmeh/bakehouse-analytics-dashboard" class="btn" target="_blank" rel="noopener noreferrer" data-i18n="project.view">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Project 1 -->
                 <div class="project-card">
                     <div class="project-image">

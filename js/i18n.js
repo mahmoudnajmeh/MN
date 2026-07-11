@@ -267,6 +267,36 @@ const translations = {
                 duration: "3 Months",
                 impact: "Implemented a production-ready ETL pipeline with Dagster orchestration, containerized with Docker for consistent deployments, and integrated with PostgreSQL for reliable data storage. Features automated data validation, asset lineage tracking, and scheduled job execution for reproducible data workflows."
             },
+            fraud_platform: {
+                title: "Fraud Detection Platform (Kafka, Spark, Delta Lake, MLflow)",
+                description: "Real-time fraud detection platform combining Kafka streaming, Spark Structured Streaming, Delta Lake, Random Forest machine learning, and hybrid rule-based risk scoring.",
+                duration: "Data Engineering Project",
+                impact: "Delivers sub-second detection, combines deterministic rules with ML probability scoring, stores alert history in Delta Lake, and provides auditable, fault-tolerant processing with live monitoring."
+            },
+            berlin_estate: {
+                title: "Berlin Estate ETL Pipeline",
+                description: "Production-grade event-driven ETL pipeline that consumes Berlin property data from Kafka, orchestrates processing with Airflow, validates quality with Soda Core, and loads curated data into PostgreSQL.",
+                duration: "Data Engineering Project",
+                impact: "Supports batch and streaming ingestion, automated data-quality checks, reusable transformations, PostgreSQL loading, clean CSV exports, and generated quality reports."
+            },
+            manufacturing_analytics: {
+                title: "Manufacturing Analytics Platform",
+                description: "Spark-based manufacturing analytics platform for factory telemetry, real-time anomaly detection, Delta Lake versioning, predictive-maintenance clustering, and AI-assisted analysis.",
+                duration: "Analytics Engineering Project",
+                impact: "Processes IoT sensor data through a modular analytics pipeline, detects anomalies in streaming workloads, evaluates machine risk with MLlib, and produces executive and quality outputs."
+            },
+            project_management: {
+                title: "ProjectFlow - Project Management Platform",
+                description: "Full-stack project management platform with Spring AI, Kafka and Spring Batch analytics, WebSocket notifications and chat, OAuth2, team collaboration, and task tracking.",
+                duration: "Full-Stack Engineering Project",
+                impact: "Combines real-time collaboration, AI-assisted project workflows, event-driven activity processing, daily analytics, secure role-based access, and centralized project, task, team, and calendar management."
+            },
+            bakehouse_dashboard: {
+                title: "Bakehouse Analytics Dashboard",
+                description: "Databricks analytics solution using Delta Live Tables and a medallion architecture to process sales and review data and power an interactive AI/BI dashboard.",
+                duration: "Analytics Dashboard Project",
+                impact: "Automates Bronze, Silver, and Gold transformations, enforces data-quality expectations, classifies customer sentiment, and exposes product and city performance insights."
+            },
             fraud_detection: {
                 title: "Fraud Detection System (Kafka)",
                 description: "Real-time fraud detection system built with Apache Kafka featuring dual-format messaging (Avro + JSON), stateful stream processing, and a rich terminal-based monitoring UI.",
@@ -580,6 +610,36 @@ const translations = {
                 description: "ETL-Pipeline, entwickelt mit Dagster, Docker und PostgreSQL, die moderne Data-Engineering-Praktiken demonstriert, einschließlich asset-basierter Orchestrierung, Datenqualitätsvalidierung und automatisierter Planung.",
                 duration: "3 Monate",
                 impact: "Implementierung einer produktionsreifen ETL-Pipeline mit Dagster-Orchestrierung, containerisiert mit Docker für konsistente Deployments und integriert mit PostgreSQL für zuverlässige Datenspeicherung. Enthält automatisierte Datenvalidierung, Asset-Lineage-Tracking und geplante Jobausführung für reproduzierbare Daten-Workflows."
+            },
+            fraud_platform: {
+                title: "Betrugserkennungsplattform (Kafka, Spark, Delta Lake, MLflow)",
+                description: "Echtzeit-Plattform zur Betrugserkennung mit Kafka-Streaming, Spark Structured Streaming, Delta Lake, Random-Forest-Machine-Learning und hybrider regelbasierter Risikobewertung.",
+                duration: "Data-Engineering-Projekt",
+                impact: "Ermöglicht Erkennung mit Subsekunden-Latenz, kombiniert deterministische Regeln mit ML-Wahrscheinlichkeiten, speichert Warnhistorien in Delta Lake und bietet auditierbare, fehlertolerante Verarbeitung mit Live-Monitoring."
+            },
+            berlin_estate: {
+                title: "Berlin Estate ETL-Pipeline",
+                description: "Produktionsreife ereignisgesteuerte ETL-Pipeline, die Berliner Immobiliendaten aus Kafka verarbeitet, Abläufe mit Airflow orchestriert, Datenqualität mit Soda Core prüft und kuratierte Daten in PostgreSQL lädt.",
+                duration: "Data-Engineering-Projekt",
+                impact: "Unterstützt Batch- und Streaming-Ingestion, automatisierte Qualitätsprüfungen, wiederverwendbare Transformationen, PostgreSQL-Loading, bereinigte CSV-Exporte und Qualitätsberichte."
+            },
+            manufacturing_analytics: {
+                title: "Manufacturing Analytics Platform",
+                description: "Spark-basierte Analyseplattform für Fabriktelemetrie, Echtzeit-Anomalieerkennung, Delta-Lake-Versionierung, Predictive-Maintenance-Clustering und KI-gestützte Analysen.",
+                duration: "Analytics-Engineering-Projekt",
+                impact: "Verarbeitet IoT-Sensordaten durch eine modulare Analytics-Pipeline, erkennt Anomalien in Streaming-Workloads, bewertet Maschinenrisiken mit MLlib und erzeugt Management- und Qualitätsausgaben."
+            },
+            project_management: {
+                title: "ProjectFlow – Projektmanagement-Plattform",
+                description: "Full-Stack-Projektmanagement-Plattform mit Spring AI, Kafka- und Spring-Batch-Analysen, WebSocket-Benachrichtigungen und Chat, OAuth2, Teamzusammenarbeit und Aufgabenverwaltung.",
+                duration: "Full-Stack-Engineering-Projekt",
+                impact: "Vereint Echtzeit-Zusammenarbeit, KI-gestützte Projektabläufe, ereignisgesteuerte Aktivitätsverarbeitung, tägliche Analysen, sicheren rollenbasierten Zugriff sowie eine zentrale Verwaltung von Projekten, Aufgaben, Teams und Kalendern."
+            },
+            bakehouse_dashboard: {
+                title: "Bakehouse Analytics Dashboard",
+                description: "Databricks-Analyselösung mit Delta Live Tables und Medallion-Architektur zur Verarbeitung von Verkaufs- und Bewertungsdaten für ein interaktives AI/BI-Dashboard.",
+                duration: "Analytics-Dashboard-Projekt",
+                impact: "Automatisiert Bronze-, Silver- und Gold-Transformationen, erzwingt Datenqualitätsregeln, klassifiziert Kundenstimmungen und stellt Produkt- sowie Stadt-Performance bereit."
             },
             fraud_detection: {
                 title: "Betrugserkennungssystem (Kafka)",
@@ -895,6 +955,36 @@ const translations = {
                 duration: "3 miesiące",
                 impact: "Wdrożenie produkcyjnego pipeline’u ETL z orkiestracją Dagster, konteneryzacją w Docker dla spójnych wdrożeń oraz integracją z PostgreSQL dla niezawodnego przechowywania danych. Obejmuje automatyczną walidację danych, śledzenie zależności (data lineage) oraz harmonogramowane wykonywanie zadań dla powtarzalnych procesów danych."
             },
+            fraud_platform: {
+                title: "Platforma wykrywania oszustw (Kafka, Spark, Delta Lake, MLflow)",
+                description: "Platforma wykrywania oszustw w czasie rzeczywistym łącząca Kafka, Spark Structured Streaming, Delta Lake, model Random Forest i hybrydową ocenę ryzyka opartą na regułach.",
+                duration: "Projekt Data Engineering",
+                impact: "Zapewnia wykrywanie z opóźnieniem poniżej sekundy, łączy reguły z wynikiem ML, przechowuje historię alertów w Delta Lake i oferuje audytowalne, odporne na błędy przetwarzanie z monitoringiem na żywo."
+            },
+            berlin_estate: {
+                title: "Pipeline ETL dla nieruchomości w Berlinie",
+                description: "Produkcyjny, sterowany zdarzeniami pipeline ETL pobierający dane nieruchomości z Kafka, orkiestrujący proces w Airflow, sprawdzający jakość w Soda Core i ładujący dane do PostgreSQL.",
+                duration: "Projekt Data Engineering",
+                impact: "Obsługuje tryb batch i streaming, automatyczne kontrole jakości, wielokrotnego użytku transformacje, zapis do PostgreSQL, czyste pliki CSV i raporty jakości."
+            },
+            manufacturing_analytics: {
+                title: "Platforma analityki produkcyjnej",
+                description: "Platforma oparta na Spark do analizy telemetrii fabrycznej, wykrywania anomalii w czasie rzeczywistym, wersjonowania Delta Lake, klasteryzacji predykcyjnego utrzymania i analiz wspieranych przez AI.",
+                duration: "Projekt Analytics Engineering",
+                impact: "Przetwarza dane czujników IoT w modułowym pipeline, wykrywa anomalie w streamingu, ocenia ryzyko maszyn z MLlib i generuje wyniki wykonawcze oraz jakościowe."
+            },
+            project_management: {
+                title: "ProjectFlow – Platforma do zarządzania projektami",
+                description: "Pełnostackowa platforma do zarządzania projektami z Spring AI, analityką Kafka i Spring Batch, powiadomieniami oraz czatem WebSocket, OAuth2, współpracą zespołową i śledzeniem zadań.",
+                duration: "Projekt inżynierii Full-Stack",
+                impact: "Łączy współpracę w czasie rzeczywistym, procesy wspierane przez AI, przetwarzanie zdarzeń aktywności, codzienną analitykę, bezpieczny dostęp oparty na rolach oraz scentralizowane zarządzanie projektami, zadaniami, zespołami i kalendarzem."
+            },
+            bakehouse_dashboard: {
+                title: "Dashboard analityczny Bakehouse",
+                description: "Rozwiązanie analityczne Databricks z Delta Live Tables i architekturą medalionową do przetwarzania sprzedaży i opinii oraz zasilania interaktywnego dashboardu AI/BI.",
+                duration: "Projekt dashboardu analitycznego",
+                impact: "Automatyzuje warstwy Bronze, Silver i Gold, egzekwuje reguły jakości, klasyfikuje sentyment klientów oraz pokazuje wyniki produktów i miast."
+            },
             fraud_detection: {
                 title: "System wykrywania oszustw (Kafka)",
                 description: "System wykrywania oszustw w czasie rzeczywistym oparty na Apache Kafka, wykorzystujący komunikację w dwóch formatach (Avro + JSON), przetwarzanie strumieniowe ze stanem oraz zaawansowany interfejs monitorowania w terminalu.",
@@ -1209,6 +1299,36 @@ const translations = {
                 duration: "3 mois",
                 impact: "Déploiement d’un pipeline ETL prêt pour la production avec orchestration Dagster, conteneurisation via Docker pour des environnements cohérents et intégration PostgreSQL pour un stockage fiable. Inclut la validation automatique des données, le suivi des dépendances (data lineage) et l’exécution planifiée pour des flux de données reproductibles."
             },
+            fraud_platform: {
+                title: "Plateforme de détection de fraude (Kafka, Spark, Delta Lake, MLflow)",
+                description: "Plateforme temps réel combinant Kafka, Spark Structured Streaming, Delta Lake, un modèle Random Forest et une notation hybride fondée sur des règles.",
+                duration: "Projet Data Engineering",
+                impact: "Fournit une détection en moins d’une seconde, combine règles déterministes et probabilité ML, conserve l’historique des alertes dans Delta Lake et assure un traitement auditable et tolérant aux pannes."
+            },
+            berlin_estate: {
+                title: "Pipeline ETL immobilier de Berlin",
+                description: "Pipeline ETL événementiel de niveau production consommant les données immobilières depuis Kafka, orchestré avec Airflow, contrôlé par Soda Core et chargé dans PostgreSQL.",
+                duration: "Projet Data Engineering",
+                impact: "Prend en charge les flux batch et streaming, les contrôles qualité automatisés, les transformations réutilisables, le chargement PostgreSQL, les exports CSV propres et les rapports qualité."
+            },
+            manufacturing_analytics: {
+                title: "Plateforme d’analytique industrielle",
+                description: "Plateforme Spark pour la télémétrie d’usine, la détection d’anomalies en temps réel, le versionnage Delta Lake, le clustering de maintenance prédictive et l’analyse assistée par IA.",
+                duration: "Projet Analytics Engineering",
+                impact: "Traite les données de capteurs IoT dans un pipeline modulaire, détecte les anomalies en streaming, évalue le risque machine avec MLlib et produit des sorties exécutives et qualité."
+            },
+            project_management: {
+                title: "ProjectFlow – Plateforme de gestion de projet",
+                description: "Plateforme full-stack de gestion de projet avec Spring AI, analyses Kafka et Spring Batch, notifications et chat WebSocket, OAuth2, collaboration d’équipe et suivi des tâches.",
+                duration: "Projet d’ingénierie Full-Stack",
+                impact: "Réunit la collaboration en temps réel, des workflows assistés par l’IA, le traitement événementiel des activités, des analyses quotidiennes, un accès sécurisé par rôles et une gestion centralisée des projets, tâches, équipes et calendriers."
+            },
+            bakehouse_dashboard: {
+                title: "Tableau de bord analytique Bakehouse",
+                description: "Solution Databricks utilisant Delta Live Tables et une architecture médaillon pour traiter les ventes et avis et alimenter un tableau de bord AI/BI interactif.",
+                duration: "Projet de tableau de bord analytique",
+                impact: "Automatise les couches Bronze, Silver et Gold, applique les règles de qualité, classe le sentiment client et expose les performances des produits et des villes."
+            },
             fraud_detection: {
                 title: "Système de détection de fraude (Kafka)",
                 description: "Système de détection de fraude en temps réel basé sur Apache Kafka, utilisant des messages en double format (Avro + JSON), un traitement de flux avec état et une interface de monitoring avancée en terminal.",
@@ -1522,6 +1642,36 @@ const translations = {
                 duration: "3 Ay",
                 impact: "Üretime hazır bir ETL pipeline’ı Dagster orkestrasyonu ile kuruldu, Docker ile tutarlı dağıtım ortamları sağlandı ve PostgreSQL ile güvenilir veri depolama entegre edildi. Otomatik veri doğrulama, veri bağımlılıklarının izlenmesi (data lineage) ve planlanmış görev yürütmeleri ile tekrarlanabilir veri süreçleri sağlandı."
             },
+            fraud_platform: {
+                title: "Dolandırıcılık Tespit Platformu (Kafka, Spark, Delta Lake, MLflow)",
+                description: "Kafka akışı, Spark Structured Streaming, Delta Lake, Random Forest makine öğrenimi ve hibrit kural tabanlı risk puanlamasını birleştiren gerçek zamanlı platform.",
+                duration: "Veri Mühendisliği Projesi",
+                impact: "Saniyenin altında tespit sağlar, kuralları ML olasılık puanıyla birleştirir, uyarı geçmişini Delta Lake’te saklar ve canlı izlemeli, denetlenebilir, hataya dayanıklı işleme sunar."
+            },
+            berlin_estate: {
+                title: "Berlin Emlak ETL Pipeline",
+                description: "Kafka’dan Berlin emlak verilerini tüketen, Airflow ile orkestre edilen, Soda Core ile kalite kontrolleri yapan ve veriyi PostgreSQL’e yükleyen üretim seviyesinde olay güdümlü ETL pipeline.",
+                duration: "Veri Mühendisliği Projesi",
+                impact: "Batch ve streaming alımını, otomatik kalite kontrollerini, yeniden kullanılabilir dönüşümleri, PostgreSQL yüklemeyi, temiz CSV çıktıları ve kalite raporlarını destekler."
+            },
+            manufacturing_analytics: {
+                title: "Üretim Analitiği Platformu",
+                description: "Fabrika telemetrisi, gerçek zamanlı anomali tespiti, Delta Lake sürümleme, kestirimci bakım kümeleme ve AI destekli analiz için Spark tabanlı platform.",
+                duration: "Analitik Mühendisliği Projesi",
+                impact: "IoT sensör verilerini modüler bir pipeline içinde işler, streaming iş yüklerinde anomalileri tespit eder, MLlib ile makine riskini değerlendirir ve yönetici ile kalite çıktıları üretir."
+            },
+            project_management: {
+                title: "ProjectFlow – Proje Yönetim Platformu",
+                description: "Spring AI, Kafka ve Spring Batch analitiği, WebSocket bildirimleri ve sohbeti, OAuth2, ekip iş birliği ve görev takibi içeren full-stack proje yönetim platformu.",
+                duration: "Full-Stack Mühendislik Projesi",
+                impact: "Gerçek zamanlı iş birliğini, yapay zekâ destekli proje iş akışlarını, olay odaklı etkinlik işlemeyi, günlük analitiği, güvenli rol tabanlı erişimi ve merkezi proje, görev, ekip ve takvim yönetimini bir araya getirir."
+            },
+            bakehouse_dashboard: {
+                title: "Bakehouse Analitik Dashboard",
+                description: "Satış ve yorum verilerini işlemek ve etkileşimli AI/BI dashboard oluşturmak için Delta Live Tables ve medallion mimarisi kullanan Databricks çözümü.",
+                duration: "Analitik Dashboard Projesi",
+                impact: "Bronze, Silver ve Gold dönüşümlerini otomatikleştirir, veri kalite beklentilerini uygular, müşteri duygu analizini sınıflandırır ve ürün ile şehir performansını gösterir."
+            },
             fraud_detection: {
                 title: "Dolandırıcılık Tespit Sistemi (Kafka)",
                 description: "Apache Kafka tabanlı, çift formatlı mesajlaşma (Avro + JSON), durum bilgili akış işleme ve gelişmiş terminal tabanlı izleme arayüzü içeren gerçek zamanlı dolandırıcılık tespit sistemi.",
@@ -1834,6 +1984,36 @@ const translations = {
                 duration: "3 месяца",
                 impact: "Развернут production-ready ETL-пайплайн с оркестрацией Dagster, контейнеризацией через Docker для стабильных окружений и интеграцией PostgreSQL для надежного хранения данных. Включает автоматическую валидацию данных, отслеживание зависимостей (data lineage) и планируемое выполнение задач для повторяемых процессов обработки данных."
             },
+            fraud_platform: {
+                title: "Платформа обнаружения мошенничества (Kafka, Spark, Delta Lake, MLflow)",
+                description: "Платформа реального времени, объединяющая Kafka, Spark Structured Streaming, Delta Lake, модель Random Forest и гибридную оценку риска на основе правил.",
+                duration: "Проект по инженерии данных",
+                impact: "Обеспечивает обнаружение менее чем за секунду, объединяет правила с ML-оценкой, хранит историю оповещений в Delta Lake и поддерживает аудируемую отказоустойчивую обработку с мониторингом."
+            },
+            berlin_estate: {
+                title: "ETL-пайплайн недвижимости Берлина",
+                description: "Промышленный событийный ETL-пайплайн, который получает данные недвижимости из Kafka, оркестрируется Airflow, проверяет качество через Soda Core и загружает данные в PostgreSQL.",
+                duration: "Проект по инженерии данных",
+                impact: "Поддерживает пакетную и потоковую загрузку, автоматические проверки качества, повторно используемые преобразования, PostgreSQL, чистые CSV и отчеты качества."
+            },
+            manufacturing_analytics: {
+                title: "Платформа производственной аналитики",
+                description: "Платформа на Spark для телеметрии фабрики, обнаружения аномалий в реальном времени, версионирования Delta Lake, кластеризации для предиктивного обслуживания и AI-аналитики.",
+                duration: "Проект Analytics Engineering",
+                impact: "Обрабатывает данные IoT-датчиков через модульный пайплайн, выявляет аномалии в потоках, оценивает риск оборудования с MLlib и создает управленческие и качественные отчеты."
+            },
+            project_management: {
+                title: "ProjectFlow — платформа управления проектами",
+                description: "Full-stack платформа управления проектами со Spring AI, аналитикой Kafka и Spring Batch, уведомлениями и чатом через WebSocket, OAuth2, командной работой и отслеживанием задач.",
+                duration: "Full-Stack инженерный проект",
+                impact: "Объединяет совместную работу в реальном времени, процессы с поддержкой ИИ, событийную обработку активности, ежедневную аналитику, безопасный ролевой доступ и централизованное управление проектами, задачами, командами и календарём."
+            },
+            bakehouse_dashboard: {
+                title: "Аналитический дашборд Bakehouse",
+                description: "Решение на Databricks с Delta Live Tables и медальонной архитектурой для обработки продаж и отзывов и построения интерактивного AI/BI-дашборда.",
+                duration: "Проект аналитического дашборда",
+                impact: "Автоматизирует слои Bronze, Silver и Gold, применяет проверки качества, классифицирует тональность отзывов и показывает эффективность продуктов и городов."
+            },
             fraud_detection: {
                 title: "Система обнаружения мошенничества (Kafka)",
                 description: "Система обнаружения мошенничества в реальном времени на базе Apache Kafka с поддержкой двух форматов сообщений (Avro + JSON), потоковой обработки с сохранением состояния и продвинутым терминальным интерфейсом мониторинга.",
@@ -2135,6 +2315,36 @@ const translations = {
                 description: "خط أنابيب ETL تم بناؤه باستخدام Dagster وDocker وPostgreSQL، يعرض ممارسات حديثة في هندسة البيانات بما في ذلك التنسيق القائم على الأصول، التحقق من جودة البيانات، والجدولة التلقائية.",
                 duration: "3 أشهر",
                 impact: "تنفيذ خط ETL جاهز للإنتاج باستخدام Dagster للتنسيق، وDocker لبيئات نشر متسقة، وPostgreSQL لتخزين بيانات موثوق. يتضمن التحقق التلقائي من البيانات، تتبع تبعيات البيانات (data lineage)، وتنفيذ مهام مجدولة لعمليات بيانات قابلة للتكرار."
+            },
+            fraud_platform: {
+                title: "منصة كشف الاحتيال (Kafka وSpark وDelta Lake وMLflow)",
+                description: "منصة فورية تجمع بين تدفق Kafka وSpark Structured Streaming وDelta Lake ونموذج Random Forest وتقييم مخاطر هجين قائم على القواعد.",
+                duration: "مشروع هندسة بيانات",
+                impact: "توفر كشفًا بزمن أقل من ثانية، وتدمج القواعد مع احتمالية التعلم الآلي، وتحفظ سجل التنبيهات في Delta Lake، وتقدم معالجة قابلة للتدقيق ومتحملة للأعطال مع مراقبة مباشرة."
+            },
+            berlin_estate: {
+                title: "خط ETL لعقارات برلين",
+                description: "خط ETL احترافي قائم على الأحداث يستهلك بيانات عقارات برلين من Kafka، وينظم المعالجة باستخدام Airflow، ويتحقق من الجودة عبر Soda Core، ويحمل البيانات المنسقة إلى PostgreSQL.",
+                duration: "مشروع هندسة بيانات",
+                impact: "يدعم الإدخال الدفعي والمتدفق، وفحوص الجودة الآلية، والتحويلات القابلة لإعادة الاستخدام، والتحميل إلى PostgreSQL، وتصدير CSV نظيف، وتقارير الجودة."
+            },
+            manufacturing_analytics: {
+                title: "منصة تحليلات التصنيع",
+                description: "منصة مبنية على Spark لتحليل بيانات المصانع، وكشف الحالات الشاذة لحظيًا، وإصدارات Delta Lake، وتجميع الصيانة التنبؤية، والتحليل المدعوم بالذكاء الاصطناعي.",
+                duration: "مشروع هندسة تحليلات",
+                impact: "تعالج بيانات مستشعرات إنترنت الأشياء عبر خط تحليلي معياري، وتكشف الحالات الشاذة في التدفق، وتقيم مخاطر الآلات باستخدام MLlib، وتنتج مخرجات إدارية وجودية."
+            },
+            project_management: {
+                title: "ProjectFlow - منصة إدارة المشاريع",
+                description: "منصة متكاملة لإدارة المشاريع تستخدم Spring AI وتحليلات Kafka وSpring Batch، مع إشعارات ودردشة فورية عبر WebSocket، وتسجيل دخول OAuth2، وتعاون الفرق، وتتبع المهام.",
+                duration: "مشروع هندسة برمجيات متكامل",
+                impact: "تجمع بين التعاون الفوري، وسير العمل المدعوم بالذكاء الاصطناعي، ومعالجة الأنشطة القائمة على الأحداث، والتحليلات اليومية، والوصول الآمن حسب الأدوار، والإدارة المركزية للمشاريع والمهام والفرق والتقويم."
+            },
+            bakehouse_dashboard: {
+                title: "لوحة تحليلات Bakehouse",
+                description: "حل تحليلي على Databricks يستخدم Delta Live Tables وبنية الميدالية لمعالجة بيانات المبيعات والمراجعات وتشغيل لوحة AI/BI تفاعلية.",
+                duration: "مشروع لوحة تحليلات",
+                impact: "يؤتمت طبقات Bronze وSilver وGold، ويفرض توقعات جودة البيانات، ويصنف مشاعر العملاء، ويعرض أداء المنتجات والمدن."
             },
             fraud_detection: {
                 title: "نظام كشف الاحتيال (Kafka)",
