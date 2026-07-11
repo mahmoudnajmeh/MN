@@ -1,0 +1,5 @@
+Contact: mailto:mn.de@outlook.com
+Preferred-Languages: en, de
+Canonical: https://mahmoudnajmeh.github.io/MN/.well-known/security.txt
+Policy: https://github.com/mahmoudnajmeh/MN/security/policy
+Expires: 2027-07-11T23:59:59Z

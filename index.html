@@ -3,19 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' 'sha256-RMKLQLW6F5Cy3F41WM80IgKraafH5EeXKHUcz5VaMHA=' https://cdn.jsdelivr.net https://www.youtube.com https://s.ytimg.com; script-src-attr 'none'; worker-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net data:; img-src 'self' data: https:; media-src 'self'; connect-src 'self' https://formspree.io https://ipapi.co https://api.country.is; frame-src https://www.youtube-nocookie.com https://www.youtube.com; form-action https://formspree.io; manifest-src 'self'; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <title data-i18n="title">Mahmoud Najmeh | Data Engineering & Full-Stack Developer</title>
     <link rel="icon" type="image/x-icon" href="images/profile.jpg"> 
     <link rel="sitemap" type="application/xml" href="/sitemap.xml" title="Sitemap">
 
-    <script>
-        (function() {
-            const storedLang = localStorage.getItem('language');
-            if (storedLang && ['en', 'de', 'pl', 'fr', 'tr', 'ar', 'ru', 'he'].includes(storedLang)) {
-                document.documentElement.lang = storedLang;
-                if (storedLang === 'ar') document.documentElement.dir = 'rtl';
-            }
-        })();
-    </script>
+    <script src="js/language-bootstrap.js"></script>
 
     <!-- Structured Data for SEO -->
     <script type="application/ld+json">
@@ -98,7 +92,6 @@
     </script>
 
     <!-- Preload critical resources -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -428,7 +421,7 @@
                         </div>
                         <div class="project-meta">
                             <span class="project-duration" data-i18n="project.fraud_detection.duration">3 Months</span>
-                            <a href="https://github.com/mahmoudnajmeh/fraud-detection-system-kafak" class="btn" target="_blank" data-i18n="project.view">View Project</a>
+                            <a href="https://github.com/mahmoudnajmeh/fraud-detection-system-kafak" class="btn" target="_blank" rel="noopener noreferrer" data-i18n="project.view">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -459,7 +452,7 @@
                         </div>
                         <div class="project-meta">
                             <span class="project-duration" data-i18n="project.dagster_etl.duration">3 Months</span>
-                            <a href="https://github.com/mahmoudnajmeh/dagster_etl" class="btn" target="_blank" data-i18n="project.view">View Project</a>
+                            <a href="https://github.com/mahmoudnajmeh/dagster_etl" class="btn" target="_blank" rel="noopener noreferrer" data-i18n="project.view">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -489,7 +482,7 @@
                         </div>
                         <div class="project-meta">
                             <span class="project-duration" data-i18n="project.missing.duration">6 Months</span>
-                            <a href="https://github.com/mahmoudnajmeh/missing_person_alert" class="btn" target="_blank" data-i18n="project.view">View Project</a>
+                            <a href="https://github.com/mahmoudnajmeh/missing_person_alert" class="btn" target="_blank" rel="noopener noreferrer" data-i18n="project.view">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -521,7 +514,7 @@
                         </div>
                         <div class="project-meta">
                             <span class="project-duration" data-i18n="project.banking.duration">6 Months</span>
-                            <a href="https://github.com/MN10101/Banking-System-FullStack" class="btn" target="_blank" data-i18n="project.view">View Project</a>
+                            <a href="https://github.com/MN10101/Banking-System-FullStack" class="btn" target="_blank" rel="noopener noreferrer" data-i18n="project.view">View Project</a>
                         </div>
                     </div>
                 </div> -->
@@ -548,7 +541,7 @@
                         </div>
                         <div class="project-meta">
                             <span class="project-duration" data-i18n="project.ai_text.duration">2 Months</span>
-                            <a href="https://github.com/mahmoudnajmeh/ai-text-summarizer" class="btn" target="_blank" data-i18n="project.view">View Project</a>
+                            <a href="https://github.com/mahmoudnajmeh/ai-text-summarizer" class="btn" target="_blank" rel="noopener noreferrer" data-i18n="project.view">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -578,7 +571,7 @@
                         </div>
                         <div class="project-meta">
                             <span class="project-duration" data-i18n="project.student.duration">4 Months</span>
-                            <a href="https://github.com/MN10101/language_learning" class="btn" target="_blank" data-i18n="project.view">View Project</a>
+                            <a href="https://github.com/MN10101/language_learning" class="btn" target="_blank" rel="noopener noreferrer" data-i18n="project.view">View Project</a>
                         </div>
                     </div>
                 </div> -->
@@ -606,7 +599,7 @@
                         </div>
                         <div class="project-meta">
                             <span class="project-duration" data-i18n="project.face_analysis.duration">4 Months</span>
-                            <a href="https://github.com/mahmoudnajmeh/Face_Analysis" class="btn" target="_blank" data-i18n="project.view">View Project</a>
+                            <a href="https://github.com/mahmoudnajmeh/Face_Analysis" class="btn" target="_blank" rel="noopener noreferrer" data-i18n="project.view">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -633,7 +626,7 @@
                         </div>
                         <div class="project-meta">
                             <span class="project-duration" data-i18n="project.medical_diagnosis.duration">2 Months</span>
-                            <a href="https://github.com/mahmoudnajmeh/MedicalDiagnosisSystem" class="btn" target="_blank" data-i18n="project.view">View Project</a>
+                            <a href="https://github.com/mahmoudnajmeh/MedicalDiagnosisSystem" class="btn" target="_blank" rel="noopener noreferrer" data-i18n="project.view">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -820,32 +813,33 @@
                         </li>
                         <li>
                         <i class="fas fa-map-marker-alt"></i>
-                            <a href="https://www.google.com/maps/place/52.5200,13.4050/@52.5200,13.4050,14z" target="_blank" data-i18n="contact.location" class="contact-link email">Berlin, Germany</a>
+                            <a href="https://www.google.com/maps/place/52.5200,13.4050/@52.5200,13.4050,14z" target="_blank" rel="noopener noreferrer" data-i18n="contact.location" class="contact-link email">Berlin, Germany</a>
                         </li>
                     </ul>
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/mahmoudnajmeh/" class="social-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://github.com/mahmoudnajmeh" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/mahmoudnajmeh/" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/mahmoudnajmeh" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                         <button class="btn video-btn" id="videoModalBtn" data-i18n="contact.video">
                             <i class="fas fa-play-circle"></i> Video About Me
                         </button>
                     </div>
                 </div>
-                <form class="contact-form" action="https://formspree.io/f/mldlzywn" method="POST">
+                <form class="contact-form" action="https://formspree.io/f/mldlzywn" method="POST" accept-charset="UTF-8" autocomplete="on">
+                    <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" class="form-honeypot">
                     <div class="form-group">
-                        <input type="text" name="name" placeholder="Your Name" data-i18n-placeholder="form.name" required>
+                        <input type="text" name="name" placeholder="Your Name" data-i18n-placeholder="form.name" minlength="2" maxlength="100" autocomplete="name" required>
                     </div>
                     <div class="form-group">
                         <input type="email" name="email" placeholder="Your Email" data-i18n-placeholder="form.email" 
                             pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" 
-                            title="Please enter a valid email address" required>
+                            title="Please enter a valid email address" maxlength="254" autocomplete="email" inputmode="email" required>
                         <div class="validation-message" id="email-validation"></div>
                     </div>
                     <div class="form-group">
-                        <input type="text" name="subject" placeholder="Subject" data-i18n-placeholder="form.subject" required>
+                        <input type="text" name="subject" placeholder="Subject" data-i18n-placeholder="form.subject" minlength="3" maxlength="150" autocomplete="off" required>
                     </div>
                     <div class="form-group">
-                        <textarea name="message" placeholder="Your Message" data-i18n-placeholder="form.message" required></textarea>
+                        <textarea name="message" placeholder="Your Message" data-i18n-placeholder="form.message" minlength="10" maxlength="5000" autocomplete="off" required></textarea>
                     </div>
                     <button type="submit" class="btn" data-i18n="form.submit" id="submit-btn">Send Message</button>
                 </form>
@@ -862,7 +856,7 @@
                     id="youtubeVideo"
                     width="100%" 
                     height="315" 
-                    src="https://www.youtube.com/embed/JJoMd8HXweY?enablejsapi=1" 
+                    src="https://www.youtube-nocookie.com/embed/JJoMd8HXweY?enablejsapi=1&rel=0" 
                     title="About Mahmoud Najmeh | Data Engineering & Full-Stack Developer" 
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -901,6 +895,5 @@
     <script src="js/particles.js"></script>
     <script src="js/main.js"></script>
     <script src="js/i18n.js"></script>
-    <script src="https://www.youtube.com/iframe_api"></script>
 </body>
 </html>
