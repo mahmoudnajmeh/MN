@@ -2,6 +2,19 @@
 const translations = {
     en: {
         title: "Mahmoud Najmeh | Data Engineering & Full-Stack Developer",
+        ops: {
+            brand: "DATA ENGINEER",
+            status: "Available for opportunities",
+            nav: { profile: "Profile", lab: "Data Lab", projects: "Projects", connect: "Connect" },
+            hero: { kicker: "DATA SYSTEMS ENGINEER", portfolio: "PORTFOLIO / 2026", statement: "I design the infrastructure behind decisions.", capabilities: "Batch. Streaming. Analytics. Production." },
+            lab: {
+                eyebrow: "LIVE ENGINEERING VIEW", title: "Data Intelligence Lab", intro: "A visual snapshot of how I think about data systems: throughput, reliability, latency, data quality, and the movement of information from source to decision.", live: "LIVE",
+                throughput: { label: "PIPELINE THROUGHPUT", title: "Streaming events", current: "CURRENT RATE", events: "events / min", peak: "PEAK", backpressure: "BACKPRESSURE", healthy: "healthy" },
+                quality: { label: "QUALITY GATES", title: "Validation coverage", pass_rate: "PASS RATE", schema: "Schema checks", nulls: "Null constraints", freshness: "Freshness SLA" },
+                latency: { label: "PROCESSING LATENCY", title: "P95 by layer", ingest: "Ingest", transform: "Transform", quality: "Quality", serve: "Serve", sla: "All stages inside SLA" },
+                lineage: { label: "DATA LINEAGE", title: "From source to decision", nodes: "6 ACTIVE NODES", source: "SOURCE", apis: "APIs", json_cdc: "JSON · CDC", stream: "STREAM", kafka: "Kafka", events: "Events", compute: "COMPUTE", spark: "Spark", transform: "Transform", storage: "STORAGE", delta: "Delta", medallion: "Medallion", quality: "QUALITY", soda: "Soda", validate: "Validate", consume: "CONSUME", bi_ml: "BI / ML", decisions: "Decisions" }
+            }
+        },
         name: {
             first: "Mahmoud",
             last: "Najmeh"
@@ -346,6 +359,19 @@ const translations = {
     },
     de: {
         title: "Mahmoud Najmeh | Data Engineering & Full-Stack Entwickler",
+        ops: {
+            brand: "DATA ENGINEER",
+            status: "Offen für neue Möglichkeiten",
+            nav: { profile: "Profil", lab: "Data Lab", projects: "Projekte", connect: "Kontakt" },
+            hero: { kicker: "DATA-SYSTEMINGENIEUR", portfolio: "PORTFOLIO / 2026", statement: "Ich entwickle die Infrastruktur hinter Entscheidungen.", capabilities: "Batch. Streaming. Analytics. Produktion." },
+            lab: {
+                eyebrow: "LIVE-ENGINEERING-ANSICHT", title: "Data Intelligence Lab", intro: "Eine visuelle Momentaufnahme meiner Sicht auf Datensysteme: Durchsatz, Zuverlässigkeit, Latenz, Datenqualität und der Informationsfluss von der Quelle bis zur Entscheidung.", live: "LIVE",
+                throughput: { label: "PIPELINE-DURCHSATZ", title: "Streaming-Ereignisse", current: "AKTUELLE RATE", events: "Ereignisse / Min.", peak: "SPITZENWERT", backpressure: "RÜCKSTAU", healthy: "stabil" },
+                quality: { label: "QUALITÄTSPRÜFUNGEN", title: "Validierungsabdeckung", pass_rate: "ERFOLGSRATE", schema: "Schemaprüfungen", nulls: "Nullwert-Regeln", freshness: "Aktualitäts-SLA" },
+                latency: { label: "VERARBEITUNGSLATENZ", title: "P95 je Schicht", ingest: "Aufnahme", transform: "Transformation", quality: "Qualität", serve: "Bereitstellung", sla: "Alle Stufen innerhalb des SLA" },
+                lineage: { label: "DATENHERKUNFT", title: "Von der Quelle zur Entscheidung", nodes: "6 AKTIVE KNOTEN", source: "QUELLE", apis: "APIs", json_cdc: "JSON · CDC", stream: "STREAM", kafka: "Kafka", events: "Ereignisse", compute: "VERARBEITUNG", spark: "Spark", transform: "Transformation", storage: "SPEICHER", delta: "Delta", medallion: "Medallion", quality: "QUALITÄT", soda: "Soda", validate: "Validierung", consume: "NUTZUNG", bi_ml: "BI / ML", decisions: "Entscheidungen" }
+            }
+        },
         name: {
             first: "Mahmoud",
             last: "Najmeh"
@@ -690,6 +716,19 @@ const translations = {
     },
     pl: {
         title: "Mahmoud Najmeh | Inżynieria Danych & Programista Full-Stack",
+        ops: {
+            brand: "INŻYNIER DANYCH",
+            status: "Otwarty na nowe możliwości",
+            nav: { profile: "Profil", lab: "Laboratorium danych", projects: "Projekty", connect: "Kontakt" },
+            hero: { kicker: "INŻYNIER SYSTEMÓW DANYCH", portfolio: "PORTFOLIO / 2026", statement: "Projektuję infrastrukturę stojącą za decyzjami.", capabilities: "Batch. Streaming. Analityka. Produkcja." },
+            lab: {
+                eyebrow: "PODGLĄD INŻYNIERII NA ŻYWO", title: "Laboratorium analityki danych", intro: "Wizualny obraz mojego podejścia do systemów danych: przepustowość, niezawodność, opóźnienia, jakość danych i przepływ informacji od źródła do decyzji.", live: "NA ŻYWO",
+                throughput: { label: "PRZEPUSTOWOŚĆ PIPELINE’U", title: "Zdarzenia strumieniowe", current: "BIEŻĄCE TEMPO", events: "zdarzeń / min", peak: "SZCZYT", backpressure: "BACKPRESSURE", healthy: "stabilnie" },
+                quality: { label: "BRAMKI JAKOŚCI", title: "Pokrycie walidacji", pass_rate: "WSPÓŁCZYNNIK ZALICZEŃ", schema: "Kontrole schematu", nulls: "Ograniczenia null", freshness: "SLA świeżości" },
+                latency: { label: "OPÓŹNIENIE PRZETWARZANIA", title: "P95 według warstwy", ingest: "Ingest", transform: "Transformacja", quality: "Jakość", serve: "Udostępnianie", sla: "Wszystkie etapy w granicach SLA" },
+                lineage: { label: "POCHODZENIE DANYCH", title: "Od źródła do decyzji", nodes: "6 AKTYWNYCH WĘZŁÓW", source: "ŹRÓDŁO", apis: "API", json_cdc: "JSON · CDC", stream: "STRUMIEŃ", kafka: "Kafka", events: "Zdarzenia", compute: "OBLICZENIA", spark: "Spark", transform: "Transformacja", storage: "MAGAZYN", delta: "Delta", medallion: "Medallion", quality: "JAKOŚĆ", soda: "Soda", validate: "Walidacja", consume: "ODBIORCY", bi_ml: "BI / ML", decisions: "Decyzje" }
+            }
+        },
         name: {
             first: "Mahmoud",
             last: "Najmeh"
@@ -1034,6 +1073,19 @@ const translations = {
     },
     fr: {
         title: "Mahmoud Najmeh | Ingénierie des Données & Développeur Full-Stack",
+        ops: {
+            brand: "INGÉNIEUR DATA",
+            status: "Disponible pour de nouvelles opportunités",
+            nav: { profile: "Profil", lab: "Data Lab", projects: "Projets", connect: "Contact" },
+            hero: { kicker: "INGÉNIEUR DES SYSTÈMES DE DONNÉES", portfolio: "PORTFOLIO / 2026", statement: "Je conçois l’infrastructure qui soutient les décisions.", capabilities: "Batch. Streaming. Analytique. Production." },
+            lab: {
+                eyebrow: "VUE D’INGÉNIERIE EN DIRECT", title: "Laboratoire d’intelligence des données", intro: "Un aperçu visuel de ma façon de penser les systèmes de données : débit, fiabilité, latence, qualité et circulation de l’information de la source à la décision.", live: "EN DIRECT",
+                throughput: { label: "DÉBIT DU PIPELINE", title: "Événements en streaming", current: "DÉBIT ACTUEL", events: "événements / min", peak: "PIC", backpressure: "CONTRE-PRESSION", healthy: "stable" },
+                quality: { label: "CONTRÔLES QUALITÉ", title: "Couverture de validation", pass_rate: "TAUX DE RÉUSSITE", schema: "Contrôles de schéma", nulls: "Contraintes de nullité", freshness: "SLA de fraîcheur" },
+                latency: { label: "LATENCE DE TRAITEMENT", title: "P95 par couche", ingest: "Ingestion", transform: "Transformation", quality: "Qualité", serve: "Service", sla: "Toutes les étapes respectent le SLA" },
+                lineage: { label: "LIGNAGE DES DONNÉES", title: "De la source à la décision", nodes: "6 NŒUDS ACTIFS", source: "SOURCE", apis: "API", json_cdc: "JSON · CDC", stream: "FLUX", kafka: "Kafka", events: "Événements", compute: "CALCUL", spark: "Spark", transform: "Transformation", storage: "STOCKAGE", delta: "Delta", medallion: "Médaillon", quality: "QUALITÉ", soda: "Soda", validate: "Validation", consume: "CONSOMMATION", bi_ml: "BI / ML", decisions: "Décisions" }
+            }
+        },
         name: {
             first: "Mahmoud",
             last: "Najmeh"
@@ -1378,6 +1430,19 @@ const translations = {
     },
     tr: {
         title: "Mahmoud Najmeh | Full-Stack Geliştirici",
+        ops: {
+            brand: "VERİ MÜHENDİSİ",
+            status: "Yeni fırsatlara açığım",
+            nav: { profile: "Profil", lab: "Veri Laboratuvarı", projects: "Projeler", connect: "İletişim" },
+            hero: { kicker: "VERİ SİSTEMLERİ MÜHENDİSİ", portfolio: "PORTFÖY / 2026", statement: "Kararların arkasındaki altyapıyı tasarlıyorum.", capabilities: "Toplu işlem. Akış. Analitik. Üretim." },
+            lab: {
+                eyebrow: "CANLI MÜHENDİSLİK GÖRÜNÜMÜ", title: "Veri Zekâsı Laboratuvarı", intro: "Veri sistemlerine yaklaşımımın görsel özeti: iş hacmi, güvenilirlik, gecikme, veri kalitesi ve bilginin kaynaktan karara hareketi.", live: "CANLI",
+                throughput: { label: "VERİ HATTI İŞ HACMİ", title: "Akış olayları", current: "GÜNCEL HIZ", events: "olay / dk", peak: "ZİRVE", backpressure: "GERİ BASINÇ", healthy: "sağlıklı" },
+                quality: { label: "KALİTE KAPILARI", title: "Doğrulama kapsamı", pass_rate: "BAŞARI ORANI", schema: "Şema kontrolleri", nulls: "Null kısıtları", freshness: "Güncellik SLA’sı" },
+                latency: { label: "İŞLEME GECİKMESİ", title: "Katmana göre P95", ingest: "Alım", transform: "Dönüşüm", quality: "Kalite", serve: "Sunum", sla: "Tüm aşamalar SLA içinde" },
+                lineage: { label: "VERİ SOYU", title: "Kaynaktan karara", nodes: "6 AKTİF DÜĞÜM", source: "KAYNAK", apis: "API’ler", json_cdc: "JSON · CDC", stream: "AKIŞ", kafka: "Kafka", events: "Olaylar", compute: "HESAPLAMA", spark: "Spark", transform: "Dönüşüm", storage: "DEPOLAMA", delta: "Delta", medallion: "Medallion", quality: "KALİTE", soda: "Soda", validate: "Doğrulama", consume: "TÜKETİM", bi_ml: "BI / ML", decisions: "Kararlar" }
+            }
+        },
         name: {
             first: "Mahmoud",
             last: "Najmeh"
@@ -1721,6 +1786,19 @@ const translations = {
     },
     ru: {
         title: "Махмуд Наджмех | Инженерия данных & Full-Stack разработчик",
+        ops: {
+            brand: "ИНЖЕНЕР ДАННЫХ",
+            status: "Открыт для новых возможностей",
+            nav: { profile: "Профиль", lab: "Лаборатория данных", projects: "Проекты", connect: "Связаться" },
+            hero: { kicker: "ИНЖЕНЕР СИСТЕМ ДАННЫХ", portfolio: "ПОРТФОЛИО / 2026", statement: "Я проектирую инфраструктуру, на которой строятся решения.", capabilities: "Пакетная обработка. Потоки. Аналитика. Продакшен." },
+            lab: {
+                eyebrow: "ИНЖЕНЕРНЫЙ МОНИТОРИНГ", title: "Лаборатория аналитики данных", intro: "Визуальный обзор моего подхода к системам данных: пропускная способность, надёжность, задержка, качество данных и движение информации от источника к решению.", live: "ОНЛАЙН",
+                throughput: { label: "ПРОПУСКНАЯ СПОСОБНОСТЬ", title: "Потоковые события", current: "ТЕКУЩАЯ СКОРОСТЬ", events: "событий / мин", peak: "ПИК", backpressure: "ОБРАТНОЕ ДАВЛЕНИЕ", healthy: "норма" },
+                quality: { label: "КОНТРОЛЬ КАЧЕСТВА", title: "Покрытие проверками", pass_rate: "ДОЛЯ УСПЕШНЫХ", schema: "Проверки схемы", nulls: "Ограничения null", freshness: "SLA свежести" },
+                latency: { label: "ЗАДЕРЖКА ОБРАБОТКИ", title: "P95 по слоям", ingest: "Загрузка", transform: "Преобразование", quality: "Качество", serve: "Выдача", sla: "Все этапы укладываются в SLA" },
+                lineage: { label: "ЛИНЕЙНОСТЬ ДАННЫХ", title: "От источника к решению", nodes: "6 АКТИВНЫХ УЗЛОВ", source: "ИСТОЧНИК", apis: "API", json_cdc: "JSON · CDC", stream: "ПОТОК", kafka: "Kafka", events: "События", compute: "ВЫЧИСЛЕНИЯ", spark: "Spark", transform: "Преобразование", storage: "ХРАНЕНИЕ", delta: "Delta", medallion: "Medallion", quality: "КАЧЕСТВО", soda: "Soda", validate: "Проверка", consume: "ПОТРЕБЛЕНИЕ", bi_ml: "BI / ML", decisions: "Решения" }
+            }
+        },
         name: {
             first: "Махмуд",
             last: "Наджмех"
@@ -2063,6 +2141,19 @@ const translations = {
     },
     ar: {
         title: "محمود نجمة | هندسة البيانات & مطور فول ستاك",
+        ops: {
+            brand: "مهندس بيانات",
+            status: "متاح لفرص جديدة",
+            nav: { profile: "الملف الشخصي", lab: "مختبر البيانات", projects: "المشاريع", connect: "تواصل" },
+            hero: { kicker: "مهندس أنظمة البيانات", portfolio: "معرض الأعمال / 2026", statement: "أصمم البنية التحتية التي تقف خلف القرارات.", capabilities: "المعالجة الدفعية. التدفق. التحليلات. الإنتاج." },
+            lab: {
+                eyebrow: "عرض هندسي مباشر", title: "مختبر ذكاء البيانات", intro: "لقطة مرئية لطريقتي في التفكير في أنظمة البيانات: الإنتاجية والموثوقية وزمن الاستجابة وجودة البيانات وانتقال المعلومات من المصدر إلى القرار.", live: "مباشر",
+                throughput: { label: "إنتاجية خط البيانات", title: "أحداث متدفقة", current: "المعدل الحالي", events: "حدث / دقيقة", peak: "الذروة", backpressure: "الضغط العكسي", healthy: "سليم" },
+                quality: { label: "بوابات الجودة", title: "تغطية التحقق", pass_rate: "معدل النجاح", schema: "فحوصات المخطط", nulls: "قيود القيم الفارغة", freshness: "اتفاقية حداثة البيانات" },
+                latency: { label: "زمن المعالجة", title: "P95 حسب الطبقة", ingest: "الإدخال", transform: "التحويل", quality: "الجودة", serve: "التقديم", sla: "جميع المراحل ضمن اتفاقية الخدمة" },
+                lineage: { label: "نَسَب البيانات", title: "من المصدر إلى القرار", nodes: "6 عُقد نشطة", source: "المصدر", apis: "واجهات API", json_cdc: "JSON · CDC", stream: "التدفق", kafka: "Kafka", events: "الأحداث", compute: "المعالجة", spark: "Spark", transform: "التحويل", storage: "التخزين", delta: "Delta", medallion: "Medallion", quality: "الجودة", soda: "Soda", validate: "التحقق", consume: "الاستهلاك", bi_ml: "BI / ML", decisions: "القرارات" }
+            }
+        },
         name: {
             first: "محمود",
             last: "نجمة"
@@ -2395,6 +2486,19 @@ const translations = {
     },
     he: {
         title: "מחמוד נג'מה | הנדסת נתונים & מפתח Full-Stack",
+        ops: {
+            brand: "מהנדס נתונים",
+            status: "זמין להזדמנויות חדשות",
+            nav: { profile: "פרופיל", lab: "מעבדת נתונים", projects: "פרויקטים", connect: "יצירת קשר" },
+            hero: { kicker: "מהנדס מערכות נתונים", portfolio: "תיק עבודות / 2026", statement: "אני מתכנן את התשתית שמאחורי ההחלטות.", capabilities: "אצווה. סטרימינג. אנליטיקה. ייצור." },
+            lab: {
+                eyebrow: "תצוגת הנדסה חיה", title: "מעבדת בינת נתונים", intro: "תמונה חזותית של הדרך שבה אני חושב על מערכות נתונים: תפוקה, אמינות, השהיה, איכות נתונים ותנועת המידע מהמקור להחלטה.", live: "חי",
+                throughput: { label: "תפוקת צינור הנתונים", title: "אירועי סטרימינג", current: "קצב נוכחי", events: "אירועים / דקה", peak: "שיא", backpressure: "לחץ חוזר", healthy: "תקין" },
+                quality: { label: "שערי איכות", title: "כיסוי אימות", pass_rate: "שיעור הצלחה", schema: "בדיקות סכמה", nulls: "אילוצי null", freshness: "SLA רעננות" },
+                latency: { label: "השהיית עיבוד", title: "P95 לפי שכבה", ingest: "קליטה", transform: "טרנספורמציה", quality: "איכות", serve: "הגשה", sla: "כל השלבים בתוך ה-SLA" },
+                lineage: { label: "שושלת נתונים", title: "מהמקור להחלטה", nodes: "6 צמתים פעילים", source: "מקור", apis: "ממשקי API", json_cdc: "JSON · CDC", stream: "זרם", kafka: "Kafka", events: "אירועים", compute: "חישוב", spark: "Spark", transform: "טרנספורמציה", storage: "אחסון", delta: "Delta", medallion: "Medallion", quality: "איכות", soda: "Soda", validate: "אימות", consume: "צריכה", bi_ml: "BI / ML", decisions: "החלטות" }
+            }
+        },
         name: {
             first: "מחמוד",
             last: "נג'מה"
