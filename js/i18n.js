@@ -322,7 +322,11 @@ const translations = {
             info: "Contact Information",
             location: "Berlin, Germany",
             video: "Video About Me",
-            phone: "+49 163 9769764"
+            phone: "+49 163 9769764",
+            pitch: 'Building a data platform, modernizing pipelines, or hiring a data engineer? Send the context, constraints, and desired outcome. I respond with a clear next step.',
+            response_label: 'RESPONSE WINDOW',
+            response_time: 'Usually within 24–48 hours',
+            response_location: 'Berlin · CET/CEST · Open to data engineering opportunities'
         },
         form: {
             name: "Your Name",
@@ -679,7 +683,11 @@ const translations = {
             info: "Kontaktinformationen",
             location: "Berlin, Deutschland",
             video: "Video über mich",
-            phone: "+49 163 9769764"
+            phone: "+49 163 9769764",
+            pitch: 'Sie bauen eine Datenplattform, modernisieren Pipelines oder suchen einen Data Engineer? Senden Sie mir den Kontext, die Rahmenbedingungen und das gewünschte Ergebnis. Ich antworte mit einem klaren nächsten Schritt.',
+            response_label: 'ANTWORTZEIT',
+            response_time: 'In der Regel innerhalb von 24–48 Stunden',
+            response_location: 'Berlin · MEZ/MESZ · Offen für Positionen im Data Engineering'
         },
         form: {
             name: "Ihr Name",
@@ -1036,7 +1044,11 @@ const translations = {
             info: "Informacje kontaktowe",
             location: "Berlin, Niemcy",
             video: "Wideo o mnie",
-            phone: "+49 163 9769764"
+            phone: "+49 163 9769764",
+            pitch: 'Budujesz platformę danych, modernizujesz pipeline’y lub szukasz Data Engineera? Prześlij kontekst, ograniczenia i oczekiwany rezultat. Odpowiem z jasnym kolejnym krokiem.',
+            response_label: 'CZAS ODPOWIEDZI',
+            response_time: 'Zwykle w ciągu 24–48 godzin',
+            response_location: 'Berlin · CET/CEST · Otwarty na możliwości w obszarze Data Engineering'
         },
         form: {
             name: "Twoje imię",
@@ -1393,7 +1405,11 @@ const translations = {
             info: "Informations de contact",
             location: "Berlin, Allemagne",
             video: "Vidéo à propos de moi",
-            phone: "+49 163 9769764"
+            phone: "+49 163 9769764",
+            pitch: 'Vous construisez une plateforme de données, modernisez des pipelines ou recrutez un Data Engineer ? Envoyez-moi le contexte, les contraintes et le résultat attendu. Je vous répondrai avec une prochaine étape claire.',
+            response_label: 'DÉLAI DE RÉPONSE',
+            response_time: 'Généralement sous 24 à 48 heures',
+            response_location: 'Berlin · CET/CEST · Ouvert aux opportunités en ingénierie des données'
         },
         form: {
             name: "Votre nom",
@@ -1749,7 +1765,11 @@ const translations = {
             info: "İletişim Bilgileri",
             location: "Berlin, Almanya",
             video: "Hakkımda Video",
-            phone: "+49 163 9769764"
+            phone: "+49 163 9769764",
+            pitch: 'Bir veri platforması mı kuruyorsunuz, veri hatlarını mı modernize ediyorsunuz veya bir Veri Mühendisi mi arıyorsunuz? Bağlamı, kısıtları ve hedeflenen sonucu paylaşın. Size net bir sonraki adımla dönüş yaparım.',
+            response_label: 'YANIT SÜRESİ',
+            response_time: 'Genellikle 24–48 saat içinde',
+            response_location: 'Berlin · CET/CEST · Veri mühendisliği fırsatlarına açığım'
         },
         form: {
             name: "Adınız",
@@ -2104,7 +2124,11 @@ const translations = {
             info: "Контактная информация",
             location: "Берлин, Германия",
             video: "Видео обо мне",
-            phone: "+49 163 9769764"
+            phone: "+49 163 9769764",
+            pitch: 'Создаёте платформу данных, модернизируете конвейеры или ищете инженера данных? Пришлите контекст, ограничения и желаемый результат. Я отвечу с чётким следующим шагом.',
+            response_label: 'ВРЕМЯ ОТВЕТА',
+            response_time: 'Обычно в течение 24–48 часов',
+            response_location: 'Берлин · CET/CEST · Открыт к возможностям в области инженерии данных'
         },
         form: {
             name: "Ваше имя",
@@ -2449,7 +2473,11 @@ const translations = {
             info: "معلومات الاتصال",
             location: "برلين، ألمانيا",
             video: "فيديو عني",
-            phone: "+49 163 9769764"
+            phone: "+49 163 9769764",
+            pitch: 'هل تبني منصة بيانات، أو تطوّر خطوط معالجة البيانات، أو تبحث عن مهندس بيانات؟ أرسل السياق والقيود والنتيجة المطلوبة، وسأرد عليك بخطوة تالية واضحة.',
+            response_label: 'مدة الرد',
+            response_time: 'عادةً خلال 24–48 ساعة',
+            response_location: 'برلين · CET/CEST · متاح لفرص هندسة البيانات'
         },
         form: {
             name: "اسمك",
@@ -2764,7 +2792,11 @@ const translations = {
             info: "פרטי יצירת קשר",
             location: "ברלין, גרמניה",
             video: "סרטון עליי",
-            phone: "+49 163 9769764"
+            phone: "+49 163 9769764",
+            pitch: 'בונים פלטפורמת נתונים, משדרגים צינורות נתונים או מחפשים מהנדס נתונים? שלחו את ההקשר, המגבלות והתוצאה הרצויה, ואחזור אליכם עם צעד הבא ברור.',
+            response_label: 'זמן תגובה',
+            response_time: 'בדרך כלל תוך 24–48 שעות',
+            response_location: 'ברלין · CET/CEST · פתוח להזדמנויות בהנדסת נתונים'
         },
 
         form: {
