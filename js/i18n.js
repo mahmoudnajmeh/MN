@@ -12,7 +12,7 @@ const translations = {
         connect: "Connect",
       },
       hero: {
-        kicker: "DATA SYSTEMS ENGINEER",
+        kicker: "DATA ENGINEER",
         portfolio: "PORTFOLIO / 2026",
         statement: "I design the infrastructure behind decisions.",
         capabilities: "Batch. Streaming. Analytics. Production.",
@@ -3984,6 +3984,170 @@ const translations = {
   },
 };
 
+// CV-aligned skill taxonomy. Product names stay unchanged in the markup;
+// only descriptive category and capability labels are localized here.
+const cvSkillsTranslations = {
+  en: {
+    "processing-streaming": "Processing & Streaming",
+    orchestration: "Orchestration",
+    "programming-backend": "Programming & Backend",
+    "databases-cloud": "Databases & Cloud",
+    "devops-quality": "DevOps & Quality",
+    items: {
+      "batch-streaming": "Batch and streaming pipelines",
+      "data-modelling": "Data modelling",
+      "data-lakes": "Data lakes",
+      "lakehouse-architecture": "Lakehouse architecture",
+      "data-quality": "Data quality",
+      "scheduled-workflows": "Scheduled workflows",
+      "pipeline-monitoring": "Pipeline monitoring",
+      "advanced-sql": "Advanced SQL",
+      "query-optimization": "Query optimization",
+    },
+  },
+  de: {
+    "processing-streaming": "Verarbeitung & Streaming",
+    orchestration: "Orchestrierung",
+    "programming-backend": "Programmierung & Backend",
+    "databases-cloud": "Datenbanken & Cloud",
+    "devops-quality": "DevOps & Qualität",
+    items: {
+      "batch-streaming": "Batch- und Streaming-Pipelines",
+      "data-modelling": "Datenmodellierung",
+      "data-lakes": "Data Lakes",
+      "lakehouse-architecture": "Lakehouse-Architektur",
+      "data-quality": "Datenqualität",
+      "scheduled-workflows": "Geplante Workflows",
+      "pipeline-monitoring": "Pipeline-Überwachung",
+      "advanced-sql": "Fortgeschrittenes SQL",
+      "query-optimization": "Abfrageoptimierung",
+    },
+  },
+  pl: {
+    "processing-streaming": "Przetwarzanie i streaming",
+    orchestration: "Orkiestracja",
+    "programming-backend": "Programowanie i backend",
+    "databases-cloud": "Bazy danych i chmura",
+    "devops-quality": "DevOps i jakość",
+    items: {
+      "batch-streaming": "Potoki wsadowe i strumieniowe",
+      "data-modelling": "Modelowanie danych",
+      "data-lakes": "Jeziora danych",
+      "lakehouse-architecture": "Architektura lakehouse",
+      "data-quality": "Jakość danych",
+      "scheduled-workflows": "Harmonogramowane przepływy pracy",
+      "pipeline-monitoring": "Monitorowanie potoków",
+      "advanced-sql": "Zaawansowany SQL",
+      "query-optimization": "Optymalizacja zapytań",
+    },
+  },
+  fr: {
+    "processing-streaming": "Traitement et streaming",
+    orchestration: "Orchestration",
+    "programming-backend": "Programmation et backend",
+    "databases-cloud": "Bases de données et cloud",
+    "devops-quality": "DevOps et qualité",
+    items: {
+      "batch-streaming": "Pipelines batch et streaming",
+      "data-modelling": "Modélisation des données",
+      "data-lakes": "Lacs de données",
+      "lakehouse-architecture": "Architecture lakehouse",
+      "data-quality": "Qualité des données",
+      "scheduled-workflows": "Workflows planifiés",
+      "pipeline-monitoring": "Surveillance des pipelines",
+      "advanced-sql": "SQL avancé",
+      "query-optimization": "Optimisation des requêtes",
+    },
+  },
+  tr: {
+    "processing-streaming": "İşleme ve Akış",
+    orchestration: "Orkestrasyon",
+    "programming-backend": "Programlama ve Backend",
+    "databases-cloud": "Veritabanları ve Bulut",
+    "devops-quality": "DevOps ve Kalite",
+    items: {
+      "batch-streaming": "Toplu ve akış veri hatları",
+      "data-modelling": "Veri modelleme",
+      "data-lakes": "Veri gölleri",
+      "lakehouse-architecture": "Lakehouse mimarisi",
+      "data-quality": "Veri kalitesi",
+      "scheduled-workflows": "Zamanlanmış iş akışları",
+      "pipeline-monitoring": "Veri hattı izleme",
+      "advanced-sql": "İleri düzey SQL",
+      "query-optimization": "Sorgu optimizasyonu",
+    },
+  },
+  ru: {
+    "processing-streaming": "Обработка и потоковые данные",
+    orchestration: "Оркестрация",
+    "programming-backend": "Программирование и бэкенд",
+    "databases-cloud": "Базы данных и облако",
+    "devops-quality": "DevOps и качество",
+    items: {
+      "batch-streaming": "Пакетные и потоковые конвейеры",
+      "data-modelling": "Моделирование данных",
+      "data-lakes": "Озёра данных",
+      "lakehouse-architecture": "Архитектура Lakehouse",
+      "data-quality": "Качество данных",
+      "scheduled-workflows": "Запланированные рабочие процессы",
+      "pipeline-monitoring": "Мониторинг конвейеров",
+      "advanced-sql": "Продвинутый SQL",
+      "query-optimization": "Оптимизация запросов",
+    },
+  },
+  ar: {
+    "processing-streaming": "المعالجة والتدفق",
+    orchestration: "التنسيق",
+    "programming-backend": "البرمجة والواجهة الخلفية",
+    "databases-cloud": "قواعد البيانات والسحابة",
+    "devops-quality": "DevOps والجودة",
+    items: {
+      "batch-streaming": "خطوط البيانات الدفعية والمتدفقة",
+      "data-modelling": "نمذجة البيانات",
+      "data-lakes": "بحيرات البيانات",
+      "lakehouse-architecture": "معمارية Lakehouse",
+      "data-quality": "جودة البيانات",
+      "scheduled-workflows": "سير العمل المجدول",
+      "pipeline-monitoring": "مراقبة خطوط البيانات",
+      "advanced-sql": "SQL المتقدم",
+      "query-optimization": "تحسين الاستعلامات",
+    },
+  },
+  he: {
+    "processing-streaming": "עיבוד והזרמה",
+    orchestration: "תזמור",
+    "programming-backend": "תכנות וצד שרת",
+    "databases-cloud": "מסדי נתונים וענן",
+    "devops-quality": "DevOps ואיכות",
+    items: {
+      "batch-streaming": "צינורות אצווה והזרמה",
+      "data-modelling": "מידול נתונים",
+      "data-lakes": "אגמי נתונים",
+      "lakehouse-architecture": "ארכיטקטורת Lakehouse",
+      "data-quality": "איכות נתונים",
+      "scheduled-workflows": "תהליכי עבודה מתוזמנים",
+      "pipeline-monitoring": "ניטור צינורות נתונים",
+      "advanced-sql": "SQL מתקדם",
+      "query-optimization": "אופטימיזציית שאילתות",
+    },
+  },
+};
+
+Object.entries(cvSkillsTranslations).forEach(([lang, skillLabels]) => {
+  Object.assign(translations[lang].skills, skillLabels);
+});
+
+const pageTitles = {
+  en: "Mahmoud Najmeh | Data Engineer",
+  de: "Mahmoud Najmeh | Data Engineer",
+  pl: "Mahmoud Najmeh | Inżynier danych",
+  fr: "Mahmoud Najmeh | Ingénieur Data",
+  tr: "Mahmoud Najmeh | Veri Mühendisi",
+  ru: "Махмуд Наджмех | Инженер данных",
+  ar: "محمود نجمة | مهندس بيانات",
+  he: "מחמוד נג'מה | מהנדס נתונים",
+};
+
 // Function to update content based on language
 function updateContent(lang) {
   // Validate language
@@ -4015,8 +4179,7 @@ function updateContent(lang) {
   document.documentElement.lang = lang;
   document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
 
-  document.title =
-    translations[lang]?.title || "Mahmoud Najmeh | Full-Stack Developer";
+  document.title = pageTitles[lang] || pageTitles.en;
 
   // Text content
   document.querySelectorAll("[data-i18n]").forEach((element) => {
