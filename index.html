@@ -1,171 +1,275 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html dir="ltr" id="html-root" lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
-<meta content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' 'sha256-vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE=' https://cdn.jsdelivr.net https://www.youtube.com https://s.ytimg.com; script-src-attr 'none'; worker-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net data:; img-src 'self' data: https:; media-src 'self'; connect-src 'self' https://formspree.io https://ipapi.co https://api.country.is; frame-src https://www.youtube-nocookie.com https://www.youtube.com; form-action https://formspree.io; manifest-src 'self'; upgrade-insecure-requests" http-equiv="Content-Security-Policy"/>
-<meta content="strict-origin-when-cross-origin" name="referrer"/>
-<title>Mahmoud Najmeh | Data Systems Engineer</title>
-<!-- Primary SEO and social sharing metadata: keep before scripts and styles for crawler compatibility -->
-<meta content="Mahmoud Najmeh is a Data Engineer in Berlin building production-grade batch and streaming platforms with Apache Kafka, Spark, Airflow, Delta Lake, Python, and cloud technologies." name="description"/>
-<meta content="Mahmoud Najmeh, Data Engineer, Apache Kafka, Apache Spark, Apache Airflow, Delta Lake, Python, Data Engineering Portfolio, Berlin" name="keywords"/>
-<meta content="Mahmoud Najmeh" name="author"/>
-<meta content="index, follow, max-image-preview:large" name="robots"/>
-<meta content="#050706" name="theme-color"/>
-<meta content="dark" name="color-scheme"/>
-<link href="https://mahmoudnajmeh.github.io/MN/" rel="canonical"/>
-<meta content="website" property="og:type"/>
-<meta content="https://mahmoudnajmeh.github.io/MN/" property="og:url"/>
-<meta content="Mahmoud Najmeh | Data Systems Engineer" property="og:title"/>
-<meta content="Production-grade data engineering portfolio featuring streaming pipelines, analytics platforms, data quality, and cloud systems." property="og:description"/>
-<meta content="Mahmoud Najmeh — Data Engineering Portfolio" property="og:site_name"/>
-<meta content="en_US" property="og:locale"/>
-<meta content="https://mahmoudnajmeh.github.io/MN/images/social-preview-v3.jpg" property="og:image"/>
-<meta content="https://mahmoudnajmeh.github.io/MN/images/social-preview-v3.jpg" property="og:image:url"/>
-<meta content="https://mahmoudnajmeh.github.io/MN/images/social-preview-v3.jpg" property="og:image:secure_url"/>
-<meta content="image/jpeg" property="og:image:type"/>
-<meta content="1200" property="og:image:width"/>
-<meta content="630" property="og:image:height"/>
-<meta content="Mahmoud Najmeh — Data Engineer portfolio" property="og:image:alt"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="https://mahmoudnajmeh.github.io/MN/" name="twitter:url"/>
-<meta content="mahmoudnajmeh.github.io" name="twitter:domain"/>
-<meta content="Mahmoud Najmeh | Data Systems Engineer" name="twitter:title"/>
-<meta content="Production-grade data engineering portfolio featuring streaming pipelines, analytics platforms, data quality, and cloud systems." name="twitter:description"/>
-<meta content="https://mahmoudnajmeh.github.io/MN/images/social-preview-v3.jpg" name="twitter:image"/>
-<meta content="Mahmoud Najmeh — Data Engineer portfolio" name="twitter:image:alt"/>
-<meta content="Mahmoud Najmeh | Data Systems Engineer" itemprop="name"/>
-<meta content="Production-grade data engineering portfolio featuring streaming pipelines, analytics platforms, data quality, and cloud systems." itemprop="description"/>
-<meta content="https://mahmoudnajmeh.github.io/MN/images/social-preview-v3.jpg" itemprop="image"/>
-<link href="images/profile.jpg" rel="icon" type="image/x-icon"/>
-<link href="/sitemap.xml" rel="sitemap" title="Sitemap" type="application/xml"/>
-<script src="js/language-bootstrap.js"></script>
-<!-- Structured Data for SEO -->
-<script type="application/ld+json">
-    {
-    "@context": "https://schema.org",
-    "@graph": [
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+      name="viewport"
+    />
+    <meta
+      content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' 'sha256-vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE=' https://cdn.jsdelivr.net https://www.youtube.com https://s.ytimg.com; script-src-attr 'none'; worker-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com https://cdn.jsdelivr.net data:; img-src 'self' data: https:; media-src 'self'; connect-src 'self' https://formspree.io https://ipapi.co https://api.country.is; frame-src https://www.youtube-nocookie.com https://www.youtube.com; form-action https://formspree.io; manifest-src 'self'; upgrade-insecure-requests"
+      http-equiv="Content-Security-Policy"
+    />
+    <meta content="strict-origin-when-cross-origin" name="referrer" />
+    <title>Mahmoud Najmeh | Data Systems Engineer</title>
+    <meta
+      content="Mahmoud Najmeh is a Data Engineer in Berlin building production-grade batch and streaming platforms with Apache Kafka, Spark, Airflow, Delta Lake, Python, and cloud technologies."
+      name="description"
+    />
+    <meta
+      content="Mahmoud Najmeh, Data Engineer, Apache Kafka, Apache Spark, Apache Airflow, Delta Lake, Python, Data Engineering Portfolio, Berlin"
+      name="keywords"
+    />
+    <meta content="Mahmoud Najmeh" name="author" />
+    <meta content="index, follow, max-image-preview:large" name="robots" />
+    <meta content="#050706" name="theme-color" />
+    <meta content="dark" name="color-scheme" />
+    <link href="https://mahmoudnajmeh.github.io/MN/" rel="canonical" />
+    <meta content="website" property="og:type" />
+    <meta content="https://mahmoudnajmeh.github.io/MN/" property="og:url" />
+    <meta
+      content="Mahmoud Najmeh | Data Systems Engineer"
+      property="og:title"
+    />
+    <meta
+      content="Production-grade data engineering portfolio featuring streaming pipelines, analytics platforms, data quality, and cloud systems."
+      property="og:description"
+    />
+    <meta
+      content="Mahmoud Najmeh — Data Engineering Portfolio"
+      property="og:site_name"
+    />
+    <meta content="en_US" property="og:locale" />
+    <meta
+      content="https://mahmoudnajmeh.github.io/MN/images/social-preview-v3.jpg"
+      property="og:image"
+    />
+    <meta
+      content="https://mahmoudnajmeh.github.io/MN/images/social-preview-v3.jpg"
+      property="og:image:url"
+    />
+    <meta
+      content="https://mahmoudnajmeh.github.io/MN/images/social-preview-v3.jpg"
+      property="og:image:secure_url"
+    />
+    <meta content="image/jpeg" property="og:image:type" />
+    <meta content="1200" property="og:image:width" />
+    <meta content="630" property="og:image:height" />
+    <meta
+      content="Mahmoud Najmeh — Data Engineer portfolio"
+      property="og:image:alt"
+    />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta content="https://mahmoudnajmeh.github.io/MN/" name="twitter:url" />
+    <meta content="mahmoudnajmeh.github.io" name="twitter:domain" />
+    <meta
+      content="Mahmoud Najmeh | Data Systems Engineer"
+      name="twitter:title"
+    />
+    <meta
+      content="Production-grade data engineering portfolio featuring streaming pipelines, analytics platforms, data quality, and cloud systems."
+      name="twitter:description"
+    />
+    <meta
+      content="https://mahmoudnajmeh.github.io/MN/images/social-preview-v3.jpg"
+      name="twitter:image"
+    />
+    <meta
+      content="Mahmoud Najmeh — Data Engineer portfolio"
+      name="twitter:image:alt"
+    />
+    <meta content="Mahmoud Najmeh | Data Systems Engineer" itemprop="name" />
+    <meta
+      content="Production-grade data engineering portfolio featuring streaming pipelines, analytics platforms, data quality, and cloud systems."
+      itemprop="description"
+    />
+    <meta
+      content="https://mahmoudnajmeh.github.io/MN/images/social-preview-v3.jpg"
+      itemprop="image"
+    />
+    <link href="images/profile.jpg" rel="icon" type="image/x-icon" />
+    <link
+      href="/sitemap.xml"
+      rel="sitemap"
+      title="Sitemap"
+      type="application/xml"
+    />
+    <script src="js/language-bootstrap.js"></script>
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://mahmoudnajmeh.github.io/MN/#person",
+            "name": "Mahmoud Najmeh",
+            "alternateName": "mahmoudnajmeh",
+            "url": "https://mahmoudnajmeh.github.io/MN",
+            "image": "https://mahmoudnajmeh.github.io/MN/images/profile.jpg",
+            "email": "mn.de@outlook.com",
+            "telephone": "+49-163-9769764",
+            "jobTitle": "Data Engineer | Software Developer",
+            "description": "Data Engineer specializing in Apache Spark, Kafka, Airflow, and scalable data pipelines, with full-stack development experience.",
 
-        {
-        "@type": "Person",
-        "@id": "https://mahmoudnajmeh.github.io/MN/#person",
-        "name": "Mahmoud Najmeh",
-        "alternateName": "mahmoudnajmeh",
-        "url": "https://mahmoudnajmeh.github.io/MN",
-        "image": "https://mahmoudnajmeh.github.io/MN/images/profile.jpg",
-        "email": "mn.de@outlook.com",
-        "telephone": "+49-163-9769764",
-        "jobTitle": "Data Engineer | Software Developer",
-        "description": "Data Engineer specializing in Apache Spark, Kafka, Airflow, and scalable data pipelines, with full-stack development experience.",
-        
-        "sameAs": [
-            "https://github.com/mahmoudnajmeh",
-            "https://www.linkedin.com/in/mahmoudnajmeh/"
-        ],
+            "sameAs": [
+              "https://github.com/mahmoudnajmeh",
+              "https://www.linkedin.com/in/mahmoudnajmeh/"
+            ],
 
-        "knowsAbout": [
-            "Data Engineering",
-            "Apache Spark",
-            "Apache Kafka",
-            "Apache Airflow",
-            "MLflow",
-            "ETL Pipelines",
-            "Data Warehousing",
-            "Python",
-            "Java",
-            "Spring Boot",
-            "Django",
-            "AWS",
-            "Docker",
-            "CI/CD"
-        ],
+            "knowsAbout": [
+              "Data Engineering",
+              "Apache Spark",
+              "Apache Kafka",
+              "Apache Airflow",
+              "MLflow",
+              "ETL Pipelines",
+              "Data Warehousing",
+              "Python",
+              "Java",
+              "Spring Boot",
+              "Django",
+              "AWS",
+              "Docker",
+              "CI/CD"
+            ],
 
-        "knowsLanguage": [
-            {"@type": "Language", "name": "English"},
-            {"@type": "Language", "name": "German"},
-            {"@type": "Language", "name": "Arabic"}
-        ],
+            "knowsLanguage": [
+              { "@type": "Language", "name": "English" },
+              { "@type": "Language", "name": "German" },
+              { "@type": "Language", "name": "Arabic" }
+            ],
 
-        "homeLocation": {
-            "@type": "Place",
-            "name": "Berlin, Germany"
-        }
-        },
+            "homeLocation": {
+              "@type": "Place",
+              "name": "Berlin, Germany"
+            }
+          },
 
-        {
-        "@type": "WebSite",
-        "@id": "https://mahmoudnajmeh.github.io/MN/#website",
-        "url": "https://mahmoudnajmeh.github.io/MN",
-        "name": "Mahmoud Najmeh Portfolio",
-        "description": "Portfolio of Mahmoud Najmeh - Data Engineer and Software Developer",
-        "inLanguage": ["en", "de", "ar"],
-        "author": {
-            "@id": "https://mahmoudnajmeh.github.io/MN/#person"
-        }
-        },
+          {
+            "@type": "WebSite",
+            "@id": "https://mahmoudnajmeh.github.io/MN/#website",
+            "url": "https://mahmoudnajmeh.github.io/MN",
+            "name": "Mahmoud Najmeh Portfolio",
+            "description": "Portfolio of Mahmoud Najmeh - Data Engineer and Software Developer",
+            "inLanguage": ["en", "de", "ar"],
+            "author": {
+              "@id": "https://mahmoudnajmeh.github.io/MN/#person"
+            }
+          },
 
-        {
-        "@type": "Organization",
-        "@id": "https://mahmoudnajmeh.github.io/MN/#organization",
-        "name": "Mahmoud Najmeh",
-        "url": "https://mahmoudnajmeh.github.io/MN",
-        "logo": "https://mahmoudnajmeh.github.io/MN/images/profile.jpg",
-        "sameAs": [
-            "https://github.com/mahmoudnajmeh",
-            "https://www.linkedin.com/in/mahmoudnajmeh/"
+          {
+            "@type": "Organization",
+            "@id": "https://mahmoudnajmeh.github.io/MN/#organization",
+            "name": "Mahmoud Najmeh",
+            "url": "https://mahmoudnajmeh.github.io/MN",
+            "logo": "https://mahmoudnajmeh.github.io/MN/images/profile.jpg",
+            "sameAs": [
+              "https://github.com/mahmoudnajmeh",
+              "https://www.linkedin.com/in/mahmoudnajmeh/"
+            ]
+          }
         ]
-        }
-
-    ]
-    }
+      }
     </script>
-<!-- Preload critical resources -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-<link href="css/style.css?v=20260715-social-map-v3" rel="stylesheet"/>
-<link href="css/animations.css" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Syne:wght@400;500;600;700;800&amp;family=Noto+Naskh+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://cdn.jsdelivr.net/npm/devicon@2.15.1/devicon.min.css" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.6.6/css/flag-icons.min.css" rel="stylesheet"/>
-<!-- Google Verification -->
-<meta content="QR4p6t8vOnNrT_-qrlNAzKH_WXOvjABhOCXQiNV2sWQ" name="google-site-verification"/>
-</head>
-<body id="top">
-<nav aria-label="Primary navigation" class="ops-nav">
-<a aria-label="Mahmoud Najmeh home" class="ops-brand" href="#top">
-<span class="brand-mark">MN</span>
-<span class="brand-copy"><strong data-i18n="ops.brand">DATA ENGINEER</strong><small>BERLIN · DE</small></span>
-</a>
-<div class="ops-nav-links">
-<a data-i18n="ops.nav.profile" href="#about">Profile</a>
-<a data-i18n="ops.nav.projects" href="#projects">Projects</a>
-<a data-i18n="ops.nav.connect" href="#contact">Connect</a>
-</div>
-<div aria-label="Available for opportunities" class="ops-status"><span aria-hidden="true" class="ops-status-dot"></span><span class="ops-status-text" data-i18n="ops.status">Available for opportunities</span></div>
-</nav>
-<a class="skip-link" href="#main-content">Skip to main content</a>
-<!-- Language Toggle -->
-<div class="language-toggle">
-<select aria-label="Select language" id="language-select">
-<option value="en">English</option>
-<option value="de">German</option>
-<option value="pl">Polish</option>
-<option value="fr">French</option>
-<option value="tr">Turkish</option>
-<option value="ru">Russian</option>
-<option value="ar">العربية</option>
-<!-- <option value="he">עברית</option> -->
-</select>
-</div>
-<div id="language-notification" style="display: none; position: fixed; bottom: 20px; right: 20px; background: #2d3748; color: white; padding: 12px 20px; border-radius: 8px; z-index: 1000; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
-<span id="lang-notification-text"></span>
-<button id="close-notification" style="margin-left: 12px; background: none; border: none; color: white; cursor: pointer;">✕</button>
-</div>
-<!-- NAVIGATION MENU -->
-<!-- <nav class="main-navigation" role="navigation" aria-label="Main navigation">
+    <!-- Preload critical resources -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/style.css?v=20260715-social-map-v3" rel="stylesheet" />
+    <link href="css/animations.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Syne:wght@400;500;600;700;800&amp;family=Noto+Naskh+Arabic:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/devicon@2.15.1/devicon.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.6.6/css/flag-icons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Verification -->
+    <meta
+      content="QR4p6t8vOnNrT_-qrlNAzKH_WXOvjABhOCXQiNV2sWQ"
+      name="google-site-verification"
+    />
+  </head>
+  <body id="top">
+    <nav aria-label="Primary navigation" class="ops-nav">
+      <a aria-label="Mahmoud Najmeh home" class="ops-brand" href="#top">
+        <span class="brand-mark">MN</span>
+        <span class="brand-copy"
+          ><strong data-i18n="ops.brand">DATA ENGINEER</strong
+          ><small>BERLIN · DE</small></span
+        >
+      </a>
+      <div class="ops-nav-links">
+        <a data-i18n="ops.nav.profile" href="#about">Profile</a>
+        <a data-i18n="ops.nav.projects" href="#projects">Projects</a>
+        <a data-i18n="ops.nav.connect" href="#contact">Connect</a>
+      </div>
+      <div aria-label="Available for opportunities" class="ops-status">
+        <span aria-hidden="true" class="ops-status-dot"></span
+        ><span class="ops-status-text" data-i18n="ops.status"
+          >Available for opportunities</span
+        >
+      </div>
+    </nav>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <!-- Language Toggle -->
+    <div class="language-toggle">
+      <select aria-label="Select language" id="language-select">
+        <option value="en">English</option>
+        <option value="de">German</option>
+        <option value="pl">Polish</option>
+        <option value="fr">French</option>
+        <option value="tr">Turkish</option>
+        <option value="ru">Russian</option>
+        <option value="ar">العربية</option>
+        <!-- <option value="he">עברית</option> -->
+      </select>
+    </div>
+    <div
+      id="language-notification"
+      style="
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #2d3748;
+        color: white;
+        padding: 12px 20px;
+        border-radius: 8px;
+        z-index: 1000;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      "
+    >
+      <span id="lang-notification-text"></span>
+      <button
+        id="close-notification"
+        style="
+          margin-left: 12px;
+          background: none;
+          border: none;
+          color: white;
+          cursor: pointer;
+        "
+      >
+        ✕
+      </button>
+    </div>
+    <!-- NAVIGATION MENU -->
+    <!-- <nav class="main-navigation" role="navigation" aria-label="Main navigation">
         <ul class="nav-menu">
             <li><a href="#about" data-i18n="nav.about">About</a></li>
             <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
@@ -173,77 +277,123 @@
             <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
         </ul>
     </nav> -->
-<div aria-label="Page sections" class="section-indicators" role="navigation"></div>
-<div class="cursor-trail"></div>
-<header aria-label="Main header" class="hero" role="banner">
-<div id="particles-js"></div>
-<div class="hero-content">
-<div class="hero-kicker"><span data-i18n="ops.hero.kicker">DATA SYSTEMS ENGINEER</span><span data-i18n="ops.hero.portfolio">PORTFOLIO / 2026</span></div>
-<div class="hero-intro-copy">
-<p data-i18n="ops.hero.statement">I design the infrastructure behind decisions.</p>
-<span data-i18n="ops.hero.capabilities">Batch. Streaming. Analytics. Production.</span>
-</div>
-<div class="profile-container">
-<div class="profile-image-wrapper">
-<img alt="Mahmoud Najmeh" class="profile-image" src="images/profile.jpg"/><div aria-hidden="true" class="profile-hud">
-<span class="hud-corner hud-tl"></span><span class="hud-corner hud-tr"></span><span class="hud-corner hud-bl"></span><span class="hud-corner hud-br"></span>
-<div class="hud-coordinate hud-top">52.5200° N / 13.4050° E</div>
-<div class="hud-coordinate hud-side">ENGINEER_ID · MN-2026</div>
-<div class="hud-scan"></div>
-<div class="hud-status"><i></i><span>PROFILE ONLINE</span></div>
-<div class="hud-index">01 / ARCHITECT</div>
-</div>
-<div class="tech-orbits">
-<div class="orbit java" data-tech="Java">
-<div class="label-wrapper"><span data-i18n="tech.java">Java</span></div>
-</div>
-<div class="orbit python" data-tech="Python">
-<div class="label-wrapper"><span data-i18n="tech.python">Python</span></div>
-</div>
-<div class="orbit csharp" data-tech="C#">
-<div class="label-wrapper"><span data-i18n="tech.csharp">C#</span></div>
-</div>
-<div class="orbit javascript" data-tech="JavaScript">
-<div class="label-wrapper"><span data-i18n="tech.javascript">JavaScript</span></div>
-</div>
-<div class="orbit sql" data-tech="SQL">
-<div class="label-wrapper"><span data-i18n="tech.sql">SQL</span></div>
-</div>
-<div class="orbit spring" data-tech="Spring Boot">
-<div class="label-wrapper"><span data-i18n="tech.spring">Spring Boot</span></div>
-</div>
-</div>
-</div>
-<div class="contact-links">
-<a class="contact-link email" href="mailto:mn.de@outlook.com">
-<i class="fas fa-envelope"></i>
-<span>mn.de@outlook.com</span>
-</a>
-<!-- <a href="tel:+491639769764" class="contact-link phone">
+    <div
+      aria-label="Page sections"
+      class="section-indicators"
+      role="navigation"
+    ></div>
+    <div class="cursor-trail"></div>
+    <header aria-label="Main header" class="hero" role="banner">
+      <div id="particles-js"></div>
+      <div class="hero-content">
+        <div class="hero-kicker">
+          <span data-i18n="ops.hero.kicker">DATA SYSTEMS ENGINEER</span
+          ><span data-i18n="ops.hero.portfolio">PORTFOLIO / 2026</span>
+        </div>
+        <div class="hero-intro-copy">
+          <p data-i18n="ops.hero.statement">
+            I design the infrastructure behind decisions.
+          </p>
+          <span data-i18n="ops.hero.capabilities"
+            >Batch. Streaming. Analytics. Production.</span
+          >
+        </div>
+        <div class="profile-container">
+          <div class="profile-image-wrapper">
+            <img
+              alt="Mahmoud Najmeh"
+              class="profile-image"
+              src="images/profile.jpg"
+            />
+            <div aria-hidden="true" class="profile-hud">
+              <span class="hud-corner hud-tl"></span
+              ><span class="hud-corner hud-tr"></span
+              ><span class="hud-corner hud-bl"></span
+              ><span class="hud-corner hud-br"></span>
+              <div class="hud-coordinate hud-top">52.5200° N / 13.4050° E</div>
+              <div class="hud-coordinate hud-side">ENGINEER_ID · MN-2026</div>
+              <div class="hud-scan"></div>
+              <div class="hud-status"><i></i><span>PROFILE ONLINE</span></div>
+              <div class="hud-index">01 / ARCHITECT</div>
+            </div>
+            <div class="tech-orbits">
+              <div class="orbit java" data-tech="Java">
+                <div class="label-wrapper">
+                  <span data-i18n="tech.java">Java</span>
+                </div>
+              </div>
+              <div class="orbit python" data-tech="Python">
+                <div class="label-wrapper">
+                  <span data-i18n="tech.python">Python</span>
+                </div>
+              </div>
+              <div class="orbit csharp" data-tech="C#">
+                <div class="label-wrapper">
+                  <span data-i18n="tech.csharp">C#</span>
+                </div>
+              </div>
+              <div class="orbit javascript" data-tech="JavaScript">
+                <div class="label-wrapper">
+                  <span data-i18n="tech.javascript">JavaScript</span>
+                </div>
+              </div>
+              <div class="orbit sql" data-tech="SQL">
+                <div class="label-wrapper">
+                  <span data-i18n="tech.sql">SQL</span>
+                </div>
+              </div>
+              <div class="orbit spring" data-tech="Spring Boot">
+                <div class="label-wrapper">
+                  <span data-i18n="tech.spring">Spring Boot</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-links">
+            <a class="contact-link email" href="mailto:mn.de@outlook.com">
+              <i class="fas fa-envelope"></i>
+              <span>mn.de@outlook.com</span>
+            </a>
+            <!-- <a href="tel:+491639769764" class="contact-link phone">
                     <i class="fas fa-phone"></i>
                     <span data-i18n="contact.phone">+49 163 9769764</span>
                 </a> -->
-</div></div>
-<div class="title-container">
-<h1 class="main-title">
-<span class="title-line" data-i18n="name.first">Mahmoud</span>
-<span class="title-line" data-i18n="name.last">Najmeh</span>
-</h1>
-<div class="dynamic-title">
-<div class="title-mask">
-<div class="title-slider">
-<span class="title-segment data-engineering active" data-i18n="title.data-engineering">DATA ENGINEERING</span>
-<span class="title-segment full-stack" data-i18n="title.full-stack">FULL-STACK DEVELOPER</span>
-<span class="title-segment java-backend active" data-i18n="title.java-backend">JAVA DEVELOPER</span>
-<span class="title-segment ai" data-i18n="title.ai">AI &amp; ML</span>
-</div>
-</div>
-<div class="title-underline"></div>
-</div>
-</div>
-</div>
-<!-- Weather Widget -->
-<!-- <div class="weather-widget" id="weatherWidget">
+          </div>
+        </div>
+        <div class="title-container">
+          <h1 class="main-title">
+            <span class="title-line" data-i18n="name.first">Mahmoud</span>
+            <span class="title-line" data-i18n="name.last">Najmeh</span>
+          </h1>
+          <div class="dynamic-title">
+            <div class="title-mask">
+              <div class="title-slider">
+                <span
+                  class="title-segment data-engineering active"
+                  data-i18n="title.data-engineering"
+                  >DATA ENGINEERING</span
+                >
+                <span
+                  class="title-segment full-stack"
+                  data-i18n="title.full-stack"
+                  >FULL-STACK DEVELOPER</span
+                >
+                <span
+                  class="title-segment java-backend active"
+                  data-i18n="title.java-backend"
+                  >JAVA DEVELOPER</span
+                >
+                <span class="title-segment ai" data-i18n="title.ai"
+                  >AI &amp; ML</span
+                >
+              </div>
+            </div>
+            <div class="title-underline"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Weather Widget -->
+      <!-- <div class="weather-widget" id="weatherWidget">
             <div class="weather-loading">
                 <i class="fas fa-spinner fa-spin"></i>
                 <span data-i18n="weather.loading">Loading weather...</span>
@@ -274,196 +424,391 @@
                 <div class="arrow-down"></div>
             </div>
         </div> -->
-</header>
-<section aria-label="Data engineering operations overview" class="ops-deck" id="architecture">
-<div class="ops-deck-head">
-<span>REFERENCE ARCHITECTURE</span>
-<span>ILLUSTRATIVE — NOT LIVE TELEMETRY</span>
-</div>
-<div class="pipeline-map">
-<article class="pipeline-node source"><small>01 / INGEST</small><strong>Kafka</strong><span>Event streams</span></article>
-<div class="pipeline-link"><i></i><i></i><i></i></div>
-<article class="pipeline-node process"><small>02 / PROCESS</small><strong>Spark</strong><span>Distributed compute</span></article>
-<div class="pipeline-link"><i></i><i></i><i></i></div>
-<article class="pipeline-node store"><small>03 / STORE</small><strong>Delta Lake</strong><span>Trusted data</span></article>
-<div class="pipeline-link"><i></i><i></i><i></i></div>
-<article class="pipeline-node serve"><small>04 / SERVE</small><strong>Analytics</strong><span>Decision layer</span></article>
-</div>
-
-</section>
-<main id="main-content">
-<!-- About Me Section -->
-<section aria-labelledby="projects-heading" class="section dark-section" id="projects" role="region">
-<div class="container">
-<h2 class="section-title" data-i18n="section.projects">Featured Projects</h2><p class="projects-priority-intro">Selected systems with architecture, implementation details, outcomes, and source code. The projects are the proof—not simulated dashboards.</p>
-<div class="projects-grid">
-<!-- Project 1: Fraud Detection Platform -->
-<div class="project-card">
-<div class="project-image">
-<img alt="Fraud Detection Platform with Kafka Spark Delta Lake and MLflow" loading="lazy" src="images/11.png"/>
-</div>
-<div class="project-details">
-<h3 data-i18n="project.fraud_platform.title">Fraud Detection Platform (Kafka, Spark, Delta Lake, MLflow)</h3>
-<p data-i18n="project.fraud_platform.description">Real-time fraud detection platform combining Kafka streaming, Spark Structured Streaming, Delta Lake, Random Forest machine learning, and hybrid rule-based risk scoring.</p>
-<div class="project-impact">
-<strong data-i18n="project.impact">Impact:</strong>
-<span data-i18n="project.fraud_platform.impact">Delivers sub-second detection, combines deterministic rules with ML probability scoring, stores alert history in Delta Lake, and provides auditable, fault-tolerant processing with live monitoring.</span>
-</div>
-<div class="project-tech">
-<span>Apache Kafka</span>
-<span>Apache Spark</span>
-<span>Delta Lake</span>
-<span>MLflow</span>
-<span>Random Forest</span>
-<span>Avro</span>
-<span>Docker</span>
-</div>
-<div class="project-meta">
-<span class="project-duration" data-i18n="project.fraud_platform.duration">Data Engineering Project</span>
-<a class="btn" data-i18n="project.view" href="https://github.com/mahmoudnajmeh/fraud-detection-system-Kafka-Spark-Delta-Lake-MLflow" rel="noopener noreferrer" target="_blank">View Project</a>
-</div>
-</div>
-</div>
-<!-- Project 2: Berlin Estate ETL Pipeline -->
-<div class="project-card">
-<div class="project-image">
-<img alt="Berlin Estate ETL Pipeline with Airflow and Kafka" loading="lazy" src="images/12.png"/>
-</div>
-<div class="project-details">
-<h3 data-i18n="project.berlin_estate.title">Berlin Estate ETL Pipeline</h3>
-<p data-i18n="project.berlin_estate.description">Production-grade event-driven ETL pipeline that consumes Berlin property data from Kafka, orchestrates processing with Airflow, validates quality with Soda Core, and loads curated data into PostgreSQL.</p>
-<div class="project-impact">
-<strong data-i18n="project.impact">Impact:</strong>
-<span data-i18n="project.berlin_estate.impact">Supports batch and streaming ingestion, automated data-quality checks, reusable transformations, PostgreSQL loading, clean CSV exports, and generated quality reports.</span>
-</div>
-<div class="project-tech">
-<span>Apache Airflow</span>
-<span>Apache Kafka</span>
-<span>Soda Core</span>
-<span>PostgreSQL</span>
-<span>Python</span>
-<span>Docker</span>
-</div>
-<div class="project-meta">
-<span class="project-duration" data-i18n="project.berlin_estate.duration">Data Engineering Project</span>
-<a class="btn" data-i18n="project.view" href="https://github.com/mahmoudnajmeh/berlin-estate-airflow-kafka" rel="noopener noreferrer" target="_blank">View Project</a>
-</div>
-</div>
-</div>
-<!-- Project 3: Manufacturing Analytics Platform -->
-<div class="project-card">
-<div class="project-image">
-<img alt="Manufacturing Analytics Platform with Spark and Delta Lake" loading="lazy" src="images/13.png"/>
-</div>
-<div class="project-details">
-<h3 data-i18n="project.manufacturing_analytics.title">Manufacturing Analytics Platform</h3>
-<p data-i18n="project.manufacturing_analytics.description">Spark-based manufacturing analytics platform for factory telemetry, real-time anomaly detection, Delta Lake versioning, predictive-maintenance clustering, and AI-assisted analysis.</p>
-<div class="project-impact">
-<strong data-i18n="project.impact">Impact:</strong>
-<span data-i18n="project.manufacturing_analytics.impact">Processes IoT sensor data through a modular analytics pipeline, detects anomalies in streaming workloads, evaluates machine risk with MLlib, and produces executive and quality outputs.</span>
-</div>
-<div class="project-tech">
-<span>Apache Spark</span>
-<span>Structured Streaming</span>
-<span>Delta Lake</span>
-<span>MLlib</span>
-<span>Python</span>
-<span>AI Assistant</span>
-</div>
-<div class="project-meta">
-<span class="project-duration" data-i18n="project.manufacturing_analytics.duration">Analytics Engineering Project</span>
-<a class="btn" data-i18n="project.view" href="https://github.com/mahmoudnajmeh/manufacturing-analytics-spark" rel="noopener noreferrer" target="_blank">View Project</a>
-</div>
-</div>
-</div>
-<!-- Project Management Platform -->
-<div class="project-card">
-<div class="project-image">
-<img alt="ProjectFlow full-stack project management platform architecture" loading="lazy" src="images/14.png"/>
-</div>
-<div class="project-details">
-<h3 data-i18n="project.project_management.title">ProjectFlow - Project Management Platform</h3>
-<p data-i18n="project.project_management.description">Full-stack project management platform with Spring AI, Kafka and Spring Batch analytics, WebSocket notifications and chat, OAuth2, team collaboration, and task tracking.</p>
-<div class="project-impact">
-<strong data-i18n="project.impact">Impact:</strong>
-<span data-i18n="project.project_management.impact">Combines real-time collaboration, AI-assisted project workflows, event-driven activity processing, daily analytics, secure role-based access, and centralized project, task, team, and calendar management.</span>
-</div>
-<div class="project-tech">
-<span>Spring Boot</span>
-<span>Spring AI</span>
-<span>React</span>
-<span>TypeScript</span>
-<span>Apache Kafka</span>
-<span>Spring Batch</span>
-<span>WebSocket</span>
-<span>OAuth2</span>
-<span>MySQL</span>
-<span>Docker</span>
-</div>
-<div class="project-meta">
-<span class="project-duration" data-i18n="project.project_management.duration">Full-Stack Engineering Project</span>
-<a class="btn" data-i18n="project.view" href="https://github.com/mahmoudnajmeh/project-management-app" rel="noopener noreferrer" target="_blank">View Project</a>
-</div>
-</div>
-</div>
-<!-- Project 4: Bakehouse Analytics Dashboard -->
-<div class="project-card">
-<div class="project-image">
-<img alt="Bakehouse Analytics Dashboard on Databricks" loading="lazy" src="images/15.png"/>
-</div>
-<div class="project-details">
-<h3 data-i18n="project.bakehouse_dashboard.title">Bakehouse Analytics Dashboard</h3>
-<p data-i18n="project.bakehouse_dashboard.description">Databricks analytics solution using Delta Live Tables and a medallion architecture to process sales and review data and power an interactive AI/BI dashboard.</p>
-<div class="project-impact">
-<strong data-i18n="project.impact">Impact:</strong>
-<span data-i18n="project.bakehouse_dashboard.impact">Automates Bronze, Silver, and Gold transformations, enforces data-quality expectations, classifies customer sentiment, and exposes product and city performance insights.</span>
-</div>
-<div class="project-tech">
-<span>Databricks</span>
-<span>Delta Live Tables</span>
-<span>Databricks SQL</span>
-<span>AI/BI Dashboard</span>
-<span>Medallion Architecture</span>
-<span>Python</span>
-</div>
-<div class="project-meta">
-<span class="project-duration" data-i18n="project.bakehouse_dashboard.duration">Analytics Dashboard Project</span>
-<a class="btn" data-i18n="project.view" href="https://github.com/mahmoudnajmeh/bakehouse-analytics-dashboard" rel="noopener noreferrer" target="_blank">View Project</a>
-</div>
-</div>
-</div>
-<!-- Project 1 -->
-<div class="project-card">
-<div class="project-image">
-<img alt="Missing Person Alert System Spring Boot Police Application" loading="lazy" src="images/2.png"/>
-</div>
-<div class="project-details">
-<h3 data-i18n="project.missing.title">Missing Person Alert System FullStack</h3>
-<p data-i18n="project.missing.description">Police tool developed with Spring Boot, SwiftUI &amp; Jetpack Compose featuring Firebase push notifications, geolocation tracking, and admin panel.</p>
-<div class="project-impact">
-<strong data-i18n="project.impact">Impact:</strong>
-<span data-i18n="project.missing.impact">Enhanced public safety through rapid missing person alerts, reduced police response time by 40%, and improved community engagement in safety initiatives.</span>
-</div>
-<div class="project-tech">
-<span data-i18n="tech.spring">Spring Boot</span>
-<span data-i18n="tech.rest_api">REST API</span>
-<span data-i18n="tech.swift">JDBC</span>
-<span>PostgreSQL</span>
-<span data-i18n="tech.swiftui">SwiftUI</span>
-<span data-i18n="tech.jetpack">Jetpack Compose</span>
-<span data-i18n="tech.firebase">Firebase</span>
-<span data-i18n="tech.html5">HTML5</span>
-<span data-i18n="tech.css">CSS</span>
-<span data-i18n="tech.integration">Integration Tests</span>
-</div>
-<div class="project-meta">
-<span class="project-duration" data-i18n="project.missing.duration">6 Months</span>
-<a class="btn" data-i18n="project.view" href="https://github.com/mahmoudnajmeh/missing_person_alert" rel="noopener noreferrer" target="_blank">View Project</a>
-</div>
-</div>
-</div>
-<!-- Project 2 -->
-<!-- <div class="project-card">
+    </header>
+    <section
+      aria-label="Data engineering operations overview"
+      class="ops-deck"
+      id="architecture"
+    >
+      <div class="ops-deck-head">
+        <span data-i18n="architecture.reference">REFERENCE ARCHITECTURE</span>
+        <span data-i18n="architecture.illustrative"
+          >ILLUSTRATIVE — NOT LIVE TELEMETRY</span
+        >
+      </div>
+      <div class="pipeline-map">
+        <article class="pipeline-node source">
+          <small data-i18n="architecture.ingest.label">01 / INGEST</small
+          ><strong data-i18n="architecture.ingest.title">Kafka</strong
+          ><span data-i18n="architecture.ingest.description"
+            >Event streams</span
+          >
+        </article>
+        <div class="pipeline-link"><i></i><i></i><i></i></div>
+        <article class="pipeline-node process">
+          <small data-i18n="architecture.process.label">02 / PROCESS</small
+          ><strong data-i18n="architecture.process.title">Spark</strong
+          ><span data-i18n="architecture.process.description"
+            >Distributed compute</span
+          >
+        </article>
+        <div class="pipeline-link"><i></i><i></i><i></i></div>
+        <article class="pipeline-node store">
+          <small data-i18n="architecture.store.label">03 / STORE</small
+          ><strong data-i18n="architecture.store.title">Delta Lake</strong
+          ><span data-i18n="architecture.store.description">Trusted data</span>
+        </article>
+        <div class="pipeline-link"><i></i><i></i><i></i></div>
+        <article class="pipeline-node serve">
+          <small data-i18n="architecture.serve.label">04 / SERVE</small
+          ><strong data-i18n="architecture.serve.title">Analytics</strong
+          ><span data-i18n="architecture.serve.description"
+            >Decision layer</span
+          >
+        </article>
+      </div>
+    </section>
+    <main id="main-content">
+      <!-- About Me Section -->
+      <section
+        aria-labelledby="projects-heading"
+        class="section dark-section"
+        id="projects"
+        role="region"
+      >
+        <div class="container">
+          <h2 class="section-title" data-i18n="section.projects">
+            Featured Projects
+          </h2>
+          <p class="projects-priority-intro" data-i18n="projects_intro">
+            Selected systems with architecture, implementation details,
+            outcomes, and source code. The projects are the proof—not simulated
+            dashboards.
+          </p>
+          <div class="projects-grid">
+            <!-- Project 1: Fraud Detection Platform -->
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  alt="Fraud Detection Platform with Kafka Spark Delta Lake and MLflow"
+                  loading="lazy"
+                  src="images/11.png"
+                />
+              </div>
+              <div class="project-details">
+                <h3 data-i18n="project.fraud_platform.title">
+                  Fraud Detection Platform (Kafka, Spark, Delta Lake, MLflow)
+                </h3>
+                <p data-i18n="project.fraud_platform.description">
+                  Real-time fraud detection platform combining Kafka streaming,
+                  Spark Structured Streaming, Delta Lake, Random Forest machine
+                  learning, and hybrid rule-based risk scoring.
+                </p>
+                <div class="project-impact">
+                  <strong data-i18n="project.impact">Impact:</strong>
+                  <span data-i18n="project.fraud_platform.impact"
+                    >Delivers sub-second detection, combines deterministic rules
+                    with ML probability scoring, stores alert history in Delta
+                    Lake, and provides auditable, fault-tolerant processing with
+                    live monitoring.</span
+                  >
+                </div>
+                <div class="project-tech">
+                  <span>Apache Kafka</span>
+                  <span>Apache Spark</span>
+                  <span>Delta Lake</span>
+                  <span>MLflow</span>
+                  <span>Random Forest</span>
+                  <span>Avro</span>
+                  <span>Docker</span>
+                </div>
+                <div class="project-meta">
+                  <span
+                    class="project-duration"
+                    data-i18n="project.fraud_platform.duration"
+                    >Data Engineering Project</span
+                  >
+                  <a
+                    class="btn"
+                    data-i18n="project.view"
+                    href="https://github.com/mahmoudnajmeh/fraud-detection-system-Kafka-Spark-Delta-Lake-MLflow"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Project 2: Berlin Estate ETL Pipeline -->
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  alt="Berlin Estate ETL Pipeline with Airflow and Kafka"
+                  loading="lazy"
+                  src="images/12.png"
+                />
+              </div>
+              <div class="project-details">
+                <h3 data-i18n="project.berlin_estate.title">
+                  Berlin Estate ETL Pipeline
+                </h3>
+                <p data-i18n="project.berlin_estate.description">
+                  Production-grade event-driven ETL pipeline that consumes
+                  Berlin property data from Kafka, orchestrates processing with
+                  Airflow, validates quality with Soda Core, and loads curated
+                  data into PostgreSQL.
+                </p>
+                <div class="project-impact">
+                  <strong data-i18n="project.impact">Impact:</strong>
+                  <span data-i18n="project.berlin_estate.impact"
+                    >Supports batch and streaming ingestion, automated
+                    data-quality checks, reusable transformations, PostgreSQL
+                    loading, clean CSV exports, and generated quality
+                    reports.</span
+                  >
+                </div>
+                <div class="project-tech">
+                  <span>Apache Airflow</span>
+                  <span>Apache Kafka</span>
+                  <span>Soda Core</span>
+                  <span>PostgreSQL</span>
+                  <span>Python</span>
+                  <span>Docker</span>
+                </div>
+                <div class="project-meta">
+                  <span
+                    class="project-duration"
+                    data-i18n="project.berlin_estate.duration"
+                    >Data Engineering Project</span
+                  >
+                  <a
+                    class="btn"
+                    data-i18n="project.view"
+                    href="https://github.com/mahmoudnajmeh/berlin-estate-airflow-kafka"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Project 3: Manufacturing Analytics Platform -->
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  alt="Manufacturing Analytics Platform with Spark and Delta Lake"
+                  loading="lazy"
+                  src="images/13.png"
+                />
+              </div>
+              <div class="project-details">
+                <h3 data-i18n="project.manufacturing_analytics.title">
+                  Manufacturing Analytics Platform
+                </h3>
+                <p data-i18n="project.manufacturing_analytics.description">
+                  Spark-based manufacturing analytics platform for factory
+                  telemetry, real-time anomaly detection, Delta Lake versioning,
+                  predictive-maintenance clustering, and AI-assisted analysis.
+                </p>
+                <div class="project-impact">
+                  <strong data-i18n="project.impact">Impact:</strong>
+                  <span data-i18n="project.manufacturing_analytics.impact"
+                    >Processes IoT sensor data through a modular analytics
+                    pipeline, detects anomalies in streaming workloads,
+                    evaluates machine risk with MLlib, and produces executive
+                    and quality outputs.</span
+                  >
+                </div>
+                <div class="project-tech">
+                  <span>Apache Spark</span>
+                  <span>Structured Streaming</span>
+                  <span>Delta Lake</span>
+                  <span>MLlib</span>
+                  <span>Python</span>
+                  <span>AI Assistant</span>
+                </div>
+                <div class="project-meta">
+                  <span
+                    class="project-duration"
+                    data-i18n="project.manufacturing_analytics.duration"
+                    >Analytics Engineering Project</span
+                  >
+                  <a
+                    class="btn"
+                    data-i18n="project.view"
+                    href="https://github.com/mahmoudnajmeh/manufacturing-analytics-spark"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Project Management Platform -->
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  alt="ProjectFlow full-stack project management platform architecture"
+                  loading="lazy"
+                  src="images/14.png"
+                />
+              </div>
+              <div class="project-details">
+                <h3 data-i18n="project.project_management.title">
+                  ProjectFlow - Project Management Platform
+                </h3>
+                <p data-i18n="project.project_management.description">
+                  Full-stack project management platform with Spring AI, Kafka
+                  and Spring Batch analytics, WebSocket notifications and chat,
+                  OAuth2, team collaboration, and task tracking.
+                </p>
+                <div class="project-impact">
+                  <strong data-i18n="project.impact">Impact:</strong>
+                  <span data-i18n="project.project_management.impact"
+                    >Combines real-time collaboration, AI-assisted project
+                    workflows, event-driven activity processing, daily
+                    analytics, secure role-based access, and centralized
+                    project, task, team, and calendar management.</span
+                  >
+                </div>
+                <div class="project-tech">
+                  <span>Spring Boot</span>
+                  <span>Spring AI</span>
+                  <span>React</span>
+                  <span>TypeScript</span>
+                  <span>Apache Kafka</span>
+                  <span>Spring Batch</span>
+                  <span>WebSocket</span>
+                  <span>OAuth2</span>
+                  <span>MySQL</span>
+                  <span>Docker</span>
+                </div>
+                <div class="project-meta">
+                  <span
+                    class="project-duration"
+                    data-i18n="project.project_management.duration"
+                    >Full-Stack Engineering Project</span
+                  >
+                  <a
+                    class="btn"
+                    data-i18n="project.view"
+                    href="https://github.com/mahmoudnajmeh/project-management-app"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Project 4: Bakehouse Analytics Dashboard -->
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  alt="Bakehouse Analytics Dashboard on Databricks"
+                  loading="lazy"
+                  src="images/15.png"
+                />
+              </div>
+              <div class="project-details">
+                <h3 data-i18n="project.bakehouse_dashboard.title">
+                  Bakehouse Analytics Dashboard
+                </h3>
+                <p data-i18n="project.bakehouse_dashboard.description">
+                  Databricks analytics solution using Delta Live Tables and a
+                  medallion architecture to process sales and review data and
+                  power an interactive AI/BI dashboard.
+                </p>
+                <div class="project-impact">
+                  <strong data-i18n="project.impact">Impact:</strong>
+                  <span data-i18n="project.bakehouse_dashboard.impact"
+                    >Automates Bronze, Silver, and Gold transformations,
+                    enforces data-quality expectations, classifies customer
+                    sentiment, and exposes product and city performance
+                    insights.</span
+                  >
+                </div>
+                <div class="project-tech">
+                  <span>Databricks</span>
+                  <span>Delta Live Tables</span>
+                  <span>Databricks SQL</span>
+                  <span>AI/BI Dashboard</span>
+                  <span>Medallion Architecture</span>
+                  <span>Python</span>
+                </div>
+                <div class="project-meta">
+                  <span
+                    class="project-duration"
+                    data-i18n="project.bakehouse_dashboard.duration"
+                    >Analytics Dashboard Project</span
+                  >
+                  <a
+                    class="btn"
+                    data-i18n="project.view"
+                    href="https://github.com/mahmoudnajmeh/bakehouse-analytics-dashboard"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Project 1 -->
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  alt="Missing Person Alert System Spring Boot Police Application"
+                  loading="lazy"
+                  src="images/2.png"
+                />
+              </div>
+              <div class="project-details">
+                <h3 data-i18n="project.missing.title">
+                  Missing Person Alert System FullStack
+                </h3>
+                <p data-i18n="project.missing.description">
+                  Police tool developed with Spring Boot, SwiftUI &amp; Jetpack
+                  Compose featuring Firebase push notifications, geolocation
+                  tracking, and admin panel.
+                </p>
+                <div class="project-impact">
+                  <strong data-i18n="project.impact">Impact:</strong>
+                  <span data-i18n="project.missing.impact"
+                    >Enhanced public safety through rapid missing person alerts,
+                    reduced police response time by 40%, and improved community
+                    engagement in safety initiatives.</span
+                  >
+                </div>
+                <div class="project-tech">
+                  <span data-i18n="tech.spring">Spring Boot</span>
+                  <span data-i18n="tech.rest_api">REST API</span>
+                  <span data-i18n="tech.swift">JDBC</span>
+                  <span>PostgreSQL</span>
+                  <span data-i18n="tech.swiftui">SwiftUI</span>
+                  <span data-i18n="tech.jetpack">Jetpack Compose</span>
+                  <span data-i18n="tech.firebase">Firebase</span>
+                  <span data-i18n="tech.html5">HTML5</span>
+                  <span data-i18n="tech.css">CSS</span>
+                  <span data-i18n="tech.integration">Integration Tests</span>
+                </div>
+                <div class="project-meta">
+                  <span
+                    class="project-duration"
+                    data-i18n="project.missing.duration"
+                    >6 Months</span
+                  >
+                  <a
+                    class="btn"
+                    data-i18n="project.view"
+                    href="https://github.com/mahmoudnajmeh/missing_person_alert"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Project 2 -->
+            <!-- <div class="project-card">
                     <div class="project-image">
                         <img src="images/1.png" alt="Banking System FullStack Java Spring Boot Application" loading="lazy">
                     </div>
@@ -493,34 +838,59 @@
                         </div>
                     </div>
                 </div> -->
-<!-- Project 3 -->
-<div class="project-card">
-<div class="project-image">
-<img alt="AI Text Summarizer Natural Language Processing Application" loading="lazy" src="images/3.png"/>
-</div>
-<div class="project-details">
-<h3 data-i18n="project.ai_text.title">AI Text Summarizer FullStack</h3>
-<p data-i18n="project.ai_text.description">Multilingual text summarization application powered by Spring Boot REST API with advanced NLP capabilities.</p>
-<div class="project-impact">
-<strong data-i18n="project.impact">Impact:</strong>
-<span data-i18n="project.ai_text.impact">Increased content consumption efficiency by 70%, supported 15+ languages for global accessibility, and reduced reading time for research and educational materials by automating summarization.</span>
-</div>
-<div class="project-tech">
-<span data-i18n="tech.spring">Spring Boot</span>
-<span data-i18n="tech.rest_api">REST API</span>
-<span data-i18n="tech.ai">AI</span>
-<span data-i18n="tech.nlp">NLP</span>
-<span data-i18n="tech.html5">HTML5</span>
-<span data-i18n="tech.css">CSS</span>
-</div>
-<div class="project-meta">
-<span class="project-duration" data-i18n="project.ai_text.duration">2 Months</span>
-<a class="btn" data-i18n="project.view" href="https://github.com/mahmoudnajmeh/ai-text-summarizer" rel="noopener noreferrer" target="_blank">View Project</a>
-</div>
-</div>
-</div>
-<!-- Project 4 -->
-<!-- <div class="project-card">
+            <!-- Project 3 -->
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  alt="AI Text Summarizer Natural Language Processing Application"
+                  loading="lazy"
+                  src="images/3.png"
+                />
+              </div>
+              <div class="project-details">
+                <h3 data-i18n="project.ai_text.title">
+                  AI Text Summarizer FullStack
+                </h3>
+                <p data-i18n="project.ai_text.description">
+                  Multilingual text summarization application powered by Spring
+                  Boot REST API with advanced NLP capabilities.
+                </p>
+                <div class="project-impact">
+                  <strong data-i18n="project.impact">Impact:</strong>
+                  <span data-i18n="project.ai_text.impact"
+                    >Increased content consumption efficiency by 70%, supported
+                    15+ languages for global accessibility, and reduced reading
+                    time for research and educational materials by automating
+                    summarization.</span
+                  >
+                </div>
+                <div class="project-tech">
+                  <span data-i18n="tech.spring">Spring Boot</span>
+                  <span data-i18n="tech.rest_api">REST API</span>
+                  <span data-i18n="tech.ai">AI</span>
+                  <span data-i18n="tech.nlp">NLP</span>
+                  <span data-i18n="tech.html5">HTML5</span>
+                  <span data-i18n="tech.css">CSS</span>
+                </div>
+                <div class="project-meta">
+                  <span
+                    class="project-duration"
+                    data-i18n="project.ai_text.duration"
+                    >2 Months</span
+                  >
+                  <a
+                    class="btn"
+                    data-i18n="project.view"
+                    href="https://github.com/mahmoudnajmeh/ai-text-summarizer"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Project 4 -->
+            <!-- <div class="project-card">
                     <div class="project-image">
                         <img src="images/4.jpeg" alt="Student Portal FullStack Educational Platform" loading="lazy">
                     </div>
@@ -548,228 +918,596 @@
                         </div>
                     </div>
                 </div> -->
-<!-- Project 5 -->
-<!-- Project 6 -->
-<div class="project-card">
-<div class="project-image">
-<img alt="Medical Diagnosis System ML.NET Desktop Application" loading="lazy" src="images/7.png"/>
-</div>
-<div class="project-details">
-<h3 data-i18n="project.medical_diagnosis.title">Medical Diagnosis System</h3>
-<p data-i18n="project.medical_diagnosis.description">
-                            A machine learning-based desktop application built with .NET and ML.NET that predicts potential diseases from user-provided symptoms. Features include natural language symptom input, disease prediction with confidence score, and a WPF-based user-friendly interface.
-                        </p>
-<div class="project-impact">
-<strong data-i18n="project.impact">Impact:</strong>
-<span data-i18n="project.medical_diagnosis.impact">Assisted in preliminary diagnosis for 1,000+ users with 88% accuracy, reduced unnecessary hospital visits by 35% through reliable symptom assessment, and empowered individuals with accessible healthcare information for better decision-making.</span>
-</div>
-<div class="project-tech">
-<span data-i18n="tech.dotnet">.NET</span>
-<span data-i18n="tech.mlnet">ML.NET</span>
-<span data-i18n="tech.wpf">WPF</span>
-<span data-i18n="tech.machine_learning">Machine Learning</span>
-</div>
-<div class="project-meta">
-<span class="project-duration" data-i18n="project.medical_diagnosis.duration">2 Months</span>
-<a class="btn" data-i18n="project.view" href="https://github.com/mahmoudnajmeh/MedicalDiagnosisSystem" rel="noopener noreferrer" target="_blank">View Project</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section><section aria-labelledby="about-heading" class="section" id="about" role="region">
-<div class="container">
-<h2 class="section-title" data-i18n="section.about">About Me</h2>
-<div class="about-content">
-<div class="about-text">
-<p data-i18n="about.description">
-                        Data Engineer with hands-on experience building ETL/ELT pipelines, 
-                        real-time data processing systems, and scalable data architectures using Python, 
-                        Apache Spark, Kafka, Dagster, SQL, and cloud technologies. 
-                        Strong backend development background with Java and Spring Boot, 
-                        experienced in designing REST APIs, data-driven applications, 
-                        and production-ready software solutions. Skilled in data modeling, 
-                        workflow orchestration, batch and streaming processing, 
-                        and delivering end-to-end data pipelines for analytics and business intelligence.
-                    </p>
-<h3 data-i18n="about.education">Education</h3>
-<ul class="education-list">
-<li>
-<strong data-i18n="education.data-engineering.title">Data Engineering with Python (IHK Certificate)</strong>
-<span>DCI Digital Career Institute, Berlin (03/2026 – Present)</span>
-<button class="toggle-details" data-i18n="education.toggle">Show Details</button>
-<span class="education-detail" data-i18n="education.data-engineering.details" style="display: none;">
-                                - IHK-certified professional program<br/>
-                                - Data Acquisition &amp; Integration: ETL/ELT, APIs, Web Scraping<br/>
-                                - Cloud Data Engineering: AWS Glue, BigQuery, dbt Cloud<br/>
-                                - Data Streams: Apache Airflow, Kafka, Spark Streaming<br/>
-                                - Data Platforms: Delta Lake, Apache Iceberg, Lakehouses<br/>
-                                - ML Engineering: MLflow, scikit-learn, Feature Stores<br/>
-                                - Data Quality: Great Expectations, Data Lineage, Observability
-                            </span>
-</li>
-<li>
-<strong data-i18n="education.java.title">Java Backend Developer</strong>
-<span>DCI Digital Career Institute, Berlin (06/2023 – 08/2024)</span>
-<button class="toggle-details" data-i18n="education.toggle">Show Details</button>
-<span class="education-detail" data-i18n="education.java.details" style="display: none;">
-                                - Programming fundamentals, Agile methodologies<br/>
-                                - Java: OOP, Streams, Concurrency, Maven, Gradle, Testing<br/>
-                                - Databases: JDBC, Advanced SQL<br/>
-                                - Frameworks: Spring Boot, Hibernate, Spring Security<br/>
-                                - REST APIs and Cloud: AWS, GCP
-                            </span>
-</li>
-<li>
-<strong data-i18n="education.it_specialist.title">IT Specialist for Application Development</strong>
-<span>Combard GmbH, Berlin (05/2020 – 05/2022)</span>
-<button class="toggle-details" data-i18n="education.toggle">Show Details</button>
-<span class="education-detail" data-i18n="education.it_specialist.details" style="display: none;">
-                                - OOP with Java SE, C# (.NET), Python, JavaScript, PHP<br/>
-                                - Web and database development, Linux systems<br/>
-                                - IT project management, business processes<br/>
-                                - Mathematics and MS Office for IT Processes<br/>
-                                - Technical English, communication skills
-                            </span>
-</li>
-</ul>
-</div>
-<div class="skills-container">
-<h3 data-i18n="skills.title">Technical Skills</h3>
-<div class="skills-grid">
-<div class="skill-category">
-<h4 data-i18n="skills.data-engineering">Data Engineering</h4>
-<ul class="icon-list">
-<li><i class="fas fa-database" data-i18n-title="tech.spark" title="Apache Spark"></i></li>
-<li><i class="fas fa-stream" data-i18n-title="tech.airflow" title="Apache Airflow"></i></li>
-<li><i class="fas fa-bolt" data-i18n-title="tech.kafka" title="Apache Kafka"></i></li>
-<li><i class="fas fa-chart-line" data-i18n-title="tech.mlflow" title="MLflow"></i></li>
-<li><i class="fas fa-cloud" data-i18n-title="tech.dbt" title="dbt"></i></li>
-<li><i class="fas fa-check-circle" data-i18n-title="tech.great-expectations" title="Great Expectations"></i></li>
-<li><i class="fas fa-water" data-i18n-title="tech.delta-lake" title="Delta Lake"></i></li>
-</ul>
-<h4 data-i18n="skills.languages">Languages</h4>
-<ul class="icon-list">
-<li><i class="devicon-java-plain" data-i18n-title="tech.java" title="Java"></i></li>
-<li><i class="devicon-python-plain" data-i18n-title="tech.python" title="Python"></i></li>
-<li><i class="devicon-csharp-plain" data-i18n-title="tech.csharp" title="C#"></i></li>
-<li><i class="devicon-javascript-plain" title="JavaScript"></i></li>
-<li><i class="devicon-mysql-plain" data-i18n-title="tech.sql" title="SQL"></i></li>
-</ul>
-</div>
-<div class="skill-category">
-<h4 data-i18n="skills.frameworks">Frameworks</h4>
-<ul class="icon-list">
-<li><i class="devicon-spring-plain" data-i18n-title="tech.spring" title="Spring Boot"></i></li>
-<li><i class="devicon-django-plain" data-i18n-title="tech.django" title="Django"></i></li>
-<li><i class="devicon-dot-net-plain" data-i18n-title="tech.dotnet" title=".NET"></i></li>
-<li><i class="devicon-react-original" data-i18n-title="tech.react" title="React"></i></li>
-</ul>
-</div>
-<div class="skill-category">
-<h4 data-i18n="skills.ai">AI &amp; Machine Learning</h4>
-<ul class="icon-list">
-<li><i class="fas fa-brain" data-i18n-title="tech.ml" title="Machine Learning"></i></li>
-<li><i class="fas fa-robot" data-i18n-title="tech.ai" title="AI Development"></i></li>
-<li><i class="fas fa-language" data-i18n-title="tech.nlp" title="NLP"></i></li>
-<li><i class="fas fa-eye" data-i18n-title="tech.cv" title="Computer Vision"></i></li>
-<li><i class="devicon-tensorflow-original" data-i18n-title="tech.tensorflow" title="TensorFlow"></i></li>
-<li><i class="devicon-python-plain" data-i18n-title="tech.python-ai" title="Python AI Libraries"></i></li>
-</ul>
-</div>
-<div class="skill-category">
-<h4 data-i18n="skills.tools">Tools &amp; Platforms</h4>
-<ul class="icon-list">
-<li><i class="devicon-amazonwebservices-plain" data-i18n-title="tech.aws" title="AWS"></i></li>
-<li><i class="devicon-googlecloud-plain" data-i18n-title="tech.gcp" title="GCP"></i></li>
-<li><i class="devicon-docker-plain" data-i18n-title="tech.docker" title="Docker"></i></li>
-<li><i class="devicon-git-plain" data-i18n-title="tech.git" title="Git"></i></li>
-<li><i class="devicon-postgresql-plain" title="PostgreSQL"></i></li>
-<li><i class="devicon-mysql-plain" data-i18n-title="tech.mysql" title="MySQL"></i></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
+            <!-- Project 5 -->
+            <!-- Project 6 -->
+            <div class="project-card">
+              <div class="project-image">
+                <img
+                  alt="Medical Diagnosis System ML.NET Desktop Application"
+                  loading="lazy"
+                  src="images/7.png"
+                />
+              </div>
+              <div class="project-details">
+                <h3 data-i18n="project.medical_diagnosis.title">
+                  Medical Diagnosis System
+                </h3>
+                <p data-i18n="project.medical_diagnosis.description">
+                  A machine learning-based desktop application built with .NET
+                  and ML.NET that predicts potential diseases from user-provided
+                  symptoms. Features include natural language symptom input,
+                  disease prediction with confidence score, and a WPF-based
+                  user-friendly interface.
+                </p>
+                <div class="project-impact">
+                  <strong data-i18n="project.impact">Impact:</strong>
+                  <span data-i18n="project.medical_diagnosis.impact"
+                    >Assisted in preliminary diagnosis for 1,000+ users with 88%
+                    accuracy, reduced unnecessary hospital visits by 35% through
+                    reliable symptom assessment, and empowered individuals with
+                    accessible healthcare information for better
+                    decision-making.</span
+                  >
+                </div>
+                <div class="project-tech">
+                  <span data-i18n="tech.dotnet">.NET</span>
+                  <span data-i18n="tech.mlnet">ML.NET</span>
+                  <span data-i18n="tech.wpf">WPF</span>
+                  <span data-i18n="tech.machine_learning"
+                    >Machine Learning</span
+                  >
+                </div>
+                <div class="project-meta">
+                  <span
+                    class="project-duration"
+                    data-i18n="project.medical_diagnosis.duration"
+                    >2 Months</span
+                  >
+                  <a
+                    class="btn"
+                    data-i18n="project.view"
+                    href="https://github.com/mahmoudnajmeh/MedicalDiagnosisSystem"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        aria-labelledby="about-heading"
+        class="section"
+        id="about"
+        role="region"
+      >
+        <div class="container">
+          <h2 class="section-title" data-i18n="section.about">About Me</h2>
+          <div class="about-content">
+            <div class="about-text">
+              <p data-i18n="about.description">
+                Data Engineer with hands-on experience building ETL/ELT
+                pipelines, real-time data processing systems, and scalable data
+                architectures using Python, Apache Spark, Kafka, Dagster, SQL,
+                and cloud technologies. Strong backend development background
+                with Java and Spring Boot, experienced in designing REST APIs,
+                data-driven applications, and production-ready software
+                solutions. Skilled in data modeling, workflow orchestration,
+                batch and streaming processing, and delivering end-to-end data
+                pipelines for analytics and business intelligence.
+              </p>
+              <h3 data-i18n="about.education">Education</h3>
+              <ul class="education-list">
+                <li>
+                  <strong data-i18n="education.data-engineering.title"
+                    >Data Engineering with Python (IHK Certificate)</strong
+                  >
+                  <span
+                    >DCI Digital Career Institute, Berlin (03/2026 –
+                    Present)</span
+                  >
+                  <button class="toggle-details" data-i18n="education.toggle">
+                    Show Details
+                  </button>
+                  <span
+                    class="education-detail"
+                    data-i18n="education.data-engineering.details"
+                    style="display: none"
+                  >
+                    - IHK-certified professional program<br />
+                    - Data Acquisition &amp; Integration: ETL/ELT, APIs, Web
+                    Scraping<br />
+                    - Cloud Data Engineering: AWS Glue, BigQuery, dbt Cloud<br />
+                    - Data Streams: Apache Airflow, Kafka, Spark Streaming<br />
+                    - Data Platforms: Delta Lake, Apache Iceberg, Lakehouses<br />
+                    - ML Engineering: MLflow, scikit-learn, Feature Stores<br />
+                    - Data Quality: Great Expectations, Data Lineage,
+                    Observability
+                  </span>
+                </li>
+                <li>
+                  <strong data-i18n="education.java.title"
+                    >Java Backend Developer</strong
+                  >
+                  <span
+                    >DCI Digital Career Institute, Berlin (06/2023 –
+                    08/2024)</span
+                  >
+                  <button class="toggle-details" data-i18n="education.toggle">
+                    Show Details
+                  </button>
+                  <span
+                    class="education-detail"
+                    data-i18n="education.java.details"
+                    style="display: none"
+                  >
+                    - Programming fundamentals, Agile methodologies<br />
+                    - Java: OOP, Streams, Concurrency, Maven, Gradle, Testing<br />
+                    - Databases: JDBC, Advanced SQL<br />
+                    - Frameworks: Spring Boot, Hibernate, Spring Security<br />
+                    - REST APIs and Cloud: AWS, GCP
+                  </span>
+                </li>
+                <li>
+                  <strong data-i18n="education.it_specialist.title"
+                    >IT Specialist for Application Development</strong
+                  >
+                  <span>Combard GmbH, Berlin (05/2020 – 05/2022)</span>
+                  <button class="toggle-details" data-i18n="education.toggle">
+                    Show Details
+                  </button>
+                  <span
+                    class="education-detail"
+                    data-i18n="education.it_specialist.details"
+                    style="display: none"
+                  >
+                    - OOP with Java SE, C# (.NET), Python, JavaScript, PHP<br />
+                    - Web and database development, Linux systems<br />
+                    - IT project management, business processes<br />
+                    - Mathematics and MS Office for IT Processes<br />
+                    - Technical English, communication skills
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="skills-container">
+              <h3 data-i18n="skills.title">Technical Skills</h3>
+              <div class="skills-grid">
+                <div class="skill-category">
+                  <h4 data-i18n="skills.data-engineering">Data Engineering</h4>
+                  <ul class="icon-list">
+                    <li>
+                      <i
+                        class="fas fa-database"
+                        data-i18n-title="tech.spark"
+                        title="Apache Spark"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fas fa-stream"
+                        data-i18n-title="tech.airflow"
+                        title="Apache Airflow"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fas fa-bolt"
+                        data-i18n-title="tech.kafka"
+                        title="Apache Kafka"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fas fa-chart-line"
+                        data-i18n-title="tech.mlflow"
+                        title="MLflow"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fas fa-cloud"
+                        data-i18n-title="tech.dbt"
+                        title="dbt"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fas fa-check-circle"
+                        data-i18n-title="tech.great-expectations"
+                        title="Great Expectations"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fas fa-water"
+                        data-i18n-title="tech.delta-lake"
+                        title="Delta Lake"
+                      ></i>
+                    </li>
+                  </ul>
+                  <h4 data-i18n="skills.languages">Languages</h4>
+                  <ul class="icon-list">
+                    <li>
+                      <i
+                        class="devicon-java-plain"
+                        data-i18n-title="tech.java"
+                        title="Java"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="devicon-python-plain"
+                        data-i18n-title="tech.python"
+                        title="Python"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="devicon-csharp-plain"
+                        data-i18n-title="tech.csharp"
+                        title="C#"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="devicon-javascript-plain"
+                        title="JavaScript"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="devicon-mysql-plain"
+                        data-i18n-title="tech.sql"
+                        title="SQL"
+                      ></i>
+                    </li>
+                  </ul>
+                </div>
+                <div class="skill-category">
+                  <h4 data-i18n="skills.frameworks">Frameworks</h4>
+                  <ul class="icon-list">
+                    <li>
+                      <i
+                        class="devicon-spring-plain"
+                        data-i18n-title="tech.spring"
+                        title="Spring Boot"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="devicon-django-plain"
+                        data-i18n-title="tech.django"
+                        title="Django"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="devicon-dot-net-plain"
+                        data-i18n-title="tech.dotnet"
+                        title=".NET"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="devicon-react-original"
+                        data-i18n-title="tech.react"
+                        title="React"
+                      ></i>
+                    </li>
+                  </ul>
+                </div>
+                <div class="skill-category">
+                  <h4 data-i18n="skills.ai">AI &amp; Machine Learning</h4>
+                  <ul class="icon-list">
+                    <li>
+                      <i
+                        class="fas fa-brain"
+                        data-i18n-title="tech.ml"
+                        title="Machine Learning"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fas fa-robot"
+                        data-i18n-title="tech.ai"
+                        title="AI Development"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fas fa-language"
+                        data-i18n-title="tech.nlp"
+                        title="NLP"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="fas fa-eye"
+                        data-i18n-title="tech.cv"
+                        title="Computer Vision"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="devicon-tensorflow-original"
+                        data-i18n-title="tech.tensorflow"
+                        title="TensorFlow"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="devicon-python-plain"
+                        data-i18n-title="tech.python-ai"
+                        title="Python AI Libraries"
+                      ></i>
+                    </li>
+                  </ul>
+                </div>
+                <div class="skill-category">
+                  <h4 data-i18n="skills.tools">Tools &amp; Platforms</h4>
+                  <ul class="icon-list">
+                    <li>
+                      <i
+                        class="devicon-amazonwebservices-plain"
+                        data-i18n-title="tech.aws"
+                        title="AWS"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="devicon-googlecloud-plain"
+                        data-i18n-title="tech.gcp"
+                        title="GCP"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="devicon-docker-plain"
+                        data-i18n-title="tech.docker"
+                        title="Docker"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="devicon-git-plain"
+                        data-i18n-title="tech.git"
+                        title="Git"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="devicon-postgresql-plain"
+                        title="PostgreSQL"
+                      ></i>
+                    </li>
+                    <li>
+                      <i
+                        class="devicon-mysql-plain"
+                        data-i18n-title="tech.mysql"
+                        title="MySQL"
+                      ></i>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<!-- Projects Section -->
+      <!-- Projects Section -->
 
-<!-- Contact Section -->
-<section aria-labelledby="contact-heading" class="section" id="contact" role="region">
-<div class="container">
-<h2 class="section-title" data-i18n="section.contact">Get In Touch</h2>
-<div class="contact-container">
-<div class="contact-info">
-<h3 data-i18n="contact.info">Contact Information</h3><p class="contact-pitch" data-i18n="contact.pitch">Building a data platform, modernizing pipelines, or hiring a data engineer? Send the context, constraints, and desired outcome. I respond with a clear next step.</p><div class="contact-response-panel"><span data-i18n="contact.response_label">RESPONSE WINDOW</span><strong data-i18n="contact.response_time">Usually within 24–48 hours</strong><small data-i18n="contact.response_location">Berlin · CET/CEST · Open to data engineering opportunities</small></div>
-<ul>
-<li>
-<i class="fas fa-envelope"></i>
-<a class="contact-link email" href="mailto:mn.de@outlook.com">
-<span>mn.de@outlook.com</span>
-</a>
-</li>
-<li>
-<!-- <i class="fas fa-phone"></i>
+      <!-- Contact Section -->
+      <section
+        aria-labelledby="contact-heading"
+        class="section"
+        id="contact"
+        role="region"
+      >
+        <div class="container">
+          <h2 class="section-title" data-i18n="section.contact">
+            Get In Touch
+          </h2>
+          <div class="contact-container">
+            <div class="contact-info">
+              <h3 data-i18n="contact.info">Contact Information</h3>
+              <p class="contact-pitch" data-i18n="contact.pitch">
+                Building a data platform, modernizing pipelines, or hiring a
+                data engineer? Send the context, constraints, and desired
+                outcome. I respond with a clear next step.
+              </p>
+              <div class="contact-response-panel">
+                <span data-i18n="contact.response_label">RESPONSE WINDOW</span
+                ><strong data-i18n="contact.response_time"
+                  >Usually within 24–48 hours</strong
+                ><small data-i18n="contact.response_location"
+                  >Berlin · CET/CEST · Open to data engineering
+                  opportunities</small
+                >
+              </div>
+              <ul>
+                <li>
+                  <i class="fas fa-envelope"></i>
+                  <a class="contact-link email" href="mailto:mn.de@outlook.com">
+                    <span>mn.de@outlook.com</span>
+                  </a>
+                </li>
+                <li>
+                  <!-- <i class="fas fa-phone"></i>
                             <a href="tel:+491639769764" class="contact-link phone">
                                 <span data-i18n="contact.phone">+49 163 9769764</span>
                             </a> -->
-</li>
-<li>
-<i class="fas fa-map-marker-alt"></i>
-<a class="contact-link email" data-i18n="contact.location" href="https://www.google.com/maps/place/52.5200,13.4050/@52.5200,13.4050,14z" rel="noopener noreferrer" target="_blank">Berlin, Germany</a>
-</li>
-</ul>
-<div class="social-links">
-<a aria-label="LinkedIn profile" class="social-link" data-label="LinkedIn" href="https://www.linkedin.com/in/mahmoudnajmeh/" rel="noopener noreferrer" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-<a aria-label="GitHub profile" class="social-link" data-label="GitHub" href="https://github.com/mahmoudnajmeh" rel="noopener noreferrer" target="_blank"><i class="fab fa-github"></i></a>
-<button class="btn video-btn" data-i18n="contact.video" id="videoModalBtn">
-<i class="fas fa-play-circle"></i> Video About Me
-                        </button>
-</div>
-</div>
-<form accept-charset="UTF-8" action="https://formspree.io/f/mldlzywn" autocomplete="on" class="contact-form" method="POST">
-<input aria-hidden="true" autocomplete="off" class="form-honeypot" name="_gotcha" tabindex="-1" type="text"/>
-<div class="form-group">
-<input autocomplete="name" data-i18n-placeholder="form.name" maxlength="100" minlength="2" name="name" placeholder="Your Name" required="" type="text"/>
-</div>
-<div class="form-group">
-<input autocomplete="email" data-i18n-placeholder="form.email" inputmode="email" maxlength="254" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="Your Email" required="" title="Please enter a valid email address" type="email"/>
-<div class="validation-message" id="email-validation"></div>
-</div>
-<div class="form-group">
-<input autocomplete="off" data-i18n-placeholder="form.subject" maxlength="150" minlength="3" name="subject" placeholder="Subject" required="" type="text"/>
-</div>
-<div class="form-group">
-<textarea autocomplete="off" data-i18n-placeholder="form.message" maxlength="5000" minlength="10" name="message" placeholder="Your Message" required=""></textarea>
-</div>
-<button class="btn" data-i18n="form.submit" id="submit-btn" type="submit">Send Message</button>
-</form>
-</div>
-</div>
-</section>
-<!-- Video Modal -->
-<div aria-hidden="true" aria-labelledby="videoModalTitle" class="modal" id="videoModal" role="dialog">
-<div class="modal-content">
-<span aria-label="Close video modal" class="close-btn" role="button">×</span>
-<div class="video-container">
-<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="315" id="youtubeVideo" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/JJoMd8HXweY?enablejsapi=1&amp;rel=0" title="About Mahmoud Najmeh | Data Systems Engineer" width="100%">
-</iframe>
-</div>
-</div>
-</div>
-</main>
-<footer>
-<div class="container">
-<p data-i18n="footer.copyright">© 2026 Mahmoud Najmeh. All rights reserved.</p>
-<a class="back-to-top" href="#">
-<i class="fas fa-arrow-up"></i>
-</a>
-</div>
-</footer>
-<!-- Cookie Consent Popup -->
-<!--   <div class="cookie-consent" id="cookieConsent" style="display: none;">
+                </li>
+                <li>
+                  <i class="fas fa-map-marker-alt"></i>
+                  <a
+                    class="contact-link email"
+                    data-i18n="contact.location"
+                    href="https://www.google.com/maps/place/52.5200,13.4050/@52.5200,13.4050,14z"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >Berlin, Germany</a
+                  >
+                </li>
+              </ul>
+              <div class="social-links">
+                <a
+                  aria-label="LinkedIn profile"
+                  class="social-link"
+                  data-label="LinkedIn"
+                  href="https://www.linkedin.com/in/mahmoudnajmeh/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a
+                  aria-label="GitHub profile"
+                  class="social-link"
+                  data-label="GitHub"
+                  href="https://github.com/mahmoudnajmeh"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <button
+                  class="btn video-btn"
+                  data-i18n="contact.video"
+                  id="videoModalBtn"
+                >
+                  <i class="fas fa-play-circle"></i> Video About Me
+                </button>
+              </div>
+            </div>
+            <form
+              accept-charset="UTF-8"
+              action="https://formspree.io/f/mldlzywn"
+              autocomplete="on"
+              class="contact-form"
+              method="POST"
+            >
+              <input
+                aria-hidden="true"
+                autocomplete="off"
+                class="form-honeypot"
+                name="_gotcha"
+                tabindex="-1"
+                type="text"
+              />
+              <div class="form-group">
+                <input
+                  autocomplete="name"
+                  data-i18n-placeholder="form.name"
+                  maxlength="100"
+                  minlength="2"
+                  name="name"
+                  placeholder="Your Name"
+                  required=""
+                  type="text"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  autocomplete="email"
+                  data-i18n-placeholder="form.email"
+                  inputmode="email"
+                  maxlength="254"
+                  name="email"
+                  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                  placeholder="Your Email"
+                  required=""
+                  title="Please enter a valid email address"
+                  type="email"
+                />
+                <div class="validation-message" id="email-validation"></div>
+              </div>
+              <div class="form-group">
+                <input
+                  autocomplete="off"
+                  data-i18n-placeholder="form.subject"
+                  maxlength="150"
+                  minlength="3"
+                  name="subject"
+                  placeholder="Subject"
+                  required=""
+                  type="text"
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  autocomplete="off"
+                  data-i18n-placeholder="form.message"
+                  maxlength="5000"
+                  minlength="10"
+                  name="message"
+                  placeholder="Your Message"
+                  required=""
+                ></textarea>
+              </div>
+              <button
+                class="btn"
+                data-i18n="form.submit"
+                id="submit-btn"
+                type="submit"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- Video Modal -->
+      <div
+        aria-hidden="true"
+        aria-labelledby="videoModalTitle"
+        class="modal"
+        id="videoModal"
+        role="dialog"
+      >
+        <div class="modal-content">
+          <span aria-label="Close video modal" class="close-btn" role="button"
+            >×</span
+          >
+          <div class="video-container">
+            <iframe
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              allowfullscreen=""
+              frameborder="0"
+              height="315"
+              id="youtubeVideo"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              src="https://www.youtube-nocookie.com/embed/JJoMd8HXweY?enablejsapi=1&amp;rel=0"
+              title="About Mahmoud Najmeh | Data Systems Engineer"
+              width="100%"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <p data-i18n="footer.copyright">
+          © 2026 Mahmoud Najmeh. All rights reserved.
+        </p>
+        <a class="back-to-top" href="#">
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </footer>
+    <!-- Cookie Consent Popup -->
+    <!--   <div class="cookie-consent" id="cookieConsent" style="display: none;">
         <div class="cookie-content">
             <h3 data-i18n="cookie.title">We Use Cookies</h3>
             <p data-i18n="cookie.message">
@@ -781,10 +1519,10 @@
             </div>
         </div>
     </div> -->
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script src="js/particles.js"></script>
-<script src="js/main.js"></script>
-<script src="js/i18n.js"></script>
-<script src="js/mobile-name-fit.js?v=20260715"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/mobile-name-fit.js?v=20260715"></script>
+  </body>
 </html>

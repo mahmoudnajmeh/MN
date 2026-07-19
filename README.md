@@ -4,17 +4,17 @@ Modern, responsive personal portfolio built with HTML, CSS, and
 JavaScript.\
 Designed to showcase projects, skills, and professional background.
 
-------------------------------------------------------------------------
+---
 
 ## 🚀 Live Demo
 
 👉 https://mahmoudnajmeh.github.io/MN/
 
-------------------------------------------------------------------------
+---
 
 ## 📁 Project Structure
 
-``` bash
+```bash
 MN/
 ├── .github/
 ├── css/
@@ -31,27 +31,28 @@ MN/
 ├── sitemap.xml
 └── thank-you.html
 ```
-------------------------------------------------------------------------
+
+---
 
 ## ✨ Features
 
--   🌍 Multi-language support (i18n)
--   🎨 Custom animations
--   💫 Interactive particle background
--   📱 Fully responsive design
--   🔎 SEO optimized (robots.txt & sitemap.xml)
--   📬 Contact form with redirect page
+- 🌍 Multi-language support (i18n)
+- 🎨 Custom animations
+- 💫 Interactive particle background
+- 📱 Fully responsive design
+- 🔎 SEO optimized (robots.txt & sitemap.xml)
+- 📬 Contact form with redirect page
 
-------------------------------------------------------------------------
+---
 
 ## 🛠️ Technologies Used
 
--   HTML5\
--   CSS3\
--   JavaScript (Vanilla JS)\
--   GitHub Pages (Deployment)
+- HTML5\
+- CSS3\
+- JavaScript (Vanilla JS)\
+- GitHub Pages (Deployment)
 
-------------------------------------------------------------------------
+---
 
 ## 📦 Installation & Usage
 
@@ -63,7 +64,7 @@ git clone https://github.com/MN10101/MN.git
 
 No build tools or dependencies required.
 
-------------------------------------------------------------------------
+---
 
 ## 🌍 Deployment
 
@@ -72,15 +73,15 @@ This project is deployed using GitHub Pages.
 To deploy: - Push to `main` branch - Enable GitHub Pages in repository
 settings
 
-------------------------------------------------------------------------
+---
 
 ## 📈 SEO
 
--   robots.txt configured
--   sitemap.xml included
--   Semantic HTML structure
+- robots.txt configured
+- sitemap.xml included
+- Semantic HTML structure
 
-------------------------------------------------------------------------
+---
 
 ## 📄 License
 
