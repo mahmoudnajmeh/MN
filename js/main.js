@@ -1,4 +1,3 @@
-// Ensure the title is valid on load
 if (
   typeof document.title !== "string" ||
   document.title.includes("[object Object]")
@@ -6,24 +5,23 @@ if (
   document.title = "Mahmoud Najmeh | Data Engineering & Full-Stack Developer";
 }
 
-// Title Protection Guard
+/**
+ * Keeps the document title within the supported localized title set, including
+ * protection against third-party scripts replacing it with invalid content.
+ */
 (function () {
-  // List of allowed titles
   const allowedTitles = [
     "Mahmoud Najmeh | Data Engineering & Full-Stack Developer",
     "Mahmoud Najmeh - Portfolio",
   ];
 
-  // Immediately enforce a valid title
   if (!allowedTitles.includes(document.title)) {
     document.title = allowedTitles[0];
   }
 
-  // Monitor for title changes
   let lastValidTitle = document.title;
   const titleObserver = new MutationObserver(() => {
     if (!allowedTitles.includes(document.title)) {
-      // console.warn('Invalid title detected:', document.title);
       document.title = lastValidTitle;
     } else {
       lastValidTitle = document.title;
@@ -37,13 +35,11 @@ if (
   });
 })();
 
-// Function to get URL parameters
 function getUrlParameter(name) {
   const urlParams = new URLSearchParams(window.location.search);
   return urlParams.get(name);
 }
 
-// Dynamic title animation - WITH ARABIC SUPPORT
 const titleSlider = document.querySelector(".title-slider");
 const titleUnderline = document.querySelector(".title-underline");
 const titleSegments = document.querySelectorAll(".title-segment");
@@ -56,9 +52,7 @@ function rotateTitle() {
 
   currentIndex = (currentIndex + 1) % titleSegments.length;
 
-  // Different behavior for Arabic vs other languages
   if (isArabic) {
-    // Opacity and position instead of display none/flex
     titleSegments.forEach((seg, index) => {
       if (index === currentIndex) {
         seg.style.opacity = "1";
@@ -73,10 +67,8 @@ function rotateTitle() {
       }
     });
 
-    // No translation needed for Arabic
     titleSlider.style.transform = "translateY(0)";
   } else {
-    // Original behavior for other languages
     const offset = -currentIndex * 3.5;
 
     titleSegments.forEach((seg, index) => {
@@ -89,18 +81,15 @@ function rotateTitle() {
     titleSlider.style.transform = `translateY(${offset}rem)`;
   }
 
-  // Animate the underline
   titleUnderline.style.animation = "none";
   void titleUnderline.offsetWidth;
   titleUnderline.style.animation = "underlineGrow 1s ease forwards";
 }
 
-// Initialize titles based on language
 function initializeTitles() {
   const isArabic = document.documentElement.lang === "ar";
 
   if (isArabic) {
-    // Show only the first title initially using opacity/position
     titleSegments.forEach((seg, index) => {
       if (index === 0) {
         seg.style.opacity = "1";
@@ -116,7 +105,6 @@ function initializeTitles() {
     });
     titleSlider.style.transform = "translateY(0)";
   } else {
-    // For other languages Show all titles in slider
     titleSegments.forEach((seg, index) => {
       seg.style.opacity = "1";
       seg.style.visibility = "visible";
@@ -126,7 +114,6 @@ function initializeTitles() {
   }
 }
 
-// Restart title animation with new language settings
 function restartTitleAnimation() {
   if (titleInterval) {
     clearInterval(titleInterval);
@@ -135,11 +122,9 @@ function restartTitleAnimation() {
   titleInterval = setInterval(rotateTitle, 3000);
 }
 
-// Cursor trail effect
 const trails = [];
 const trailCount = 10;
 
-// Create trail elements
 for (let i = 0; i < trailCount; i++) {
   const trail = document.createElement("div");
   trail.className = "cursor-trail";
@@ -151,7 +136,6 @@ for (let i = 0; i < trailCount; i++) {
   trails.push(trail);
 }
 
-// Function to update trail positions
 function updateTrailPosition(x, y) {
   trails.forEach((trail, index) => {
     setTimeout(() => {
@@ -162,14 +146,12 @@ function updateTrailPosition(x, y) {
   });
 }
 
-// Function to hide all trails
 function hideTrails() {
   trails.forEach((trail) => {
     trail.style.display = "none";
   });
 }
 
-// Handle touch events
 document.addEventListener("touchstart", (e) => {
   const touch = e.touches[0];
   updateTrailPosition(touch.clientX, touch.clientY);
@@ -184,17 +166,14 @@ document.addEventListener("touchend", () => {
   hideTrails();
 });
 
-// Handle mouse events (for desktop)
 document.addEventListener("mousemove", (e) => {
   updateTrailPosition(e.clientX, e.clientY);
 });
 
-// Clear trails on scroll
 window.addEventListener("scroll", () => {
   hideTrails();
 });
 
-// Back to top button
 const backToTopButton = document.querySelector(".back-to-top");
 
 window.addEventListener("scroll", () => {
@@ -213,31 +192,33 @@ backToTopButton.addEventListener("click", (e) => {
   });
 });
 
-// Function to update back to home links
 function updateBackToHomeLinks(lang) {
   const backToHomeLinks = document.querySelectorAll(
     'a[href="index.html"], a[href*="index.html"]',
   );
   backToHomeLinks.forEach((link) => {
-    // Avoid changing the language selector link
     if (link.getAttribute("id") !== "language-select") {
       link.href = `index.html?lang=${lang}`;
     }
   });
 }
 
-// Email Validation Functions
+/**
+ * Validates contact addresses against syntax, abuse patterns, disposable
+ * providers, and the portfolio's accepted provider policy.
+ *
+ * @param {string} email
+ * @returns {{isValid: boolean, message: string}}
+ */
 function validateEmail(email) {
   const currentLang = document.documentElement.lang || "en";
   const t = translations[currentLang]?.validation || translations.en.validation;
 
-  // Email format validation
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   if (!emailRegex.test(email)) {
     return { isValid: false, message: t.invalidEmail };
   }
 
-  // Check for suspicious patterns
   if (email.length > 254) {
     return { isValid: false, message: t.emailTooLong };
   }
@@ -247,10 +228,8 @@ function validateEmail(email) {
     return { isValid: false, message: t.emailTooLong };
   }
 
-  // SMART DISPOSABLE DOMAIN DETECTION + PATTERN MATCHING
   const domain = email.split("@")[1].toLowerCase();
 
-  // MAJOR DISPOSABLE DOMAINS LIST
   const majorDisposableDomains = [
     "mailinator.com",
     "10minutemail.com",
@@ -269,7 +248,6 @@ function validateEmail(email) {
     "throwawaymail.com",
   ];
 
-  // SUSPICIOUS PATTERNS (Catches new disposable domains)
   const suspiciousPatterns = [
     /temp-?mail|tempemail/i,
     /fake-?mail|fakeemail/i,
@@ -281,14 +259,12 @@ function validateEmail(email) {
     /mailinator|guerrilla|yopmail|trashmail/i,
   ];
 
-  // SUSPICIOUS LOCAL PARTS (Username patterns)
   const suspiciousLocalParts = [
     /^test\d*$/i,
     /^demo\d*$/i,
     /^example\d*$/i,
     /^temp\d*$/i,
     /^fake\d*$/i,
-    // only numbers
     /^\d+$/,
     /^abc$/i,
     /testtest/i,
@@ -308,26 +284,20 @@ function validateEmail(email) {
     return { isValid: false, message: t.disposableEmail };
   }
 
-  // ALLOW ONLY MAJOR PROVIDERS + COMMON DOMAINS
   const allowedDomains = [
-    // Google
     "gmail.com",
     "googlemail.com",
     "google.com",
-    // Microsoft
     "outlook.com",
     "hotmail.com",
     "live.com",
     "msn.com",
-    // Apple
     "icloud.com",
     "me.com",
     "mac.com",
-    // Yahoo
     "yahoo.com",
     "ymail.com",
     "rocketmail.com",
-    // Other major providers
     "protonmail.com",
     "proton.me",
     "aol.com",
@@ -336,7 +306,6 @@ function validateEmail(email) {
     "mail.com",
     "gmx.com",
     "gmx.net",
-    // Common business/education domains
     "edu",
     "university.edu",
     "school.edu",
@@ -354,8 +323,7 @@ function validateEmail(email) {
   );
 
   if (!isAllowedDomain) {
-    return { isValid: false, message: t.useMajorProvider }; // Use translation here
-  }
+    return { isValid: false, message: t.useMajorProvider };  }
 
   return { isValid: true, message: t.validEmail };
 }
@@ -394,9 +362,7 @@ function setupEmailValidation() {
   });
 }
 
-// Main DOM Content Loaded
 document.addEventListener("DOMContentLoaded", () => {
-  // Initialize title animation
   restartTitleAnimation();
 
   setupEmailValidation();
@@ -407,13 +373,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // initWeatherWidget();
 
-  // Form submission handler
   const contactForm = document.querySelector(".contact-form");
   if (contactForm) {
     contactForm.addEventListener("submit", async (e) => {
       e.preventDefault();
 
-      // Email validation
       const emailInput = contactForm.querySelector('input[type="email"]');
       const email = emailInput.value.trim();
       const validation = validateEmail(email);
@@ -433,7 +397,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const currentLang = document.documentElement.lang || "en";
 
       try {
-        // Show loading state
         const submitBtn = contactForm.querySelector('button[type="submit"]');
         const originalText = submitBtn.textContent;
         submitBtn.textContent = "Sending...";
@@ -460,7 +423,6 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error("Network error:", error);
         alert("A network error occurred. Please check your connection.");
       } finally {
-        // Reset button state
         const submitBtn = contactForm.querySelector('button[type="submit"]');
         if (submitBtn) {
           submitBtn.textContent = originalText;
@@ -470,7 +432,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Smooth scrolling for navigation
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
@@ -488,7 +449,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Make orbits interactive
   document.querySelectorAll(".orbit").forEach((orbit) => {
     orbit.addEventListener("mouseenter", () => {
       orbit.style.boxShadow = `0 0 15px ${getComputedStyle(orbit).color}`;
@@ -501,7 +461,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Pause animation on hover for better readability
   const techOrbits = document.querySelector(".tech-orbits");
   if (techOrbits) {
     techOrbits.addEventListener("mouseenter", () => {
@@ -517,7 +476,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Keep orbit labels upright
   const orbitWrappers = document.querySelectorAll(".orbit");
 
   function updateLabelRotations() {
@@ -540,7 +498,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   updateLabelRotations();
 
-  // Toggle education details
   document.querySelectorAll(".toggle-details").forEach((button) => {
     button.addEventListener("click", () => {
       const details = button.nextElementSibling;
@@ -554,19 +511,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Section Indicator Logic
   const sections = document.querySelectorAll(".section");
   const indicatorsContainer = document.querySelector(".section-indicators");
   let lastScrollY = window.scrollY;
 
-  // Map section IDs to custom indicator labels
   const sectionLabels = {
     about: "About Me",
     projects: "Projects",
     contact: "Contact",
   };
 
-  // Create indicators dynamically
   sections.forEach((section, index) => {
     const sectionId = section.getAttribute("id");
     const sectionTitle =
@@ -574,10 +528,8 @@ document.addEventListener("DOMContentLoaded", () => {
       section.querySelector(".section-title")?.textContent ||
       sectionId;
 
-    // Split the title into words for better fitting
     let displayText = sectionTitle;
 
-    // Custom splitting for different sections
     switch (sectionId) {
       case "about":
         displayText = "About<br>Me";
@@ -592,7 +544,6 @@ document.addEventListener("DOMContentLoaded", () => {
         displayText = "Get In<br>Touch";
         break;
       default:
-        // Auto-split long titles (max 2 lines)
         const words = sectionTitle.split(" ");
         if (words.length > 2) {
           const mid = Math.ceil(words.length / 2);
@@ -608,12 +559,10 @@ document.addEventListener("DOMContentLoaded", () => {
     indicatorsContainer.appendChild(indicator);
   });
 
-  // Handle scroll events
   function handleScroll() {
     const currentScrollY = window.scrollY;
     const indicators = document.querySelectorAll(".section-indicator");
 
-    // Hide indicators when near the top of the page
     if (currentScrollY <= 100) {
       if (indicatorsContainer) indicatorsContainer.classList.add("hidden");
       indicators.forEach((indicator) => indicator.classList.remove("active"));
@@ -627,7 +576,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const rect = section.getBoundingClientRect();
       const indicator = indicators[index];
 
-      // Check if section is in viewport
       const isInView =
         rect.top >= -window.innerHeight * 0.2 &&
         rect.top <= window.innerHeight * 0.5;
@@ -642,7 +590,6 @@ document.addEventListener("DOMContentLoaded", () => {
     lastScrollY = currentScrollY;
   }
 
-  // Throttle scroll event for performance
   function throttle(fn, wait) {
     let lastCall = 0;
     return function (...args) {
@@ -653,10 +600,8 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   }
 
-  // Add scroll event listener
   window.addEventListener("scroll", throttle(handleScroll, 100));
 
-  // Make indicators clickable
   if (indicatorsContainer) {
     indicatorsContainer.addEventListener("click", (e) => {
       const indicator = e.target.closest(".section-indicator");
@@ -673,10 +618,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Initial check on page load
   handleScroll();
 
-  // re-initialize when language changes
   const languageSelect = document.getElementById("language-select");
   if (languageSelect) {
     languageSelect.addEventListener("change", () => {
@@ -691,13 +634,11 @@ document.addEventListener("DOMContentLoaded", () => {
         submitBtn.disabled = false;
       }
 
-      // Small delay to allow the language change to take effect
       setTimeout(restartTitleAnimation, 100);
     });
   }
 });
 
-// Force correct text for Arabic education titles on mobile
 function fixArabicEducationTitles() {
   if (document.documentElement.lang === "ar" && window.innerWidth <= 1024) {
     const javaTitle = document.querySelector(
@@ -714,11 +655,9 @@ function fixArabicEducationTitles() {
   }
 }
 
-// Call it on page load and when language changes
 document.addEventListener("DOMContentLoaded", fixArabicEducationTitles);
 window.addEventListener("resize", fixArabicEducationTitles);
 
-// Also call it when language changes
 const languageSelect = document.getElementById("language-select");
 if (languageSelect) {
   languageSelect.addEventListener("change", () => {
@@ -726,7 +665,6 @@ if (languageSelect) {
   });
 }
 
-// Thank-you page specific initialization
 document.addEventListener("DOMContentLoaded", () => {
   const urlParams = new URLSearchParams(window.location.search);
   const lang = urlParams.get("lang");
@@ -780,7 +718,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// Management for modals and dynamic content
 function trapFocus(element) {
   const focusableElements = element.querySelectorAll(
     'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
@@ -791,13 +728,10 @@ function trapFocus(element) {
   }
 }
 
-// YouTube IFrame API Implementation
 let player;
 let isYouTubeAPILoaded = false;
 
-// Load YouTube API
 const loadYouTubeAPI = () => {
-  // Check if API is already loaded
   if (window.YT && window.YT.Player) {
     isYouTubeAPILoaded = true;
     initializeYouTubePlayer();
@@ -813,7 +747,6 @@ const loadYouTubeAPI = () => {
   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 };
 
-// YouTube API ready callback
 function onYouTubeIframeAPIReady() {
   initializeYouTubePlayer();
 }
@@ -835,18 +768,15 @@ function onPlayerReady(event) {
 }
 
 function onPlayerStateChange(event) {
-  // Handle player state changes
   if (event.data === YT.PlayerState.ENDED) {
     console.log("Video ended");
   }
 }
 
-// Safe video control functions
 function playVideo() {
   if (player && typeof player.playVideo === "function") {
     player.playVideo();
   } else {
-    // Fallback: reload iframe with autoplay
     const iframe = document.getElementById("youtubeVideo");
     if (iframe) {
       const currentSrc = iframe.src;
@@ -863,7 +793,6 @@ function pauseVideo() {
   if (player && typeof player.pauseVideo === "function") {
     player.pauseVideo();
   } else {
-    // Fallback: reload iframe without autoplay
     const iframe = document.getElementById("youtubeVideo");
     if (iframe) {
       const currentSrc = iframe.src;
@@ -872,24 +801,19 @@ function pauseVideo() {
   }
 }
 
-// Video Modal Setup
 function setupVideoModal() {
   const modal = document.getElementById("videoModal");
   const btn = document.getElementById("videoModalBtn");
   const closeBtn = document.querySelector(".close-btn");
   const modalContent = document.querySelector(".modal-content");
-  let scrollPosition = 0; // Variable to store scroll position
-
-  // Check if elements exist
+  let scrollPosition = 0;
   if (!modal || !btn || !closeBtn || !modalContent) return;
 
-  // Check if we're on a mobile device
   const isMobile =
     /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
       navigator.userAgent,
     );
 
-  // Function to trap focus within modal for accessibility
   function trapFocus(element) {
     const focusableElements = element.querySelectorAll(
       'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
@@ -912,10 +836,8 @@ function setupVideoModal() {
     if (firstElement) firstElement.focus();
   }
 
-  // Open modal function
   function openModal(e) {
     e.preventDefault();
-    // Save current scroll position
     scrollPosition = window.scrollY || window.pageYOffset;
     modal.style.display = "block";
     modal.setAttribute("aria-hidden", "false");
@@ -925,28 +847,22 @@ function setupVideoModal() {
     }
     trapFocus(modal);
 
-    // Start video playback using safe method
     playVideo();
   }
 
-  // Close modal function
   function closeModal() {
     modal.style.display = "none";
     modal.setAttribute("aria-hidden", "true");
     document.body.classList.remove("modal-open", "mobile-modal-open");
     document.body.style.overflow = "auto";
 
-    // Restore scroll position
     window.scrollTo(0, scrollPosition);
 
-    // Pause video using safe method
     pauseVideo();
 
-    // Return focus to the button that opened the modal
     btn.focus();
   }
 
-  // Event listeners for opening modal
   btn.addEventListener("click", openModal);
   if (isMobile) {
     btn.addEventListener("touchend", (e) => {
@@ -955,14 +871,12 @@ function setupVideoModal() {
     });
   }
 
-  // Event listeners for closing modal
   closeBtn.addEventListener("click", closeModal);
   closeBtn.addEventListener("touchend", (e) => {
     e.preventDefault();
     closeModal();
   });
 
-  // Close modal when clicking/touching outside
   modal.addEventListener("click", (e) => {
     if (e.target === modal) {
       closeModal();
@@ -975,26 +889,22 @@ function setupVideoModal() {
     }
   });
 
-  // Close modal with Escape key
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && modal.style.display === "block") {
       closeModal();
     }
   });
 
-  // Prevent modal content from closing when interacting inside
   modalContent.addEventListener("click", (e) => e.stopPropagation());
   modalContent.addEventListener("touchend", (e) => e.stopPropagation());
   modalContent.addEventListener("touchmove", (e) => e.stopPropagation());
 
-  // Add touch event prevention for the iframe
   const iframe = document.getElementById("youtubeVideo");
   if (iframe) {
     iframe.addEventListener("touchstart", (e) => e.stopPropagation());
   }
 }
 
-// Weather functionality
 // class WeatherWidget {
 //     constructor() {
 //         this.apiKey = '1b1286a2450ec4aaf41b6d5d7b7c1bee';
@@ -1003,7 +913,6 @@ function setupVideoModal() {
 //         this.weatherLoading = this.weatherWidget?.querySelector('.weather-loading');
 //         this.weatherError = this.weatherWidget?.querySelector('.weather-error');
 
-//         // Store current weather data to prevent unnecessary API calls
 //         this.currentWeatherData = null;
 //         this.isUserLocation = true;
 
@@ -1017,7 +926,6 @@ function setupVideoModal() {
 //             await this.loadWeather();
 //         } catch (error) {
 //             console.error('Weather initialization failed:', error);
-//             // Fallback to Berlin weather
 //             await this.loadFallbackWeather();
 //         }
 //     }
@@ -1026,7 +934,6 @@ function setupVideoModal() {
 //         this.showLoading();
 
 //         try {
-//             // Get user location first
 //             const position = await this.getUserPosition();
 //             const weatherData = await this.fetchWeatherData(position.coords.latitude, position.coords.longitude);
 //             this.currentWeatherData = weatherData;
@@ -1034,14 +941,12 @@ function setupVideoModal() {
 //             this.displayWeather(weatherData, true);
 //         } catch (geoError) {
 //             console.log('Geolocation failed, using fallback:', geoError);
-//             // If geolocation fails, use Berlin as fallback
 //             await this.loadFallbackWeather();
 //         }
 //     }
 
 //     async loadFallbackWeather() {
 //         try {
-//             // Berlin coordinates as fallback
 //             const weatherData = await this.fetchWeatherData(52.5200, 13.4050);
 //             this.currentWeatherData = weatherData;
 //             this.isUserLocation = false;
@@ -1061,16 +966,13 @@ function setupVideoModal() {
 
 //             navigator.geolocation.getCurrentPosition(resolve, reject, {
 //                 enableHighAccuracy: false,
-//                 // Reduced timeout for better UX
 //                 timeout: 8000,
-//                 // 5 minutes cache
 //                 maximumAge: 300000
 //             });
 //         });
 //     }
 
 //     async fetchWeatherData(lat, lon) {
-//         // Get current language at the moment of API call
 //         const currentLang = document.documentElement.lang || 'en';
 //         const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${this.apiKey}&units=metric&lang=${currentLang}`;
 
@@ -1092,34 +994,27 @@ function setupVideoModal() {
 //         const country = data.sys.country;
 //         const iconCode = data.weather[0].icon;
 
-//         // Update weather content
 //         this.weatherContent.querySelector('.temp-value').textContent = temp;
 //         this.weatherContent.querySelector('.weather-desc').textContent = description;
 
-//         // Get current language for fallback message
 //         const currentLang = document.documentElement.lang || 'en';
 //         const t = translations[currentLang]?.weather || translations.en.weather;
 
-//         // Show location name with appropriate indicator
 //         let locationText;
 //         if (isUserLocation) {
 //             locationText = `${city}, ${country}`;
 //         } else {
-//             // Use the translated fallback message
 //             const fallbackText = t.fallback || 'Showing Berlin weather';
 //             locationText = `${city}, ${country} (${fallbackText})`;
 //         }
 //         this.weatherContent.querySelector('.location-name').textContent = locationText;
 
-//         // Update weather icon
 //         const weatherIcon = this.weatherContent.querySelector('.weather-icon i');
 //         weatherIcon.className = this.getWeatherIcon(iconCode);
 
-//         // Show content
 //         this.hideLoading();
 //         this.weatherContent.style.display = 'flex';
 
-//         // Demo badge for portfolio showcase
 //         this.addDemoBadge();
 //     }
 
@@ -1179,7 +1074,6 @@ function setupVideoModal() {
 //     }
 
 //     addDemoBadge() {
-//         // Remove existing badge if any
 //         const existingBadge = this.weatherWidget.querySelector('.weather-demo-badge');
 //         if (existingBadge) {
 //             existingBadge.remove();
@@ -1192,7 +1086,6 @@ function setupVideoModal() {
 //         this.weatherWidget.style.position = 'relative';
 //         this.weatherWidget.appendChild(badge);
 
-//         // Update translation for the badge
 //         this.updateBadgeTranslation();
 //     }
 
@@ -1205,41 +1098,33 @@ function setupVideoModal() {
 //         }
 //     }
 
-//     // Update weather when language changes
 //     async updateLanguage() {
-//         // Update badge first
 //         this.updateBadgeTranslation();
 
-//         // Force a fresh API call with the new language
 //         try {
 //             await this.loadWeather();
 //         } catch (error) {
 //             console.error('Failed to update weather with new language:', error);
-//             // If fresh load fails, try to update display with existing data
 //             if (this.currentWeatherData) {
 //                 this.displayWeather(this.currentWeatherData, this.isUserLocation);
 //             }
 //         }
 //     }
 // }
-// // Initialize weather widget
 // let weatherWidget;
 
 // function initWeatherWidget() {
 //     weatherWidget = new WeatherWidget();
 // }
 
-// // Update weather on language change
 // function updateWeatherOnLanguageChange() {
 //     if (weatherWidget) {
 //         weatherWidget.updateLanguage();
 //     }
 // }
 
-// Disable right-click
 // document.addEventListener('contextmenu', (event) => event.preventDefault());
 
-// Disable F12 and Ctrl+Shift+I
 /* document.addEventListener('keydown', (event) => {
     if (event.key === 'F12' || (event.ctrlKey && event.shiftKey && event.key === 'I')) {
         event.preventDefault();

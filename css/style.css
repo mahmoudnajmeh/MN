@@ -46,14 +46,14 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    border: 1px solid var(--accent);
+    border: 1px solid var(--ops-accent);
     transition: all 0.3s ease;
     z-index: 1001;
     animation: bounce 2s infinite;
   }
 
   .scroll-down:hover {
-    background: var(--accent);
+    background: rgba(184, 255, 61, 0.16);
     transform: translateX(-50%) scale(1.1);
   }
 
