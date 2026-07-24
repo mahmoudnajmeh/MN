@@ -4697,6 +4697,17 @@ document.addEventListener("DOMContentLoaded", async () => {
   languageSelect.addEventListener("change", async (e) => {
     const lang = e.target.value;
     if (["en", "de", "pl", "fr", "tr", "ar", "ru", "he"].includes(lang)) {
+      const languageToggle = languageSelect.closest(".language-toggle");
+      if (languageToggle) {
+        languageToggle.classList.remove("is-switching");
+        void languageToggle.offsetWidth;
+        languageToggle.classList.add("is-switching");
+        window.setTimeout(
+          () => languageToggle.classList.remove("is-switching"),
+          720,
+        );
+      }
+
       console.log(`🖱️ Manual language selection: ${lang}`);
       localStorage.setItem("language", lang);
 
