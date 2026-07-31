@@ -403,6 +403,14 @@ const translations = {
         impact:
           "Implemented a production-ready ETL pipeline with Dagster orchestration, containerized with Docker for consistent deployments, and integrated with PostgreSQL for reliable data storage. Features automated data validation, asset lineage tracking, and scheduled job execution for reproducible data workflows.",
       },
+      cybersecurity_threat: {
+        title: "Global Cybersecurity Threat Intelligence Platform",
+        description:
+          "Production-style data engineering platform that collects, validates, processes, models, searches, and visualizes global vulnerability, exploit, and security advisory intelligence.",
+        duration: "Data Engineering & AI Platform",
+        impact:
+          "Unifies streaming and batch threat data through Kafka, Spark, dbt, and PostgreSQL; delivers Metabase analytics, Qdrant-backed RAG with Grok or Ollama, MLflow tracking, and Prometheus/Grafana observability.",
+      },
       fraud_platform: {
         title: "Fraud Detection Platform (Kafka, Spark, Delta Lake, MLflow)",
         description:
@@ -903,6 +911,14 @@ const translations = {
         duration: "3 Monate",
         impact:
           "Implementierung einer produktionsreifen ETL-Pipeline mit Dagster-Orchestrierung, containerisiert mit Docker für konsistente Deployments und integriert mit PostgreSQL für zuverlässige Datenspeicherung. Enthält automatisierte Datenvalidierung, Asset-Lineage-Tracking und geplante Jobausführung für reproduzierbare Daten-Workflows.",
+      },
+      cybersecurity_threat: {
+        title: "Globale Cybersecurity-Threat-Intelligence-Plattform",
+        description:
+          "Produktionsnahe Data-Engineering-Plattform zur Erfassung, Validierung, Verarbeitung, Modellierung, Suche und Visualisierung globaler Schwachstellen-, Exploit- und Sicherheitswarnungsdaten.",
+        duration: "Data-Engineering- & KI-Plattform",
+        impact:
+          "Vereint Streaming- und Batch-Bedrohungsdaten mit Kafka, Spark, dbt und PostgreSQL und liefert Metabase-Analysen, Qdrant-basiertes RAG mit Grok oder Ollama, MLflow-Tracking sowie Prometheus/Grafana-Monitoring.",
       },
       fraud_platform: {
         title: "Betrugserkennungsplattform (Kafka, Spark, Delta Lake, MLflow)",
@@ -1405,6 +1421,14 @@ const translations = {
         impact:
           "Wdrożenie produkcyjnego pipeline’u ETL z orkiestracją Dagster, konteneryzacją w Docker dla spójnych wdrożeń oraz integracją z PostgreSQL dla niezawodnego przechowywania danych. Obejmuje automatyczną walidację danych, śledzenie zależności (data lineage) oraz harmonogramowane wykonywanie zadań dla powtarzalnych procesów danych.",
       },
+      cybersecurity_threat: {
+        title: "Globalna platforma analizy zagrożeń cyberbezpieczeństwa",
+        description:
+          "Produkcyjna platforma inżynierii danych do gromadzenia, walidacji, przetwarzania, modelowania, przeszukiwania i wizualizacji globalnych danych o podatnościach, exploitach i alertach bezpieczeństwa.",
+        duration: "Platforma Data Engineering i AI",
+        impact:
+          "Łączy strumieniowe i wsadowe dane o zagrożeniach za pomocą Kafka, Spark, dbt i PostgreSQL oraz udostępnia analitykę Metabase, RAG oparty na Qdrant z Grok lub Ollama, śledzenie MLflow i obserwowalność Prometheus/Grafana.",
+      },
       fraud_platform: {
         title:
           "Platforma wykrywania oszustw (Kafka, Spark, Delta Lake, MLflow)",
@@ -1905,6 +1929,14 @@ const translations = {
         duration: "3 mois",
         impact:
           "Déploiement d’un pipeline ETL prêt pour la production avec orchestration Dagster, conteneurisation via Docker pour des environnements cohérents et intégration PostgreSQL pour un stockage fiable. Inclut la validation automatique des données, le suivi des dépendances (data lineage) et l’exécution planifiée pour des flux de données reproductibles.",
+      },
+      cybersecurity_threat: {
+        title: "Plateforme mondiale de renseignement sur les cybermenaces",
+        description:
+          "Plateforme d’ingénierie des données de niveau production qui collecte, valide, traite, modélise, recherche et visualise les vulnérabilités, exploits et avis de sécurité mondiaux.",
+        duration: "Plateforme Data Engineering et IA",
+        impact:
+          "Unifie les données de menaces en streaming et par lots avec Kafka, Spark, dbt et PostgreSQL, puis fournit des analyses Metabase, un RAG Qdrant avec Grok ou Ollama, le suivi MLflow et l’observabilité Prometheus/Grafana.",
       },
       fraud_platform: {
         title:
@@ -2407,6 +2439,14 @@ const translations = {
         impact:
           "Üretime hazır bir ETL pipeline’ı Dagster orkestrasyonu ile kuruldu, Docker ile tutarlı dağıtım ortamları sağlandı ve PostgreSQL ile güvenilir veri depolama entegre edildi. Otomatik veri doğrulama, veri bağımlılıklarının izlenmesi (data lineage) ve planlanmış görev yürütmeleri ile tekrarlanabilir veri süreçleri sağlandı.",
       },
+      cybersecurity_threat: {
+        title: "Küresel Siber Güvenlik Tehdit İstihbaratı Platformu",
+        description:
+          "Küresel güvenlik açıklarını, exploit verilerini ve güvenlik duyurularını toplayan, doğrulayan, işleyen, modelleyen, arayan ve görselleştiren üretim tarzı veri mühendisliği platformu.",
+        duration: "Veri Mühendisliği ve Yapay Zekâ Platformu",
+        impact:
+          "Kafka, Spark, dbt ve PostgreSQL ile akış ve toplu tehdit verilerini birleştirir; Metabase analitiği, Grok veya Ollama destekli Qdrant RAG, MLflow takibi ve Prometheus/Grafana gözlemlenebilirliği sunar.",
+      },
       fraud_platform: {
         title:
           "Dolandırıcılık Tespit Platformu (Kafka, Spark, Delta Lake, MLflow)",
@@ -2907,6 +2947,14 @@ const translations = {
         impact:
           "Развернут production-ready ETL-пайплайн с оркестрацией Dagster, контейнеризацией через Docker для стабильных окружений и интеграцией PostgreSQL для надежного хранения данных. Включает автоматическую валидацию данных, отслеживание зависимостей (data lineage) и планируемое выполнение задач для повторяемых процессов обработки данных.",
       },
+      cybersecurity_threat: {
+        title: "Глобальная платформа аналитики киберугроз",
+        description:
+          "Платформа инженерии данных производственного уровня для сбора, проверки, обработки, моделирования, поиска и визуализации глобальных данных об уязвимостях, эксплойтах и рекомендациях по безопасности.",
+        duration: "Платформа Data Engineering и ИИ",
+        impact:
+          "Объединяет потоковые и пакетные данные об угрозах с помощью Kafka, Spark, dbt и PostgreSQL; предоставляет аналитику Metabase, RAG на Qdrant с Grok или Ollama, отслеживание MLflow и мониторинг Prometheus/Grafana.",
+      },
       fraud_platform: {
         title:
           "Платформа обнаружения мошенничества (Kafka, Spark, Delta Lake, MLflow)",
@@ -3396,6 +3444,14 @@ const translations = {
         impact:
           "تنفيذ خط ETL جاهز للإنتاج باستخدام Dagster للتنسيق، وDocker لبيئات نشر متسقة، وPostgreSQL لتخزين بيانات موثوق. يتضمن التحقق التلقائي من البيانات، تتبع تبعيات البيانات (data lineage)، وتنفيذ مهام مجدولة لعمليات بيانات قابلة للتكرار.",
       },
+      cybersecurity_threat: {
+        title: "منصة عالمية لاستخبارات تهديدات الأمن السيبراني",
+        description:
+          "منصة هندسة بيانات بمستوى إنتاجي تجمع بيانات الثغرات والاستغلالات والتنبيهات الأمنية العالمية وتتحقق منها وتعالجها وتنمذجها وتتيح البحث فيها وعرضها بصريًا.",
+        duration: "منصة هندسة بيانات وذكاء اصطناعي",
+        impact:
+          "توحّد بيانات التهديدات المتدفقة والدفعية عبر Kafka وSpark وdbt وPostgreSQL، وتوفر تحليلات Metabase ونظام RAG مدعومًا بـ Qdrant مع Grok أو Ollama وتتبع MLflow ومراقبة Prometheus وGrafana.",
+      },
       fraud_platform: {
         title: "منصة كشف الاحتيال (Kafka وSpark وDelta Lake وMLflow)",
         description:
@@ -3825,6 +3881,14 @@ const translations = {
       },
     },
     project: {
+      cybersecurity_threat: {
+        title: "פלטפורמה גלובלית למודיעין איומי סייבר",
+        description:
+          "פלטפורמת הנדסת נתונים ברמת ייצור שאוספת, מאמתת, מעבדת, ממדלת, מחפשת וממחישה מידע גלובלי על חולשות, ניצולים והתראות אבטחה.",
+        duration: "פלטפורמת הנדסת נתונים ובינה מלאכותית",
+        impact:
+          "מאחדת נתוני איומים זורמים ואצוות באמצעות Kafka, Spark, dbt ו-PostgreSQL, ומספקת ניתוחי Metabase, ‏RAG מבוסס Qdrant עם Grok או Ollama, מעקב MLflow וניטור Prometheus/Grafana.",
+      },
       fraud_platform: {
         title: "פלטפורמת זיהוי הונאות בזמן אמת",
         description:
