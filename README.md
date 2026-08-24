@@ -58,7 +58,7 @@ MN/
 
 1.  Clone the repository:
 
-git clone https://github.com/MN10101/MN.git
+git clone https://github.com/mahmoudnajmeh/MN.git
 
 2.  Open `index.html` in your browser.
 
