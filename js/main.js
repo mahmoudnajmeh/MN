@@ -192,6 +192,17 @@ backToTopButton.addEventListener("click", (e) => {
   });
 });
 
+const scrollDownButton = document.querySelector(".scroll-down");
+
+if (scrollDownButton) {
+  const toggleScrollDownButton = () => {
+    scrollDownButton.classList.toggle("hide", window.pageYOffset >= 50);
+  };
+
+  window.addEventListener("scroll", toggleScrollDownButton);
+  toggleScrollDownButton();
+}
+
 function updateBackToHomeLinks(lang) {
   const backToHomeLinks = document.querySelectorAll(
     'a[href="index.html"], a[href*="index.html"]',

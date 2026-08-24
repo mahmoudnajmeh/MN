@@ -34,7 +34,7 @@ body {
 @media (min-width: 769px) {
   .scroll-down {
     position: fixed;
-    bottom: 100px;
+    bottom: 70px;
     left: 50%;
     transform: translateX(-50%);
     width: 40px;
