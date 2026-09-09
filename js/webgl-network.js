@@ -83,8 +83,8 @@
     [76, 91], [91, 84]
   ];
   const mobileConstellationSlots = [
-    [50, 8], [24, 16], [76, 16], [18, 28], [82, 28], [16, 72],
-    [84, 72], [25, 82], [75, 82], [50, 91]
+    [50, 20], [23, 28], [77, 28], [16, 38], [84, 38], [15, 68],
+    [85, 68], [24, 79], [76, 79], [50, 89]
   ];
   const getConstellationSlots = () => width <= 760 ? mobileConstellationSlots : desktopConstellationSlots;
   const constellationSlots = desktopConstellationSlots;
@@ -287,21 +287,91 @@
     label.style.left = `${slot[0]}%`;
     label.style.top = `${slot[1]}%`;
 
-    const padding = width <= 760 ? 14 : 24;
+    const padding = width <= 760 ? 12 : 24;
     const rect = label.getBoundingClientRect();
     const layerRect = constellationLayer.getBoundingClientRect();
-    let x = (slot[0] / 100) * width;
-    let y = (slot[1] / 100) * height;
     const halfW = rect.width / 2;
     const halfH = rect.height / 2;
 
+    if (width <= 760) {
+      const protectedSelectors = [
+        ".hero-kicker",
+        ".hero-intro-copy",
+        ".profile-image-wrapper",
+        ".contact-links",
+        ".main-title",
+        ".dynamic-title",
+        ".scroll-indicator"
+      ];
+
+      const protectedRects = protectedSelectors
+        .flatMap((selector) => Array.from(document.querySelectorAll(selector)))
+        .filter((element) => {
+          const style = window.getComputedStyle(element);
+          const r = element.getBoundingClientRect();
+          return style.display !== "none" && style.visibility !== "hidden" && parseFloat(style.opacity || "1") > 0 && r.width > 0 && r.height > 0;
+        })
+        .map((element) => element.getBoundingClientRect());
+
+      const collidesAt = (x, y) => {
+        const left = layerRect.left + x - halfW;
+        const right = layerRect.left + x + halfW;
+        const top = layerRect.top + y - halfH;
+        const bottom = layerRect.top + y + halfH;
+        const gapX = 12;
+        const gapY = 10;
+
+        return protectedRects.some((r) =>
+          right > r.left - gapX &&
+          left < r.right + gapX &&
+          bottom > r.top - gapY &&
+          top < r.bottom + gapY
+        );
+      };
+
+      const candidates = [];
+      const xStep = Math.max(26, Math.min(42, width * 0.09));
+      const yStep = Math.max(20, Math.min(34, height * 0.035));
+      const minX = padding + halfW;
+      const maxX = width - padding - halfW;
+      const minY = padding + halfH;
+      const maxY = height - padding - halfH;
+      const preferredX = (slot[0] / 100) * width;
+      const preferredY = (slot[1] / 100) * height;
+
+      for (let y = minY; y <= maxY; y += yStep) {
+        for (let x = minX; x <= maxX; x += xStep) {
+          if (!collidesAt(x, y)) {
+            const edgeBonus = Math.min(x - minX, maxX - x) * 0.08;
+            const distance = Math.hypot(x - preferredX, y - preferredY) - edgeBonus;
+            candidates.push({ x, y, distance });
+          }
+        }
+      }
+
+      if (candidates.length) {
+        candidates.sort((a, b) => a.distance - b.distance);
+        const choiceIndex = Math.min(slotIndex % Math.min(5, candidates.length), candidates.length - 1);
+        const position = candidates[choiceIndex];
+        label.style.left = `${position.x}px`;
+        label.style.top = `${position.y}px`;
+        return { x: position.x, y: position.y };
+      }
+
+      label.style.opacity = "0";
+      const fallbackX = Math.max(minX, Math.min(maxX, preferredX));
+      const fallbackY = Math.max(minY, Math.min(maxY, preferredY));
+      label.style.left = `${fallbackX}px`;
+      label.style.top = `${fallbackY}px`;
+      return { x: fallbackX, y: fallbackY };
+    }
+
+    let x = (slot[0] / 100) * width;
+    let y = (slot[1] / 100) * height;
     x = Math.max(padding + halfW, Math.min(width - padding - halfW, x));
     y = Math.max(padding + halfH, Math.min(height - padding - halfH, y));
 
-    const protectedElements = width <= 760
-      ? [".main-title", ".profile-container", ".hero-intro-copy"]
-      : [".main-title", ".profile-container", ".dynamic-title"];
-
+    const protectedElements = [".main-title", ".profile-container", ".dynamic-title"];
     const collides = protectedElements.some((selector) => {
       const element = document.querySelector(selector);
       if (!element) return false;
@@ -314,9 +384,7 @@
     });
 
     if (collides) {
-      const fallback = width <= 760
-        ? mobileConstellationSlots[(slotIndex + 3) % mobileConstellationSlots.length]
-        : desktopConstellationSlots[(slotIndex + 5) % desktopConstellationSlots.length];
+      const fallback = desktopConstellationSlots[(slotIndex + 5) % desktopConstellationSlots.length];
       x = (fallback[0] / 100) * width;
       y = (fallback[1] / 100) * height;
       x = Math.max(padding + halfW, Math.min(width - padding - halfW, x));
@@ -345,6 +413,7 @@
     });
 
     label.textContent = skillNames[skillIndex];
+    label.style.opacity = "";
     label.classList.remove("is-fading");
     void label.offsetWidth;
     const position = placeConstellation(label, slotIndex);
