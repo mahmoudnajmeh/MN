@@ -12,6 +12,94 @@
   canvas.setAttribute("aria-hidden", "true");
   container.replaceChildren(canvas);
 
+  const constellationStyle = document.createElement("style");
+  constellationStyle.textContent = `
+    #particles-js { position: absolute; overflow: hidden; }
+    #particles-js .skill-constellation-layer {
+      position: absolute; inset: 0; pointer-events: none; z-index: 2;
+      font-family: inherit; overflow: hidden;
+    }
+    #particles-js .skill-constellation {
+      position: absolute; transform: translate(-50%, -50%) scale(.82);
+      opacity: 0; white-space: nowrap;
+      color: rgba(241,255,226,.98);
+      font-size: clamp(12px, 1.05vw, 18px); font-weight: 700;
+      letter-spacing: .12em; text-transform: uppercase;
+      text-shadow: 0 0 8px rgba(201,255,55,.95),
+                   0 0 18px rgba(201,255,55,.72),
+                   0 0 34px rgba(40,236,255,.45);
+      transition: opacity .7s ease, transform .9s cubic-bezier(.2,.8,.2,1), filter .7s ease;
+      filter: blur(5px);
+    }
+    #particles-js .skill-constellation::before,
+    #particles-js .skill-constellation::after {
+      content: ""; position: absolute; top: 50%; width: 5px; height: 5px;
+      border-radius: 50%; background: #d7ff32; box-shadow: 0 0 7px #d7ff32, 0 0 18px #28ecff;
+    }
+    #particles-js .skill-constellation::before { left: -15px; }
+    #particles-js .skill-constellation::after { right: -15px; }
+    #particles-js .skill-constellation.is-visible {
+      opacity: .94; transform: translate(-50%, -50%) scale(1); filter: blur(0);
+      animation: constellationGlow 2.8s ease-in-out infinite;
+    }
+    #particles-js .skill-constellation.is-fading { opacity: .18; transform: translate(-50%, -50%) scale(.96); }
+    @keyframes constellationGlow {
+      0%,100% { text-shadow: 0 0 7px rgba(201,255,55,.78), 0 0 18px rgba(40,236,255,.35); }
+      50% { text-shadow: 0 0 11px rgba(221,255,93,1), 0 0 27px rgba(201,255,55,.8), 0 0 44px rgba(40,236,255,.58); }
+    }
+    @media (max-width: 760px) {
+      #particles-js .skill-constellation {
+        font-size: clamp(8px, 2.5vw, 10px);
+        letter-spacing: .055em;
+        max-width: calc(100vw - 28px);
+      }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      #particles-js .skill-constellation { animation: none !important; transition: none !important; }
+    }
+  `;
+  document.head.appendChild(constellationStyle);
+
+  const constellationLayer = document.createElement("div");
+  constellationLayer.className = "skill-constellation-layer";
+  constellationLayer.setAttribute("aria-hidden", "true");
+  container.appendChild(constellationLayer);
+
+  const preferredSkills = [
+    "Python", "Machine Learning", "AI", "MLflow", "Apache Spark", "Kafka",
+    "Apache Airflow", "PySpark", "Spark Structured Streaming", "Delta Lake",
+    "Apache Iceberg", "Databricks", "ETL/ELT", "Data Lakes", "Lakehouse Architecture",
+    "Data Quality", "Data Governance", "Data Lineage", "Data Drift", "SQL",
+    "PostgreSQL", "Docker", "Dagster", "AWS", "GCP", "Java", "Spring Boot"
+  ];
+
+  const pageSkills = Array.from(document.querySelectorAll(".skill-name"))
+    .map((item) => item.textContent.trim())
+    .filter(Boolean);
+  const skillNames = [...new Set([...preferredSkills, ...pageSkills])];
+  const desktopConstellationSlots = [
+    [9, 14], [25, 13], [45, 11], [68, 12], [90, 15], [7, 38],
+    [93, 43], [7, 61], [92, 66], [13, 87], [32, 91], [55, 89],
+    [76, 91], [91, 84]
+  ];
+  const mobileConstellationSlots = [
+    [50, 8], [24, 16], [76, 16], [18, 28], [82, 28], [16, 72],
+    [84, 72], [25, 82], [75, 82], [50, 91]
+  ];
+  const getConstellationSlots = () => width <= 760 ? mobileConstellationSlots : desktopConstellationSlots;
+  const constellationSlots = desktopConstellationSlots;
+  const constellationLabels = constellationSlots.map((slot, index) => {
+    const label = document.createElement("span");
+    label.className = "skill-constellation";
+    label.style.left = `${slot[0]}%`;
+    label.style.top = `${slot[1]}%`;
+    label.dataset.slot = String(index);
+    constellationLayer.appendChild(label);
+    return label;
+  });
+  let constellationIndex = 0;
+  let constellationTimer = 0;
+
   const gl = canvas.getContext("webgl", {
     alpha: true,
     antialias: true,
@@ -172,6 +260,11 @@
     canvas.style.height = `${height}px`;
     gl.viewport(0, 0, canvas.width, canvas.height);
     createNodes();
+    constellationLabels.forEach((label, index) => {
+      if (label.classList.contains("is-visible")) {
+        placeConstellation(label, index);
+      }
+    });
   };
 
   const createPulse = (x, y, strength = 1) => {
@@ -186,6 +279,88 @@
         node.activation = Math.max(node.activation, 1 - distance / 220);
       }
     }
+  };
+
+  const placeConstellation = (label, slotIndex) => {
+    const slots = getConstellationSlots();
+    const slot = slots[slotIndex % slots.length];
+    label.style.left = `${slot[0]}%`;
+    label.style.top = `${slot[1]}%`;
+
+    const padding = width <= 760 ? 14 : 24;
+    const rect = label.getBoundingClientRect();
+    const layerRect = constellationLayer.getBoundingClientRect();
+    let x = (slot[0] / 100) * width;
+    let y = (slot[1] / 100) * height;
+    const halfW = rect.width / 2;
+    const halfH = rect.height / 2;
+
+    x = Math.max(padding + halfW, Math.min(width - padding - halfW, x));
+    y = Math.max(padding + halfH, Math.min(height - padding - halfH, y));
+
+    const protectedElements = width <= 760
+      ? [".main-title", ".profile-container", ".hero-intro-copy"]
+      : [".main-title", ".profile-container", ".dynamic-title"];
+
+    const collides = protectedElements.some((selector) => {
+      const element = document.querySelector(selector);
+      if (!element) return false;
+      const r = element.getBoundingClientRect();
+      const left = layerRect.left + x - halfW;
+      const right = layerRect.left + x + halfW;
+      const top = layerRect.top + y - halfH;
+      const bottom = layerRect.top + y + halfH;
+      return right > r.left - 18 && left < r.right + 18 && bottom > r.top - 12 && top < r.bottom + 12;
+    });
+
+    if (collides) {
+      const fallback = width <= 760
+        ? mobileConstellationSlots[(slotIndex + 3) % mobileConstellationSlots.length]
+        : desktopConstellationSlots[(slotIndex + 5) % desktopConstellationSlots.length];
+      x = (fallback[0] / 100) * width;
+      y = (fallback[1] / 100) * height;
+      x = Math.max(padding + halfW, Math.min(width - padding - halfW, x));
+      y = Math.max(padding + halfH, Math.min(height - padding - halfH, y));
+    }
+
+    label.style.left = `${x}px`;
+    label.style.top = `${y}px`;
+    return { x, y };
+  };
+
+  const revealNextConstellation = () => {
+    if (!constellationLabels.length || !skillNames.length) return;
+
+    const slots = getConstellationSlots();
+    const slotIndex = constellationIndex % slots.length;
+    const skillIndex = constellationIndex % skillNames.length;
+    const label = constellationLabels[slotIndex % constellationLabels.length];
+    const oldVisible = constellationLayer.querySelectorAll(".skill-constellation.is-visible");
+
+    oldVisible.forEach((item) => {
+      if (item !== label) {
+        item.classList.remove("is-visible");
+        item.classList.add("is-fading");
+      }
+    });
+
+    label.textContent = skillNames[skillIndex];
+    label.classList.remove("is-fading");
+    void label.offsetWidth;
+    const position = placeConstellation(label, slotIndex);
+    label.classList.add("is-visible");
+
+    createPulse(position.x, position.y, 1.15);
+
+    nodes
+      .map((node) => ({ node, distance: Math.hypot(node.x - position.x, node.y - position.y) }))
+      .sort((a, b) => a.distance - b.distance)
+      .slice(0, 6)
+      .forEach(({ node }, order) => {
+        node.activation = Math.max(node.activation, 1 - order * 0.1);
+      });
+
+    constellationIndex += 1;
   };
 
   const spawnPacket = (timestamp) => {
@@ -429,12 +604,23 @@
   resizeObserver.observe(container);
   resize();
   createPulse(width * 0.74, height * 0.42, 0.65);
+  revealNextConstellation();
+  if (!reducedMotion) {
+    constellationTimer = window.setInterval(revealNextConstellation, 2400);
+  } else {
+    constellationLabels.slice(0, width <= 760 ? 4 : 6).forEach((label, index) => {
+      label.textContent = skillNames[index % skillNames.length];
+      placeConstellation(label, index);
+      label.classList.add("is-visible");
+    });
+  }
   animationFrame = requestAnimationFrame(draw);
 
   window.addEventListener(
     "pagehide",
     () => {
       cancelAnimationFrame(animationFrame);
+      if (constellationTimer) window.clearInterval(constellationTimer);
       resizeObserver.disconnect();
     },
     { once: true }
