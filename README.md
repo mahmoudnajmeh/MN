@@ -12,28 +12,6 @@ Designed to showcase projects, skills, and professional background.
 
 ---
 
-## 📁 Project Structure
-
-```bash
-MN/
-├── .github/
-├── css/
-│   ├── animations.css
-│   └── style.css
-├── images/
-├── js/
-│   ├── i18n.js
-│   ├── main.js
-│   └── particles.js
-├── .gitattributes
-├── index.html
-├── robots.txt
-├── sitemap.xml
-└── thank-you.html
-```
-
----
-
 ## ✨ Features
 
 - 🌍 Multi-language support (i18n)
